@@ -9,7 +9,8 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- tailwind cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -19,48 +20,69 @@
 
 <body class="primary-font">
 
-    <header class="bg-[#000103] sticky">
-        <nav class="sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
-            <div class="navbar py-5">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle hover:bg-[#EA2B1F] hover:border-white active:bg-[#EA2B1F] active:border-white focus:bg-[#EA2B1F] focus:border-white">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="white">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
-                                    d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
+    <div class="drawer">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+            <!-- Page content here -->
+            <header class="bg-[#070B1D] sticky">
+                <nav class="sm:w-11/12 md:w-10/12 lg:w-10/12 mx-auto">
+                    <div class="navbar py-5">
+                        <div class="navbar-start active:translate-y-0.5">
+                            <a
+                                class="cursor-pointer select-none text-3xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all">Rahib
+                                Azam</a>
                         </div>
-                        <ul tabindex="0"
-                            class="menu dropdown-content bg-[#515052] w-56 [&_li>*]:rounded-none p-0 shadow text-white transition-all mt-3">
-                            <li class="hover:bg-[#EA2B1F] transition-all primary-font"><a>Homepage</a></li>
-                            <li class="hover:bg-[#EA2B1F] transition-all primary-font"><a>Portfolio</a></li>
-                            <li class="hover:bg-[#EA2B1F] transition-all primary-font"><a>About</a></li>
-                        </ul>
+                        <div class="navbar-end">
+                            <label for="my-drawer" class="btn btn-primary bg-[#0AC4FF] drawer-button text-black">Quick Links</label>
+                        </div>
                     </div>
-                </div>
-                <div class="navbar-end active:translate-y-0.5">
-                    <a class="cursor-pointer select-none text-2xl font-extrabold text-white hover:text-[#EA2B1F] transition-all">Rahib Azam</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+                </nav>
+            </header>
 
-    <main class="bg-[#FFFFFA]">
+            <main class="bg-[#FFFFFA]">
 
-        <!-- hero section -->
-         <section>
-            <div class="sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30">
+                <!-- hero section -->
+                <section class="bg-[url(images/bg-img.png)]  bg-center bg-fixed">
+                    <div class="sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30">
+                        <div
+                            class="bg-[rgb(255,255,255,0.05)] backdrop-blur-[12px] mt-75 mb-30 py-15 px-60 primary-font text-center space-y-5">
+                            <h5 class="secondary-color text-2xl uppercase">Welcome To My Portfolio</h5>
+                            <h1 class="text-white text-5xl font-light">A Front-End Web Developer</h1>
+                            <h1 class="text-white text-5xl font-light">& HubSpot Specialist</h1>
+                        </div>
+                    </div>
+                </section>
 
-            </div>
-         </section>
+                <!-- about me -->
+                 <section class="bg-[#FAFAFA]">
+                    <div class="sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30 space-y-10">
+                        <!-- section heading -->
+                        <h2 class="primary-color primary-font font-light text-5xl text-center"><span class="bg-[#0AC4FF] py-1 px-7 rounded-md text-white">About Me</span></h2>
+                        <p>I’m a web developer with a passion for clean code, responsive design, and marketing-ready builds.  
+                            With a strong foundation in HTML, CSS, and modern CSS frameworks, I bring digital experiences to life—whether it’s a landing page, a full-blown website, or a dynamic HubSpot CMS project.
+                            
+                            I currently work as a HubSpot Specialist & Implementation Partner at INSIDEA, helping companies streamline their marketing and web presence using HubSpot tools and custom development.
+                            </p>
+                    </div>
+                 </section>
 
-    </main>
+            </main>
 
-    <footer>
+            <footer>
 
-    </footer>
+            </footer>
 
+        </div>
+        <div class="drawer-side">
+            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                <!-- Sidebar content here -->
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

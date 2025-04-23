@@ -1,9 +1,22 @@
 
 
 .primary-font {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Roboto", sans-serif;;
 }
 
 .primary-color {
-    color: #EA2B1F;
+    color: #0A0F26;
+}
+
+.secondary-color {
+    color: #0AC4FF;
+
+}
+
+.accent-1 {
+    color: #BABABA;
+}
+
+.accent-2 {
+    color: rgb(255, 255, 255, 0.5)
 }
