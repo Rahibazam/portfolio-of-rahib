@@ -34,7 +34,7 @@
                                 Azam</a>
                         </div>
                         <div class="navbar-end">
-                            <label for="my-drawer" class="btn btn-primary bg-[#0AC4FF] drawer-button text-black">Quick
+                            <label for="my-drawer" class="btn btn-primary bg-[#0AC4FF] drawer-button text-black text-lg hover:scale-105 transition-all  hover:drop-shadow-[0px_1px_2px_#0AC4FF]">Quick
                                 Links</label>
                         </div>
                     </div>
@@ -52,9 +52,9 @@
                             <h1 class="text-white text-5xl font-light">A Front-End Web Developer</h1>
                             <h1 class="text-white text-5xl font-light">& HubSpot Specialist</h1>
                             <!-- You can open the modal using ID.showModal() method -->
-                            <button class="btn btn-primary bg-[#0AC4FF] text-black text-xl"
-                                onclick="my_modal_4.showModal()">About Me</button>
-                            <dialog id="my_modal_4" class="modal">
+                            <button class="btn btn-primary bg-[#0AC4FF] text-black text-xl hover:scale-105 transition-all  hover:drop-shadow-[0px_1px_5px_#0AC4FF]"
+                                onclick="my_heromodal.showModal()">About Me</button>
+                            <dialog id="my_heromodal" class="modal">
                                 <div
                                     class="modal-box w-11/12 max-w-7xl bg-[#0AC4FF] space-y-4 px-5 lg:px-10 border border-white">
                                     <h3 class="font-bold text-5xl mt-5">About Me</h3>
@@ -102,7 +102,7 @@
                         </div>
 
                         <!-- skills container -->
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
                             <!-- first skill -->
                             <div
                                 class="flex flex-col-reverse lg:flex-row justify-between bg-[#F3F3F3] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#0AC4FF] border-2 border-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:drop-shadow-none transition-all h-90 lg:h-74">
@@ -123,7 +123,7 @@
                                                 </svg>
                                             </span>Learn More</button>
                                         <dialog id="my_modal_1" class="modal">
-                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[15px]">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[90px]">
                                                 <h3 class="text-lg font-bold secondary-color">HTML5</h3>
                                                 <p class="py-4 secondary-color">I have a solid understanding of HTML5
                                                     and its role as
@@ -147,6 +147,7 @@
                                     <img class="animate-pulse mb-7 lg:mb-0" src="icons/html-5.png" alt="">
                                 </div>
                             </div>
+
                             <!-- second skill -->
                             <div
                                 class="flex flex-col-reverse lg:flex-row justify-between bg-[#0AC4FF] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#F3F3F3] border-2 border-[#F3F3F3] hover:inset-shadow-[0px_0px_20px_#F3F3F5] hover:drop-shadow-none transition-all h-90 lg:h-74">
@@ -167,7 +168,7 @@
                                                 </svg>
                                             </span>Learn More</button>
                                         <dialog id="my_modal_2" class="modal">
-                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[15px]">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[90px]">
                                                 <h3 class="text-lg font-bold secondary-color">HTML5</h3>
                                                 <p class="py-4 secondary-color">CSS is where I bring designs to life. I work with everything from basic layout styling to advanced selectors, animations, transitions, and media queries. I have experience writing vanilla CSS from scratch, organizing styles logically, and using methodologies like BEM for clean, maintainable code.</p>
                                                 <div class="modal-action">
@@ -185,6 +186,7 @@
                                     <img class="animate-pulse mb-7 lg:mb-0" src="icons/css-3.png" alt="">
                                 </div>
                             </div>
+
                             <!-- third skill -->
                             <div
                                 class="flex flex-col-reverse lg:flex-row justify-between bg-[#070B1D] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#422ad5] border-2 border-[#422ad5] hover:inset-shadow-[0px_0px_20px_#422ad5] hover:drop-shadow-none transition-all h-90 lg:h-74">
@@ -205,9 +207,9 @@
                                                 </svg>
                                             </span>Learn More</button>
                                         <dialog id="my_modal_3" class="modal">
-                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[15px]">
-                                                <h3 class="text-lg font-bold secondary-color">HTML5</h3>
-                                                <p class="py-4 secondary-color">CSS is where I bring designs to life. I work with everything from basic layout styling to advanced selectors, animations, transitions, and media queries. I have experience writing vanilla CSS from scratch, organizing styles logically, and using methodologies like BEM for clean, maintainable code.</p>
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[90px]">
+                                                <h3 class="text-lg font-bold secondary-color">Tailwind CSS</h3>
+                                                <p class="py-4 secondary-color">Tailwind is my go-to CSS framework for rapidly developing responsive, utility-first designs. I love how it streamlines development and eliminates the need to context-switch between HTML and CSS files. I use Tailwind to prototype fast and iterate even faster while keeping designs consistent across breakpoints.</p>
                                                 <div class="modal-action">
                                                     <form method="dialog">
                                                         <!-- if there is a button in form, it will close the modal -->
@@ -223,6 +225,206 @@
                                     <img class="animate-pulse mb-7 lg:mb-0" src="icons/tailwind.png" alt="">
                                 </div>
                             </div>
+
+                            <!-- fourth skill -->
+                            <div
+                                class="flex flex-col-reverse lg:flex-row justify-between bg-[#F3F3F3] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#0AC4FF] border-2 border-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:drop-shadow-none transition-all h-90 lg:h-74">
+                                <!-- left column -->
+                                <div class="grid grid-rows-2">
+                                    <h3 class="text-3xl text-white text-center lg:text-left mb-5 lg:mb-0"><span
+                                            class="bg-[#0AC4FF] py-1 px-5 rounded-lg">DaisyUI</span></h3>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <div class="content-end mx-auto lg:mx-0">
+                                        <button
+                                            class="btn btn-primary py-6 bg-[#0A0F26] text-lg uppercase flex items-center"
+                                            onclick="my_modal_4.showModal()"><span
+                                                class="bg-[#0AC4FF] rounded-full p-0.5 -rotate-45"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="white" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>Learn More</button>
+                                        <dialog id="my_modal_4" class="modal">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[90px]">
+                                                <h3 class="text-lg font-bold secondary-color">DaisyUI</h3>
+                                                <p class="py-4 secondary-color">DaisyUI makes styling even faster and more elegant on top of Tailwind CSS. I use DaisyUI’s pre-built, customizable component classes to speed up development without sacrificing flexibility. It helps me maintain consistent design patterns and create polished interfaces with less effort, especially when prototyping or scaling projects.</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn btn-circle bg-[#0AC4FF]">X</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                </div>
+                                <!-- right column -->
+                                <div class="w-4/12 lg:content-center mx-auto lg:mx-0">
+                                    <img class="animate-pulse mb-7 lg:mb-0" src="icons/daisyui.png" alt="">
+                                </div>
+                            </div>
+
+                            <!-- fifth skill -->
+                            <div
+                                class="flex flex-col-reverse lg:flex-row justify-between bg-[#F3F3F3] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#0AC4FF] border-2 border-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:drop-shadow-none transition-all h-90 lg:h-74">
+                                <!-- left column -->
+                                <div class="grid grid-rows-2">
+                                    <h3 class="text-3xl text-white text-center lg:text-left mb-5 lg:mb-0"><span
+                                            class="bg-[#0AC4FF] py-1 px-5 rounded-lg">Bootstrap</span></h3>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <div class="content-end mx-auto lg:mx-0">
+                                        <button
+                                            class="btn btn-primary py-6 bg-[#0A0F26] text-lg uppercase flex items-center"
+                                            onclick="my_modal_5.showModal()"><span
+                                                class="bg-[#0AC4FF] rounded-full p-0.5 -rotate-45"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="white" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>Learn More</button>
+                                        <dialog id="my_modal_5" class="modal">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[90px]">
+                                                <h3 class="text-lg font-bold secondary-color">Bootstrap</h3>
+                                                <p class="py-4 secondary-color">With Bootstrap, I can quickly spin up responsive layouts using its grid system, UI components, and JavaScript plugins. I’ve used it for building everything from MVPs to marketing pages and have customized it extensively to align with brand identities and design requirements.</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn btn-circle bg-[#0AC4FF]">X</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                </div>
+                                <!-- right column -->
+                                <div class="w-4/12 lg:content-center mx-auto lg:mx-0">
+                                    <img class="animate-pulse mb-7 lg:mb-0" src="icons/bootstrap.png" alt="">
+                                </div>
+                            </div>
+
+                            <!-- sixth skill -->
+                            <div
+                                class="flex flex-col-reverse lg:flex-row justify-between bg-[#0AC4FF] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#F3F3F3] border-2 border-[#F3F3F3] hover:inset-shadow-[0px_0px_20px_#F3F3F5] hover:drop-shadow-none transition-all h-90 lg:h-74">
+                                <!-- left column -->
+                                <div class="grid grid-rows-2">
+                                    <h3 class="text-3xl text-white text-center lg:text-left mb-5 lg:mb-0"><span
+                                            class="bg-[#F3F3F3] py-1 px-5 text-[#0AC4FF] rounded-lg">Responsive Design</span></h3>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <div class="content-end mx-auto lg:mx-0">
+                                        <button
+                                            class="btn btn-primary py-6 bg-[#0A0F26] text-lg uppercase flex items-center"
+                                            onclick="my_modal_6.showModal()"><span
+                                                class="bg-[#0AC4FF] rounded-full p-0.5 -rotate-45"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="white" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>Learn More</button>
+                                        <dialog id="my_modal_6" class="modal">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[90px]">
+                                                <h3 class="text-lg font-bold secondary-color">Responsive Design</h3>
+                                                <p class="py-4 secondary-color">Creating experiences that look great on every device is second nature to me. I use fluid layouts, relative units, and flexible images—paired with mobile-first breakpoints—to ensure usability and visual integrity across screen sizes.</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn btn-circle bg-[#0AC4FF]">X</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                </div>
+                                <!-- right column -->
+                                <div class="w-4/12 lg:content-center mx-auto lg:mx-0">
+                                    <img class="animate-pulse mb-7 lg:mb-0" src="icons/responsive.png" alt="">
+                                </div>
+                            </div>
+
+                            <!-- seventh skill -->
+                            <div
+                                class="flex flex-col-reverse lg:flex-row justify-between bg-[#070B1D] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#422ad5] border-2 border-[#422ad5] hover:inset-shadow-[0px_0px_20px_#422ad5] hover:drop-shadow-none transition-all h-90 lg:h-74">
+                                <!-- left column -->
+                                <div class="grid grid-rows-2">
+                                    <h3 class="text-3xl text-white text-center lg:text-left mb-5 lg:mb-0"><span
+                                            class="bg-[#422ad5] py-1 px-5 text-[#070B1D] rounded-lg">HubSpot CMS</span></h3>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <div class="content-end mx-auto lg:mx-0">
+                                        <button
+                                            class="btn btn-primary py-6 bg-[#422ad5] text-lg uppercase flex items-center"
+                                            onclick="my_modal_7.showModal()"><span
+                                                class="bg-[#070B1D] rounded-full p-0.5 -rotate-45"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="white" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>Learn More</button>
+                                        <dialog id="my_modal_7" class="modal">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[90px]">
+                                                <h3 class="text-lg font-bold secondary-color">HubSpot CMS</h3>
+                                                <p class="py-4 secondary-color">I'm highly skilled in using HubSpot’s drag-and-drop editor to build professional, responsive pages and emails without needing to touch custom code. I work efficiently with modules, smart content, and form integrations to create marketing-ready assets that drive engagement. Whether it’s landing pages, blogs, or email campaigns, I know how to structure and optimize everything directly within HubSpot’s user-friendly tools.</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn btn-circle bg-[#0AC4FF]">X</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                </div>
+                                <!-- right column -->
+                                <div class="w-4/12 lg:content-center mx-auto lg:mx-0">
+                                    <img class="animate-pulse mb-7 lg:mb-0" src="icons/hubspot.png" alt="">
+                                </div>
+                            </div>
+
+                            <!-- eighth skill -->
+                            <div
+                                class="flex flex-col-reverse lg:flex-row justify-between bg-[#F3F3F3] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#0AC4FF] border-2 border-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:drop-shadow-none transition-all h-90 lg:h-74">
+                                <!-- left column -->
+                                <div class="grid grid-rows-2">
+                                    <h3 class="text-3xl text-white text-center lg:text-left mb-5 lg:mb-0"><span
+                                            class="bg-[#0AC4FF] py-1 px-5 rounded-lg">WordPress</span></h3>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <div class="content-end mx-auto lg:mx-0">
+                                        <button
+                                            class="btn btn-primary py-6 bg-[#0A0F26] text-lg uppercase flex items-center"
+                                            onclick="my_modal_8.showModal()"><span
+                                                class="bg-[#0AC4FF] rounded-full p-0.5 -rotate-45"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="white" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>Learn More</button>
+                                        <dialog id="my_modal_8" class="modal">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[90px]">
+                                                <h3 class="text-lg font-bold secondary-color">WordPress</h3>
+                                                <p class="py-4 secondary-color">I have experience building and managing websites on WordPress, using its block editor (Gutenberg) and popular themes and plugins to create customized, responsive sites. I'm comfortable handling page layouts, basic plugin configurations, and making design adjustments to ensure a seamless user experience without heavy reliance on custom coding.</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn btn-circle bg-[#0AC4FF]">X</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                </div>
+                                <!-- right column -->
+                                <div class="w-4/12 lg:content-center mx-auto lg:mx-0">
+                                    <img class="animate-pulse mb-7 lg:mb-0" src="icons/wordpress.png" alt="">
+                                </div>
+                            </div>
+
+
+
+
+
                         </div>
                     </div>
                 </section>
@@ -236,11 +438,17 @@
         </div>
         <div class="drawer-side">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-            <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+            <ul class="menu bg-[rgb(255,255,255,0.08)] backdrop-blur-[8px] text-base-content min-h-full w-80 p-4 text-lg text-[#0AC4FF]">
                 <!-- Sidebar content here -->
-                <li><a>Homepage</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>About</a></li>
+                <li class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all"><a>Homepage</a></li>
+                <li>
+                  <a  class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all">Portfolio</a>
+                  <ul>
+                    <li  class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all"><a>Websites</a></li>
+                    <li  class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all"><a>HubSpot</a></li>
+                  </ul>
+                </li>
+                <li  class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all"><a>About</a></li> 
             </ul>
         </div>
     </div>
