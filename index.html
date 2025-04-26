@@ -102,16 +102,16 @@
                         </div>
 
                         <!-- skills container -->
-                        <div class="lg:grid grid-cols-2">
-                            <!-- html -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                            <!-- first skill -->
                             <div
-                                class="flex justify-between bg-[#F3F3F3] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#0AC4FF] border-2 border-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:drop-shadow-none transition-all">
+                                class="flex flex-col-reverse lg:flex-row justify-between bg-[#F3F3F3] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#0AC4FF] border-2 border-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:drop-shadow-none transition-all h-90 lg:h-74">
                                 <!-- left column -->
                                 <div class="grid grid-rows-2">
-                                    <h3 class="text-3xl text-white"><span
+                                    <h3 class="text-3xl text-white text-center lg:text-left mb-5 lg:mb-0"><span
                                             class="bg-[#0AC4FF] py-1 px-5 rounded-lg">HTML5</span></h3>
                                     <!-- Open the modal using ID.showModal() method -->
-                                    <div class="content-end">
+                                    <div class="content-end mx-auto lg:mx-0">
                                         <button
                                             class="btn btn-primary py-6 bg-[#0A0F26] text-lg uppercase flex items-center"
                                             onclick="my_modal_1.showModal()"><span
@@ -143,8 +143,84 @@
                                     </div>
                                 </div>
                                 <!-- right column -->
-                                <div class="w-4/12">
-                                    <img class="animate-pulse" src="icons/html.png" alt="">
+                                <div class="w-4/12 lg:content-center mx-auto lg:mx-0">
+                                    <img class="animate-pulse mb-7 lg:mb-0" src="icons/html-5.png" alt="">
+                                </div>
+                            </div>
+                            <!-- second skill -->
+                            <div
+                                class="flex flex-col-reverse lg:flex-row justify-between bg-[#0AC4FF] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#F3F3F3] border-2 border-[#F3F3F3] hover:inset-shadow-[0px_0px_20px_#F3F3F5] hover:drop-shadow-none transition-all h-90 lg:h-74">
+                                <!-- left column -->
+                                <div class="grid grid-rows-2">
+                                    <h3 class="text-3xl text-white text-center lg:text-left mb-5 lg:mb-0"><span
+                                            class="bg-[#F3F3F3] py-1 px-5 text-[#0AC4FF] rounded-lg">CSS3</span></h3>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <div class="content-end mx-auto lg:mx-0">
+                                        <button
+                                            class="btn btn-primary py-6 bg-[#0A0F26] text-lg uppercase flex items-center"
+                                            onclick="my_modal_2.showModal()"><span
+                                                class="bg-[#0AC4FF] rounded-full p-0.5 -rotate-45"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="white" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>Learn More</button>
+                                        <dialog id="my_modal_2" class="modal">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[15px]">
+                                                <h3 class="text-lg font-bold secondary-color">HTML5</h3>
+                                                <p class="py-4 secondary-color">CSS is where I bring designs to life. I work with everything from basic layout styling to advanced selectors, animations, transitions, and media queries. I have experience writing vanilla CSS from scratch, organizing styles logically, and using methodologies like BEM for clean, maintainable code.</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn btn-circle bg-[#0AC4FF]">X</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                </div>
+                                <!-- right column -->
+                                <div class="w-4/12 lg:content-center mx-auto lg:mx-0">
+                                    <img class="animate-pulse mb-7 lg:mb-0" src="icons/css-3.png" alt="">
+                                </div>
+                            </div>
+                            <!-- third skill -->
+                            <div
+                                class="flex flex-col-reverse lg:flex-row justify-between bg-[#070B1D] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#422ad5] border-2 border-[#422ad5] hover:inset-shadow-[0px_0px_20px_#422ad5] hover:drop-shadow-none transition-all h-90 lg:h-74">
+                                <!-- left column -->
+                                <div class="grid grid-rows-2">
+                                    <h3 class="text-3xl text-white text-center lg:text-left mb-5 lg:mb-0"><span
+                                            class="bg-[#422ad5] py-1 px-5 text-[#070B1D] rounded-lg">Tailwind CSS</span></h3>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <div class="content-end mx-auto lg:mx-0">
+                                        <button
+                                            class="btn btn-primary py-6 bg-[#422ad5] text-lg uppercase flex items-center"
+                                            onclick="my_modal_3.showModal()"><span
+                                                class="bg-[#070B1D] rounded-full p-0.5 -rotate-45"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="white" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>Learn More</button>
+                                        <dialog id="my_modal_3" class="modal">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[15px]">
+                                                <h3 class="text-lg font-bold secondary-color">HTML5</h3>
+                                                <p class="py-4 secondary-color">CSS is where I bring designs to life. I work with everything from basic layout styling to advanced selectors, animations, transitions, and media queries. I have experience writing vanilla CSS from scratch, organizing styles logically, and using methodologies like BEM for clean, maintainable code.</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn btn-circle bg-[#0AC4FF]">X</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                </div>
+                                <!-- right column -->
+                                <div class="w-4/12 lg:content-center mx-auto lg:mx-0">
+                                    <img class="animate-pulse mb-7 lg:mb-0" src="icons/tailwind.png" alt="">
                                 </div>
                             </div>
                         </div>
