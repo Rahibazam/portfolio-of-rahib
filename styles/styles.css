@@ -1,7 +1,11 @@
 
 
 .primary-font {
-    font-family: "Roboto", sans-serif;;
+    font-family: "Quantico", sans-serif;
+}
+
+.heading-font {
+    font-family: "Orbitron", sans-serif;
 }
 
 .primary-color {

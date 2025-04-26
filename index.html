@@ -9,7 +9,8 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <!-- tailwind cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -25,7 +26,7 @@
         <div class="drawer-content">
             <!-- Page content here -->
             <header class="bg-[#070B1D] sticky">
-                <nav class="sm:w-11/12 md:w-10/12 lg:w-10/12 mx-auto">
+                <nav class="w-12/12 md:w-10/12 lg:w-10/12 mx-auto">
                     <div class="navbar py-5">
                         <div class="navbar-start active:translate-y-0.5">
                             <a
@@ -33,7 +34,8 @@
                                 Azam</a>
                         </div>
                         <div class="navbar-end">
-                            <label for="my-drawer" class="btn btn-primary bg-[#0AC4FF] drawer-button text-black">Quick Links</label>
+                            <label for="my-drawer" class="btn btn-primary bg-[#0AC4FF] drawer-button text-black">Quick
+                                Links</label>
                         </div>
                     </div>
                 </nav>
@@ -42,29 +44,112 @@
             <main class="bg-[#FFFFFA]">
 
                 <!-- hero section -->
-                <section class="bg-[url(images/bg-img.png)]  bg-center bg-fixed">
-                    <div class="sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30">
+                <section class="lg:bg-[url(images/bg-img.png)] lg:bg-center lg:bg-fixed bg-[#070B1D]">
+                    <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30">
                         <div
-                            class="bg-[rgb(255,255,255,0.05)] backdrop-blur-[12px] mt-75 mb-30 py-15 px-60 primary-font text-center space-y-5">
+                            class="bg-[rgb(255,255,255,0.05)] backdrop-blur-[12px] lg:mt-75 lg:mb-30 py-10 lg:py-15 px-5 lg:px-60 primary-font text-center space-y-5">
                             <h5 class="secondary-color text-2xl uppercase">Welcome To My Portfolio</h5>
                             <h1 class="text-white text-5xl font-light">A Front-End Web Developer</h1>
                             <h1 class="text-white text-5xl font-light">& HubSpot Specialist</h1>
+                            <!-- You can open the modal using ID.showModal() method -->
+                            <button class="btn btn-primary bg-[#0AC4FF] text-black text-xl"
+                                onclick="my_modal_4.showModal()">About Me</button>
+                            <dialog id="my_modal_4" class="modal">
+                                <div
+                                    class="modal-box w-11/12 max-w-7xl bg-[#0AC4FF] space-y-4 px-5 lg:px-10 border border-white">
+                                    <h3 class="font-bold text-5xl mt-5">About Me</h3>
+                                    <p class="text-[#0A0F26] text-xl">I’m a web developer with a passion for clean code,
+                                        responsive
+                                        design, and marketing-ready builds. With a strong foundation in HTML, CSS, and
+                                        modern CSS
+                                        frameworks, I bring digital
+                                        experiences to life—whether it’s a landing page, a full-blown website, or a
+                                        dynamic HubSpot
+                                        CMS project.</p>
+                                    <p class="text-[#0A0F26] text-xl">I currently work as a HubSpot Specialist &
+                                        Implementation Partner at INSIDEA,
+                                        helping
+                                        companies streamline their marketing and web presence using HubSpot tools and
+                                        custom
+                                        development.</p>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button, it will close the modal -->
+                                            <button class="btn btn-circle bg-[#0A0F26] text-white">X</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </section>
 
-                <!-- about me -->
-                 <section class="bg-[#FAFAFA]">
-                    <div class="sm:w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30 space-y-10">
+                <!-- skills -->
+                <section class="bg-[#0A0F26] py-30">
+                    <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-15">
                         <!-- section heading -->
-                        <h2 class="primary-color primary-font font-light text-5xl text-center"><span class="bg-[#0AC4FF] py-1 px-7 rounded-md text-white">About Me</span></h2>
-                        <p>I’m a web developer with a passion for clean code, responsive design, and marketing-ready builds.  
-                            With a strong foundation in HTML, CSS, and modern CSS frameworks, I bring digital experiences to life—whether it’s a landing page, a full-blown website, or a dynamic HubSpot CMS project.
-                            
-                            I currently work as a HubSpot Specialist & Implementation Partner at INSIDEA, helping companies streamline their marketing and web presence using HubSpot tools and custom development.
-                            </p>
+                        <div class="lg:flex gap-15 items-center space-y-10 lg:space-y-0">
+                            <div class="">
+                                <h2
+                                    class="text-4xl font-medium text-white uppercase heading-font text-center lg:text-left">
+                                    <span class="bg-[#0AC4FF] py-3 px-5 rounded-lg">My Skills</span></h2>
+                            </div>
+                            <p class="text-lg text-white text-center lg:text-left flex-1">Here’s a closer look at the
+                                tools and technologies I
+                                work with. From writing clean, responsive code with HTML and CSS to building full pages
+                                inside HubSpot’s drag-and-drop editor, I combine technical know-how with practical
+                                experience to bring ideas to life on the web.</p>
+                        </div>
+
+                        <!-- skills container -->
+                        <div class="lg:grid grid-cols-2">
+                            <!-- html -->
+                            <div
+                                class="flex justify-between bg-[#F3F3F3] py-15 px-10 rounded-3xl drop-shadow-[0px_5px_#0AC4FF] border-2 border-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:drop-shadow-none transition-all">
+                                <!-- left column -->
+                                <div class="grid grid-rows-2">
+                                    <h3 class="text-3xl text-white"><span
+                                            class="bg-[#0AC4FF] py-1 px-5 rounded-lg">HTML5</span></h3>
+                                    <!-- Open the modal using ID.showModal() method -->
+                                    <div class="content-end">
+                                        <button
+                                            class="btn btn-primary py-6 bg-[#0A0F26] text-lg uppercase flex items-center"
+                                            onclick="my_modal_1.showModal()"><span
+                                                class="bg-[#0AC4FF] rounded-full p-0.5 -rotate-45"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="white" class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                </svg>
+                                            </span>Learn More</button>
+                                        <dialog id="my_modal_1" class="modal">
+                                            <div class="modal-box bg-[rgb(255,255,255,0.08)] backdrop-blur-[15px]">
+                                                <h3 class="text-lg font-bold secondary-color">HTML5</h3>
+                                                <p class="py-4 secondary-color">I have a solid understanding of HTML5
+                                                    and its role as
+                                                    the foundation of the web. From semantic markup and accessibility
+                                                    best practices to structuring pages for SEO and performance, I use
+                                                    HTML with intention and precision. Whether it’s building static
+                                                    websites or integrating with CMS systems like HubSpot, clean HTML is
+                                                    always at the core.</p>
+                                                <div class="modal-action">
+                                                    <form method="dialog">
+                                                        <!-- if there is a button in form, it will close the modal -->
+                                                        <button class="btn btn-circle bg-[#0AC4FF]">X</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </dialog>
+                                    </div>
+                                </div>
+                                <!-- right column -->
+                                <div class="w-4/12">
+                                    <img class="animate-pulse" src="icons/html.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                 </section>
+                </section>
 
             </main>
 
