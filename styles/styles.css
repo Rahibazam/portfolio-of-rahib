@@ -1,5 +1,3 @@
-
-
 .primary-font {
     font-family: "Quantico", sans-serif;
 }
@@ -33,4 +31,84 @@
     color: #070B1D;
 }
 
+.accent-5 {
+    color: #0A0F26
+}
 
+
+/* .background-gradient {
+    background: radial-gradient(circle, #0ac6ff8f 1%, #412ad5a9 5%, #070B1D 30%);
+    animation: gradient 15s infinite;
+    background-attachment: fixed;
+    animation-timing-function: linear;
+}
+
+@keyframes gradient {
+
+    0% {
+        background-size: 100%;
+        background-position: 50% 50%;
+    }
+
+    15% {
+        background-size: 110%;
+        background-position: 60% 40%;
+    }
+
+    30% {
+        background-size: 95%;
+        background-position: 30% 70%;
+    }
+
+    45% {
+        background-size: 105%;
+        background-position: 70% 30%;
+    }
+
+    60% {
+        background-size: 90%;
+        background-position: 40% 60%;
+    }
+
+    75% {
+        background-size: 115%;
+        background-position: 65% 35%;
+    }
+
+    90% {
+        background-size: 100%;
+        background-position: 35% 65%;
+    }
+
+    100% {
+        background-size: 105%;
+        background-position: 55% 45%;
+    }
+
+} */
+
+
+.background-gradient {
+    background: 
+      radial-gradient(circle at 30% 50%, #0ac6ff8f 1%, transparent 20%),
+      radial-gradient(circle at 70% 30%, #412ad5a9 5%, transparent 25%),
+      radial-gradient(circle at 50% 80%, #3B429F 2%, transparent 15%),
+      linear-gradient(#070B1D, #070B1D);
+    background-blend-mode: screen;
+    background-size: 200% 200%;
+    animation: float-circles 20s ease-in-out infinite alternate;
+    
+  }
+  
+  @keyframes float-circles {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+  
