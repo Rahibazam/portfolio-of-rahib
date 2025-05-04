@@ -45,13 +45,19 @@
             <main class="bg-[#070B1D]">
 
                 <!-- hero section -->
-                <section class="lg:bg-[url(images/bg-img.png)] lg:bg-center lg:bg-fixed bg-[#070B1D]">
-                    <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30">
+                <!-- <section class="lg:bg-[url(images/bg-img.png)] lg:bg-center lg:bg-fixed bg-[#070B1D]"> -->
+                <section class="bg-[#070B1D] relative h-screen pt-30 md:mb-60">
+                    <div class="fixed z-0 inset-y-43 lg:inset-y-20 w-full">
+                        <div class="pointer-events-none">
+                            <h3 class="text-[8rem] lg:text-[19.688vw] text-center secondary-color optional-font font-light tracking-widest ml-2 text-fade-in">RAHIB</h3>
+                        </div>
+                    </div>
+                    <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
                         <div
-                            class="bg-[rgb(255,255,255,0.05)] backdrop-blur-[12px] lg:mt-75 lg:mb-30 py-10 lg:py-15 px-5 lg:px-60 primary-font text-center space-y-5">
+                            class="bg-[rgb(255,255,255,0.07)] backdrop-blur-[20px] mt-20 lg:mt-40 lg:mb-30 py-10 lg:py-15 px-5 lg:px-60 primary-font text-center space-y-5">
                             <h5 class="secondary-color text-2xl uppercase">Welcome To My Portfolio</h5>
-                            <h1 class="text-white text-5xl font-light">A Front-End Web Developer</h1>
-                            <h1 class="text-white text-5xl font-light">& HubSpot Specialist</h1>
+                            <h1 class="text-white text-4xl lg:text-5xl font-light">A Front-End Web Developer</h1>
+                            <h1 class="text-white text-4xl lg:text-5xl font-light">& HubSpot Specialist</h1>
                             <!-- You can open the modal using ID.showModal() method -->
                             <button
                                 class="btn btn-primary bg-[#0AC4FF] text-black text-xl hover:scale-105 transition-all  hover:drop-shadow-[0px_1px_5px_#0AC4FF]"
@@ -86,7 +92,7 @@
                     </div>
                 </section>
 
-                <section class="background-gradient">
+                <section class="background-gradient relative z-20 min-h-screen">
 
                     <!-- skills -->
                     <section class="py-30">
@@ -701,7 +707,7 @@
             </footer>
 
         </div>
-        <div class="drawer-side">
+        <div class="drawer-side z-50">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
             <ul
                 class="menu bg-[rgb(255,255,255,0.08)] backdrop-blur-[8px] text-base-content min-h-full w-80 p-4 text-lg text-[#0AC4FF]">
