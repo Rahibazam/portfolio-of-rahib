@@ -1,3 +1,5 @@
+
+
 .primary-font {
     font-family: "Quantico", sans-serif;
 }
@@ -7,7 +9,8 @@
 }
 
 .optional-font {
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
+    ;
 
 }
 
@@ -40,57 +43,276 @@
     color: #0A0F26
 }
 
+.tab-border {
+
+  border: 1px solid #0AC4FF;
+  box-shadow: 0px 0px 15px #0AC4FF;
+  animation:
+        neonPulse 3s ease-in-out infinite;
+
+}
+
+.tab-border:checked{
+  background-color: #422ad5;
+  color: white;
+  border: 1px solid #422ad5;
+  box-shadow: 0px 0px 15px #422ad5;
+}
+
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
-  @keyframes neonPulse {
-    0%, 100% {
-      text-shadow: 
-        0 0 3px #0ac6ff,
-        0 0 7px #0ac6ff,
-        0 0 12px #0ac6ff,
-        0 0 17px #412ad5;
+    from {
+        opacity: 0;
     }
-    50% {
-      text-shadow: 
-        0 0 5px #0ac6ff,
-        0 0 10px #0ac6ff,
-        0 0 20px #0ac6ff,
-        0 0 30px #412ad5;
-    }
-  }
-  
-  .text-fade-in {
-    animation: 
-      fadeIn 2s ease-out forwards,
-      neonPulse 3s ease-in-out infinite;
-  }
 
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes neonPulse {
+
+    0%,
+    100% {
+        text-shadow:
+            0 0 3px #0ac6ff,
+            0 0 7px #0ac6ff,
+            0 0 12px #0ac6ff,
+            0 0 17px #412ad5;
+    }
+
+    50% {
+        text-shadow:
+            0 0 5px #0ac6ff,
+            0 0 10px #0ac6ff,
+            0 0 20px #0ac6ff,
+            0 0 30px #412ad5;
+    }
+}
+
+.text-fade-in {
+    animation:
+        fadeIn 2s ease-out forwards,
+        neonPulse 3s ease-in-out infinite;
+}
 
 .background-gradient {
-    background: 
-      radial-gradient(circle at 30% 50%, #0ac6ff8f 1%, transparent 20%),
-      radial-gradient(circle at 70% 30%, #412ad5a9 5%, transparent 25%),
-      radial-gradient(circle at 50% 80%, #3B429F 2%, transparent 15%),
-      linear-gradient(#070B1D, #070B1D);
+    background:
+        radial-gradient(circle at 30% 50%, #0ac6ff8f 1%, transparent 20%),
+        radial-gradient(circle at 70% 30%, #412ad5a9 5%, transparent 25%),
+        radial-gradient(circle at 50% 80%, #3B429F 2%, transparent 15%),
+        linear-gradient(#070B1D, #070B1D);
     background-blend-mode: screen;
     background-size: 200% 200%;
     animation: float-circles 20s ease-in-out infinite alternate;
-    
-  }
-  
-  @keyframes float-circles {
+
+}
+
+@keyframes float-circles {
     0% {
-      background-position: 0% 0%;
+        background-position: 0% 0%;
     }
+
     50% {
-      background-position: 100% 100%;
+        background-position: 100% 100%;
     }
+
     100% {
-      background-position: 0% 100%;
+        background-position: 0% 100%;
     }
-  }
-  
+}
+
+
+.glowing-background::before,
+    .glowing-background::after,
+    .glowing-background span {
+      content: "";
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      filter: blur(15px);
+      z-index: 1;
+      position: fixed;
+    }
+
+    /* Ball 1 */
+    .glowing-background::before {
+      top: 15%;
+      left: 20%;
+      background-color: rgba(10, 196, 255, 0.8);
+      box-shadow: 0 0 20px rgb(10, 196, 255);
+      animation: pulse1 4s infinite ease-in-out, move1 7s infinite ease-in-out;
+    }
+
+    /* Ball 2 */
+    .glowing-background::after {
+      top: 65%;
+      left: 35%;
+      background-color: rgba(186, 186, 186, 0.8);
+      box-shadow: 0 0 20px rgb(186, 186, 186);
+      animation: pulse2 5s infinite ease-in-out, move2 8s infinite ease-in-out;
+    }
+
+    /* Additional balls using spans */
+    .glowing-background span:nth-child(1) {
+      top: 20%;
+      left: 80%;
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 20px rgb(255, 255, 255);
+      animation: pulse3 6s infinite ease-in-out, move3 9s infinite ease-in-out;
+    }
+
+    .glowing-background span:nth-child(2) {
+      top: 80%;
+      left: 80%;
+      background-color: rgba(66, 42, 213, 0.8);
+      box-shadow: 0 0 20px rgb(66, 42, 213);
+      animation: pulse4 4.5s infinite ease-in-out, move4 7.5s infinite ease-in-out;
+    }
+
+    .glowing-background span:nth-child(3) {
+      top: 70%;
+      left: 55%;
+      background-color: rgba(66, 42, 213, 0.8);
+      box-shadow: 0 0 20px rgb(66, 42, 213);
+      animation: pulse5 5.5s infinite ease-in-out, move5 8.5s infinite ease-in-out;
+    }
+
+    .glowing-background span:nth-child(4) {
+      top: 10%;
+      left: 60%;
+      background-color: rgba(186, 186, 186, 0.7);
+      box-shadow: 0 0 20px rgb(186, 186, 186);
+      animation: pulse6 4.2s infinite ease-in-out, move6 7.2s infinite ease-in-out;
+    }
+
+    .glowing-background span:nth-child(5) {
+      top: 70%;
+      left: 10%;
+      background-color: rgba(66, 42, 213, 0.7);
+      box-shadow: 0 0 20px rgb(66, 42, 213);
+      animation: pulse7 5.8s infinite ease-in-out, move7 8.8s infinite ease-in-out;
+    }
+
+    .glowing-background span:nth-child(6) {
+      top: 50%;
+      left: 85%;
+      background-color: rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 20px rgb(255, 255, 255);
+      animation: pulse8 6.2s infinite ease-in-out, move8 9.2s infinite ease-in-out;
+    }
+
+    .glowing-background span:nth-child(7) {
+      top: 15%;
+      left: 37%;
+      background-color: rgba(66, 42, 213, 0.7);
+      box-shadow: 0 0 20px rgb(66, 42, 213);
+      animation: pulse7 5.8s infinite ease-in-out, move7 8.8s infinite ease-in-out;
+    }
+
+    /* Pulse animations */
+    @keyframes pulse1 {
+      0%, 100% { transform: scale(1); background-color: rgba(10, 196, 255, 0.8); }
+      50% { transform: scale(1.2); background-color: rgba(10, 196, 255, 1); }
+    }
+
+    @keyframes pulse2 {
+      0%, 100% { transform: scale(1); background-color: rgba(186, 186, 186, 0.8); }
+      50% { transform: scale(1.15); background-color: rgba(186, 186, 186, 1); }
+    }
+
+    @keyframes pulse3 {
+      0%, 100% { transform: scale(1); background-color: rgba(255, 255, 255, 0.5); }
+      50% { transform: scale(1.25); background-color: rgba(255, 255, 255, 0.8); }
+    }
+
+    @keyframes pulse4 {
+      0%, 100% { transform: scale(1); background-color: rgba(66, 42, 213, 0.8); }
+      50% { transform: scale(1.2); background-color: rgba(66, 42, 213, 1); }
+    }
+
+    @keyframes pulse5 {
+      0%, 100% { transform: scale(1); background-color: rgba(66, 42, 213, 0.8); }
+      50% { transform: scale(1.3); background-color: rgba(66, 42, 213, 1); }
+    }
+
+    @keyframes pulse6 {
+      0%, 100% { transform: scale(1); background-color: rgba(186, 186, 186, 0.7); }
+      50% { transform: scale(1.18); background-color: rgba(186, 186, 186, 0.95); }
+    }
+
+    @keyframes pulse7 {
+      0%, 100% { transform: scale(1); background-color: rgba(66, 42, 213, 0.7); }
+      50% { transform: scale(1.22); background-color: rgba(66, 42, 213, 0.95); }
+    }
+
+    @keyframes pulse8 {
+      0%, 100% { transform: scale(1); background-color: rgba(255, 255, 255, 0.4); }
+      50% { transform: scale(1.25); background-color: rgba(255, 255, 255, 0.7); }
+    }
+
+    /* Movement animations */
+    @keyframes move1 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(15px, 10px); }
+      50% { transform: translate(0, 20px); }
+      75% { transform: translate(-15px, 10px); }
+    }
+
+    @keyframes move2 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(-10px, -15px); }
+      50% { transform: translate(-20px, 0); }
+      75% { transform: translate(-10px, 15px); }
+    }
+
+    @keyframes move3 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(12px, -8px); }
+      50% { transform: translate(24px, 0); }
+      75% { transform: translate(12px, 8px); }
+    }
+
+    @keyframes move4 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(-15px, 10px); }
+      50% { transform: translate(0, 20px); }
+      75% { transform: translate(15px, 10px); }
+    }
+
+    @keyframes move5 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(18px, -12px); }
+      50% { transform: translate(0, -24px); }
+      75% { transform: translate(-18px, -12px); }
+    }
+
+    @keyframes move6 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(-10px, -10px); }
+      50% { transform: translate(-20px, 0); }
+      75% { transform: translate(-10px, 10px); }
+    }
+
+    @keyframes move7 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(13px, 8px); }
+      50% { transform: translate(26px, 0); }
+      75% { transform: translate(13px, -8px); }
+    }
+
+    @keyframes move8 {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(-12px, -15px); }
+      50% { transform: translate(0, -30px); }
+      75% { transform: translate(12px, -15px); }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .glowing-background::before,
+    .glowing-background::after,
+    .glowing-background span {
+      display: none;
+    }
+}
