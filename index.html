@@ -808,13 +808,13 @@
                 </section>
             </main>
 
-            <footer class="relative z-20">
+            <footer class="relative z-20 bg-[#070B1D] pt-20">
                 <!-- footer container -->
-                <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30 space-y-13">
+                <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto pt-20 lg:pt-30 pb-10 px-5 space-y-5 lg:space-y-13 border-t border-l border-r border-[#422ad5] shadow-[0_0px_25px_#422ad5] rounded-t-lg ">
                     <!-- top -->
-                    <div class="lg:flex">
+                    <div class="lg:flex text-center lg:text-left space-y-5 lg:space-y-0">
                         <!-- footer logo -->
-                        <div class="navbar-start active:translate-y-0.5">
+                        <div class="lg:navbar-start active:translate-y-0.5">
                             <a
                                 class="cursor-pointer select-none text-3xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow">Rahib
                                 Azam</a>
@@ -822,13 +822,13 @@
                         <!-- footer nav -->
                         <div class="navbar-center active:translate-y-0.5">
                             <ul class="flex text-xl text-white space-x-10">
-                                <li>Home</li>
-                                <li>Portfolio</li>
-                                <li>About</li>
+                                <a href="#"><li class="hover:scale-107 hover:text-[#0AC4FF] transition-all">Home</li></a>
+                                <a href="#"><li class="hover:scale-107 hover:text-[#0AC4FF] transition-all">Portfolio</li></a>
+                                <a href="#"><li class="hover:scale-107 hover:text-[#0AC4FF] transition-all">About</li></a>
                             </ul>
                         </div>
                         <!-- footer social -->
-                        <div class="navbar-end space-x-3">
+                        <div class="lg:navbar-end space-x-3">
                             <a href="#">
                                 <div
                                     class="btn btn-circle bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] hover:scale-105 active:translate-y-0.5 transition-all">
@@ -856,9 +856,9 @@
                         </div>
                     </div>
                     <!-- middle -->
-                    <div class="lg:flex justify-between">
+                    <div class="lg:flex justify-between my-15 lg:my-25 items-center">
                         <!-- left column -->
-                        <div class="space-y-6">
+                        <div class="space-y-6 flex-1 text-center lg:text-left">
                             <div>
                                 <h6 class="text-lg font-medium text-white uppercase heading-font">
                                     <span
@@ -866,24 +866,34 @@
                                         Me:</span>
                                 </h6>
                             </div>
-                            <div>
-                                <p class="text-lg text-white">Email: <span class="underline secondary-color"><a
+                            <div class="flex space-x-2">
+                                <p class="text-lg text-white">Email: <span class="underline hover:text-[#0AC4FF] transition-all"><a
                                             href="mailto:rahib.azam18@gmail.com">rahib.azam18@gmail.com</a></span></p>
+                                            <p></p>
                             </div>
                         </div>
                         <!-- right column -->
-                        <div class="bg-[#0AC4FF] rounded-lg content-center w-6/12 px-10">
-                            <form class="space-x-5" method="post"
-                                    action="https://script.google.com/macros/s/AKfycbwZoqQ4kiDIyfOw2VNp4JQ593MRwKDpo4Kggbkowlxrr7c_SxTPa1pqi5xL1B4BK82D/exec">
-                                    <input name="Email" type="email" placeholder="Email" required>
-                                    <input name="Name" type="text" placeholder="Name" required>
-                                    <button class="btn btn-primary" type="submit">Send</button>
-                                </form>
+                        <div class="bg-[#0AC4FF] rounded-lg content-center flex-1/5 px-10 py-10 mt-10 lg:mt-0">
+                            <form class="space-x-3 grid grid-cols-2 lg:grid-cols-3 gap-4" method="post"
+                                action="https://script.google.com/macros/s/AKfycbwZoqQ4kiDIyfOw2VNp4JQ593MRwKDpo4Kggbkowlxrr7c_SxTPa1pqi5xL1B4BK82D/exec">
+                                <input
+                                    class="py-2 px-3 w-full border-white rounded-sm text-white inset-shadow-[0px_0px_10px_#ffffff]"
+                                    name="Email" type="email" placeholder="Email" required>
+                                <input
+                                    class="py-2 px-3 w-full border-white rounded-sm text-white inset-shadow-[0px_0px_10px_#ffffff]"
+                                    name="Name" type="text" placeholder="Name" required>
+                                <button
+                                    class="btn col-span-2 lg:col-span-1 btn-lg bg-[#422ad5] border-2 border-[#422ad5] hover:bg-[#0AC4FF] text-white hover:text-[#422ad5]"
+                                    type="submit">Send Query</button>
+                            </form>
                         </div>
                     </div>
                     <!-- bottom -->
-                    <div>
-
+                    <div class="space-y-6">
+                        <hr class="border-[#0AC4FF]">
+                        <div>
+                            <p class="text-white text-center">© 2025 Rahib Azam. All Rights Reserved.</p>
+                        </div>
                     </div>
                 </div>
             </footer>
