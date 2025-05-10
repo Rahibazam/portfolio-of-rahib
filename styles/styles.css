@@ -1,3 +1,8 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
 .primary-font {
   font-family: "Quantico", sans-serif;
 }
