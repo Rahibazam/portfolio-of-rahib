@@ -56,6 +56,14 @@ html{
     0 0 17px #412ad5;
 }
 
+.text-shadow-2 {
+  text-shadow:
+    0 0 3px #412ad5,
+    0 0 7px #0ac6ff,
+    0 0 12px #0ac6ff,
+    0 0 17px #0ac6ff;
+}
+
 .tab-border {
 
   border: 1px solid #0AC4FF;
@@ -80,6 +88,9 @@ html{
   opacity: 1;
 }
 
+.neon-pulse {
+  animation: neonPulse 3s ease-in-out infinite;
+}
 
 
 
