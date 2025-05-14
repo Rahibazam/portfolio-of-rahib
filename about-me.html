@@ -21,6 +21,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- external css file -->
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js">
+    </script>
+</head>
 </head>
 
 <body class="primary-font">
@@ -97,7 +100,8 @@
                             <!-- objectives -->
                             <div
                                 class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all py-10 px-5 space-y-5 row-span-2">
-                                <h5 class="secondary-color font-bold text-lg lg:text-xl text-center uppercase">Tech Stack Objectives</h5>
+                                <h5 class="secondary-color font-bold text-lg lg:text-xl text-center uppercase">Tech
+                                    Stack Objectives</h5>
                                 <div>
                                     <ul class="timeline timeline-vertical">
                                         <!-- hubspot -->
@@ -279,23 +283,109 @@
                             </div>
 
                             <!-- quote -->
-                             <div class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all py-10 px-5 space-y-5 row-span-1">
+                            <div
+                                class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all py-10 px-5 space-y-5 row-span-1">
                                 <!-- quote img -->
-                                 <div>
-                                    <img class="w-3/12" src="icons/quote.png" alt=""> 
-                                 </div>
-                                 <!-- quote text -->
-                                  <div>
-                                    <p class="text-xl lg:text-2xl text-white font-bold">Every section you see here has been rebuilt at least twice — once because I wasn’t happy, and once because I broke it trying to “<span class="secondary-color">improve</span>” it.</p>
-                                  </div>
-                             </div>
+                                <div>
+                                    <img class="w-3/12" src="icons/quote.png" alt="">
+                                </div>
+                                <!-- quote text -->
+                                <div>
+                                    <p class="text-xl lg:text-2xl text-white font-bold">Every section you see here has
+                                        been rebuilt at least twice — once because I wasn’t happy, and once because I
+                                        broke it trying to “<span class="secondary-color">improve</span>” it.</p>
+                                </div>
+                            </div>
 
-                             <!-- video -->
-                              <div class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all">
-                                <video class="h-full object-cover object-[90%_100%] rounded-md" autoplay loop src="images/fav-game.mp4"></video>
-                              </div>
+                            <!-- video -->
+                            <div
+                                class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all">
+                                <video class="h-full object-cover object-[90%_100%] rounded-md" autoplay loop
+                                    src="images/fav-game.mp4"></video>
+                            </div>
 
-                            
+                            <!-- skills -->
+                            <div
+                                class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all">
+                                <div class="px-4 pt-7">
+                                    <canvas id="radarChart"></canvas>
+                                    <script>
+                                        let ctx = document.getElementById('radarChart').getContext('2d');
+                                        let myChart = new Chart(ctx, {
+                                            type: 'radar',
+                                            data: {
+                                                labels: ['HTML', 'CSS', 'Memes', 'Bootstrap', 'TailWind', 'Music'],
+                                                datasets: [{
+                                                    label: 'HTML',
+                                                    data: [82, 80, 90, 63, 90, 100],
+                                                    backgroundColor: 'rgba(66, 42, 213, 0.2)',
+                                                    borderColor: 'rgba(66, 42, 213, 1)',
+                                                    borderWidth: 1,
+                                                    pointBackgroundColor: 'rgba(66, 42, 213, 1)',
+                                                    pointRadius: 5,
+                                                    pointHoverRadius: 6,
+                                                }]
+                                            },
+                                            options: {
+                                                plugins: {
+                                                    legend: {
+                                                        display: false
+                                                    },
+                                                    tooltip: {
+                                                        callbacks: {
+                                                            
+                                                            label: function (context) {
+                                                               
+                                                                const labels = {
+                                                                    'HTML': 'HTML Skills',
+                                                                    'CSS': 'CSS Mastery',
+                                                                    'Memes': 'Meme Knowledge',
+                                                                    'Bootstrap': 'Bootstrap Expertise',
+                                                                    'TailWind': 'TailWind Proficiency',
+                                                                    'Music': 'Music Taste'
+                                                                };
+                                                                const label = context.label || '';
+                                                                const value = context.raw || 0;
+                                                                return `${labels[label] || label}: ${value}%`;
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                scales: {
+                                                    r: {
+                                                        angleLines: {
+                                                            display: true,
+                                                            color: '#0AC4FF'
+                                                        },
+                                                        grid: {
+                                                            color: '#0AC4FF'
+                                                        },
+                                                        suggestedMin: 0,
+                                                        suggestedMax: 100,
+                                                        ticks: {
+                                                            display: false,
+                                                            count: 5
+                                                        },
+                                                        pointLabels: {
+                                                            color: '#0AC4FF',
+                                                            font: {
+                                                                size: 11,
+                                                                weight: 'bold'
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        });
+                                    </script>
+                                </div>
+                                <!-- text -->
+                                <div class="py-7">
+                                    <p class="secondary-color text-lg text-center">Skill Growth 2025</p>
+                                </div>
+                            </div>
+
+
 
 
 
@@ -306,7 +396,7 @@
 
                         </div>
                     </div>
-                    
+
 
 
 
