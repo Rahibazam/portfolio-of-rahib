@@ -1,5 +1,4 @@
-
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -519,11 +518,277 @@ html{
   }
 }
 
+
+/* atom particle */
+
+.atom-container {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+
+}
+
+.nucleus {
+  position: absolute;
+  width: 25%;
+  height: 15%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.5), #0AC4FF);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 1rem #0AC4FF, 0 0 2rem #0AC4FF, 0 0 3rem #0AC4FF;
+  animation: nucleusPulse 3s infinite alternate;
+  z-index: 10;
+}
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 0.5rem #0AC4FF;
+}
+
+.orbit-1 {
+  width: 55%;
+  height: 55%;
+  border: 0.15rem solid #0AC4FF;
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: rotateOrbit 8s infinite linear;
+}
+
+.orbit-2 {
+  width: 45%;
+  height: 45%;
+  border: 0.15rem solid #422ad5;
+  transform: translate(-50%, -50%) rotate(225deg);
+  animation: rotateOrbit 12s infinite linear reverse;
+  box-shadow: 0 0 0.5rem #422ad5;
+}
+
+.orbit-3 {
+  width: 65%;
+  height: 65%;
+  border: 0.15rem solid #0AC4FF;
+  transform: translate(-50%, -50%) rotate(180deg);
+  animation: rotateOrbit 15s infinite linear;
+}
+
+.light-beam {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0.5rem;
+  background: linear-gradient(to right, transparent, #0AC4FF, transparent);
+  transform: translate(-50%, -50%) rotate(45deg);
+  animation: beamPulse 3s infinite alternate ease-in-out;
+}
+
+.light-beam-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 0.5rem;
+  background: linear-gradient(to right, transparent, #422ad5, transparent);
+  transform: translate(-50%, -50%) rotate(135deg);
+  animation: beamPulse 4s infinite alternate-reverse ease-in-out;
+}
+
+.star {
+  position: absolute;
+  width: 0.15rem;
+  height: 0.15rem;
+  background-color: #BABABA;
+  border-radius: 50%;
+}
+
+.star-1 {
+  top: 10%;
+  left: 20%;
+  animation: twinkle 3s infinite;
+}
+
+.star-2 {
+  top: 15%;
+  left: 80%;
+  animation: twinkle 2s infinite 0.3s;
+}
+
+.star-3 {
+  top: 25%;
+  left: 10%;
+  animation: twinkle 4s infinite 0.7s;
+}
+
+.star-4 {
+  top: 30%;
+  left: 70%;
+  animation: twinkle 3s infinite 1s;
+}
+
+.star-5 {
+  top: 40%;
+  left: 25%;
+  animation: twinkle 5s infinite 0.5s;
+}
+
+.star-6 {
+  top: 65%;
+  left: 90%;
+  animation: twinkle 3s infinite 1.5s;
+}
+
+.star-7 {
+  top: 75%;
+  left: 40%;
+  animation: twinkle 4s infinite 0.2s;
+}
+
+.star-8 {
+  top: 80%;
+  left: 85%;
+  animation: twinkle 3s infinite 0.8s;
+}
+
+.star-9 {
+  top: 85%;
+  left: 15%;
+  animation: twinkle 5s infinite 1.2s;
+}
+
+.star-10 {
+  top: 90%;
+  left: 50%;
+  animation: twinkle 3s infinite 1.7s;
+}
+
+.energy-wave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 60%;
+  border-radius: 50%;
+  box-shadow: 0 0 4rem rgba(10, 196, 255, 0.3);
+  opacity: 0.5;
+  animation: energyPulse 4s infinite ease-in-out;
+}
+
+
+@keyframes rotateOrbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes nucleusPulse {
+  0% {
+    box-shadow: 0 0 1rem #0AC4FF, 0 0 2rem #0AC4FF;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  50% {
+    box-shadow: 0 0 1.5rem #0AC4FF, 0 0 2.5rem #0AC4FF, 0 0 3.5rem #0AC4FF;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  100% {
+    box-shadow: 0 0 1rem #0AC4FF, 0 0 2rem #0AC4FF;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes energyPulse {
+
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes beamPulse {
+  0% {
+    opacity: 0.4;
+    width: 90%;
+  }
+
+  100% {
+    opacity: 0.8;
+    width: 100%;
+  }
+}
+
+
+
 @media only screen and (max-width: 600px) {
 
   .glowing-background::before,
   .glowing-background::after,
   .glowing-background span {
     display: none;
+  }
+
+  .atom-container {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+
+  }
+
+  .nucleus {
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5), #0AC4FF);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1rem #0AC4FF, 0 0 2rem #0AC4FF, 0 0 3rem #0AC4FF;
+    animation: nucleusPulse 3s infinite alternate;
+    z-index: 10;
+  }
+
+  .energy-wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    border-radius: 50%;
+    box-shadow: 0 0 4rem rgba(10, 196, 255, 0.3);
+    opacity: 0.5;
+    animation: energyPulse 4s infinite ease-in-out;
   }
 }
