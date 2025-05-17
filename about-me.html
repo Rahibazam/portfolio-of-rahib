@@ -412,16 +412,167 @@
                                 </div>
                             </div>
 
-                            <!-- code terminal -->
+                            <!-- 404 column -->
                             <div
                                 class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all">
                                 <div class="flex items-center h-full px-4">
                                     <div class="text-center text-white space-y-2">
                                         <p class="secondary-color text-3xl font-extrabold">404</p>
                                         <p class="text-2xl font-extrabold">Column Not Found</p>
-                                        <p class="text-base lg:text-lg">Sorry, this column didn’t load. Probably a div inside a span inside another div issue.
-                                        <p class="secondary-color text-base lg:text-lg font-extrabold">(We’re working on it. Maybe.)</p>
+                                        <p class="text-base lg:text-lg">Sorry, this column didn’t load. Probably a div
+                                            inside a span inside another div issue.
+                                        <p class="secondary-color text-base lg:text-lg font-extrabold">(We’re working on
+                                            it. Maybe.)</p>
                                         </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- playlist -->
+                            <div
+                                class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all bg-[#412ad5]">
+                                <div>
+                                    <div>
+                                        <div class="py-5 px-6 text-white">
+                                            <div class="album-art"></div>
+
+                                            <div class="song-info">
+                                                <h2>This Fire</h2>
+                                                <p>Killswitch Engage</p>
+                                            </div>
+
+                                            <div class="controls">
+                                                <button class="control-btn" id="prevBtn" aria-label="Previous song">
+                                                    <svg class="icon" viewBox="0 0 24 24">
+                                                        <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" />
+                                                    </svg>
+                                                </button>
+
+                                                <button class="play-btn" id="playBtn" aria-label="Play">
+                                                    <svg class="play-icon" id="playIcon" viewBox="0 0 24 24">
+                                                        <path d="M8 5v14l11-7z" />
+                                                    </svg>
+                                                    <svg class="pause-icon" id="pauseIcon" viewBox="0 0 24 24">
+                                                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                                                    </svg>
+                                                </button>
+
+                                                <button class="control-btn" id="nextBtn" aria-label="Next song">
+                                                    <svg class="icon" viewBox="0 0 24 24">
+                                                        <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+
+                                            <!-- Hidden audio element -->
+                                            <audio id="audioPlayer"></audio>
+                                        </div>
+
+                                        <script>
+                                            // Audio player functionality
+                                            const audioPlayer = document.getElementById('audioPlayer');
+                                            const playBtn = document.getElementById('playBtn');
+                                            const prevBtn = document.getElementById('prevBtn');
+                                            const nextBtn = document.getElementById('nextBtn');
+                                            const playIcon = document.getElementById('playIcon');
+                                            const pauseIcon = document.getElementById('pauseIcon');
+                                            const songTitle = document.querySelector('.song-info h2');
+                                            const songArtist = document.querySelector('.song-info p');
+                                            const albumArt = document.querySelector('.album-art');
+
+                                            // Track data
+                                            const tracks = [
+                                                {
+                                                    title: "This Fire",
+                                                    artist: "Killswitch Engage",
+                                                    src: "audio/This Fire.mp3",
+                                                    albumArt: "images/killswitch-engage-daylight-dies.jpg"
+                                                },
+                                                {
+                                                    title: "Ocean Waves",
+                                                    artist: "Nature Sounds",
+                                                    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+                                                    albumArt: "/api/placeholder/300/300?text=Ocean+Waves"
+                                                },
+                                                {
+                                                    title: "Midnight Jazz",
+                                                    artist: "Cool Cats",
+                                                    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+                                                    albumArt: "/api/placeholder/300/300?text=Midnight+Jazz"
+                                                },
+                                                {
+                                                    title: "Electric Dreams",
+                                                    artist: "Synthwave Masters",
+                                                    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
+                                                    albumArt: "/api/placeholder/300/300?text=Electric+Dreams"
+                                                }
+                                            ];
+
+                                            let currentTrack = 0;
+
+                                            // Initialize the audio player with the first track
+                                            function initPlayer() {
+                                                audioPlayer.src = tracks[0].src;
+                                                audioPlayer.volume = 0.5;
+                                                songTitle.textContent = tracks[0].title;
+                                                songArtist.textContent = tracks[0].artist;
+                                                albumArt.style.backgroundImage = `url('${tracks[0].albumArt}')`;
+                                            }
+
+                                            // Play or pause the current track
+                                            function togglePlay() {
+                                                if (audioPlayer.paused) {
+                                                    audioPlayer.play();
+                                                    playIcon.style.display = 'none';
+                                                    pauseIcon.style.display = 'block';
+                                                } else {
+                                                    audioPlayer.pause();
+                                                    playIcon.style.display = 'block';
+                                                    pauseIcon.style.display = 'none';
+                                                }
+                                            }
+
+                                            // Play a specific track
+                                            function playTrack(index) {
+                                                currentTrack = index;
+
+                                                // Update player
+                                                audioPlayer.src = tracks[index].src;
+                                                songTitle.textContent = tracks[index].title;
+                                                songArtist.textContent = tracks[index].artist;
+                                                albumArt.style.backgroundImage = `url('${tracks[index].albumArt}')`;
+
+                                                // Start playing
+                                                audioPlayer.play();
+                                                playIcon.style.display = 'none';
+                                                pauseIcon.style.display = 'block';
+                                            }
+
+                                            // Play previous track
+                                            function playPrevious() {
+                                                let prevTrack = currentTrack - 1;
+                                                if (prevTrack < 0) prevTrack = tracks.length - 1;
+                                                playTrack(prevTrack);
+                                            }
+
+                                            // Play next track
+                                            function playNext() {
+                                                let nextTrack = currentTrack + 1;
+                                                if (nextTrack >= tracks.length) nextTrack = 0;
+                                                playTrack(nextTrack);
+                                            }
+
+                                            // When track ends, play next track
+                                            audioPlayer.addEventListener('ended', playNext);
+
+                                            // Event listeners
+                                            playBtn.addEventListener('click', togglePlay);
+                                            prevBtn.addEventListener('click', playPrevious);
+                                            nextBtn.addEventListener('click', playNext);
+
+                                            // Initialize player
+                                            initPlayer();
+                                        </script>
                                     </div>
                                 </div>
                             </div>
