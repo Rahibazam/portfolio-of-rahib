@@ -299,7 +299,7 @@
 
                             <!-- video -->
                             <div
-                                class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all">
+                                class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all h-80 lg:h-auto">
                                 <video class="h-full object-cover object-[90%_100%] rounded-md" autoplay loop
                                     src="images/fav-game.mp4"></video>
                             </div>
@@ -415,7 +415,7 @@
                             <!-- 404 column -->
                             <div
                                 class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all">
-                                <div class="flex items-center h-full px-4">
+                                <div class="flex items-center h-full px-4 py-10 lg:py-0">
                                     <div class="text-center text-white space-y-2">
                                         <p class="secondary-color text-3xl font-extrabold">404</p>
                                         <p class="text-2xl font-extrabold">Column Not Found</p>
@@ -485,26 +485,26 @@
                                                 {
                                                     title: "This Fire",
                                                     artist: "Killswitch Engage",
-                                                    src: "audio/This Fire.mp3",
+                                                    src: "audio/this-fire.mp3",
                                                     albumArt: "images/killswitch-engage-daylight-dies.jpg"
                                                 },
                                                 {
-                                                    title: "Ocean Waves",
-                                                    artist: "Nature Sounds",
-                                                    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-                                                    albumArt: "/api/placeholder/300/300?text=Ocean+Waves"
+                                                    title: "Sleepwalking",
+                                                    artist: "Bring Me The Horizon",
+                                                    src: "audio/bmth-sleepwalking.mp3",
+                                                    albumArt: "images/bmth-sempiternal.jpg"
                                                 },
                                                 {
-                                                    title: "Midnight Jazz",
-                                                    artist: "Cool Cats",
-                                                    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
-                                                    albumArt: "/api/placeholder/300/300?text=Midnight+Jazz"
+                                                    title: "Chapter Four",
+                                                    artist: "Avenged Sevenfold",
+                                                    src: "audio/a7x-chapter-four.mp3",
+                                                    albumArt: "images/a7x-waking-the-fallen.jpg"
                                                 },
                                                 {
-                                                    title: "Electric Dreams",
-                                                    artist: "Synthwave Masters",
-                                                    src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3",
-                                                    albumArt: "/api/placeholder/300/300?text=Electric+Dreams"
+                                                    title: "Awaken",
+                                                    artist: "Breaking Benjamin",
+                                                    src: "audio/bb-awaken.mp3",
+                                                    albumArt: "images/bb-awaken.jpg"
                                                 }
                                             ];
 
@@ -577,7 +577,241 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
+                    <!-- tech stack -->
+                    <div class="w-11/12 md:w-10/12 lg:w-8/12 py-20 lg:py-30 mx-auto space-y-15">
+                        <!-- web development -->
+                        <div class="space-y-8">
+                            <div class="text-2xl lg:text-5xl text-white">
+                                <h2><span class="text-3xl lg:text-6xl secondary-color">Web</span> Development</h2>
+                            </div>
+                            <!-- web dev stack -->
+                            <div class="grid grid-cols-4 lg:grid-cols-8 gap-4">
+                                <!-- html -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/html-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">HTML</p>
+                                    </div>
+                                </div>
+
+                                <!-- css -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/css-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">CSS</p>
+                                    </div>
+                                </div>
+
+                                <!-- tailwind -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/tailwind-css-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">TailWind</p>
+                                    </div>
+                                </div>
+
+                                <!-- bootstrap -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/bootstrap-5-logo-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">Bootstrap</p>
+                                    </div>
+                                </div>
+
+                                <!-- daisyui -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/daisyui-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">DaisyUI</p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- ai -->
+                        <div class="space-y-8">
+                            <div class="text-2xl lg:text-5xl text-white">
+                                <h2><span class="text-3xl lg:text-6xl secondary-color">AI</span> Tools</h2>
+                            </div>
+                            <!-- ai tool stack -->
+                            <div class="grid grid-cols-4 lg:grid-cols-8 gap-4">
+                                <!-- open ai -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/chatgpt-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">OpenAI</p>
+                                    </div>
+                                </div>
+
+                                <!-- claude ai -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/claude-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">Claude AI</p>
+                                    </div>
+                                </div>
+
+                                <!-- perplexity -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13 invert" src="icons/perplexity-ai-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">Perplexity</p>
+                                    </div>
+                                </div>
+
+                                <!-- gemini -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/gemini-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">Gemini</p>
+                                    </div>
+                                </div>
+
+                                <!-- grok -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13 invert" src="icons/grok-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">Grok</p>
+                                    </div>
+                                </div>
+
+                                <!-- copilot -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/copilot-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">Copilot</p>
+                                    </div>
+                                </div>
+
+                                <!-- github copilot -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13 invert" src="icons/github-copilot-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">GH Copilot</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- cms & website builder -->
+                        <div class="space-y-8">
+                            <div class="text-2xl lg:text-5xl text-white">
+                                <h2><span class="text-3xl lg:text-6xl secondary-color">CMS</span> & Website Builders</h2>
+                            </div>
+                            <!-- ai tool stack -->
+                            <div class="grid grid-cols-4 lg:grid-cols-8 gap-4">
+                                <!-- hubspot -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/hubspot-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">HubSpot</p>
+                                    </div>
+                                </div>
+
+                                <!-- wordpress -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13 brightness-0 invert" src="icons/wordpress-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">WordPress</p>
+                                    </div>
+                                </div>
+
+                                <!-- elementor -->
+                                <div
+                                    class="border border-[#0AC4FF] rounded-md inset-shadow-[0px_0px_20px_#0AC4FF] hover:inset-shadow-[0px_0px_40px_#0AC4FF] transition-all py-7 px-5 space-y-3 flex flex-col self-center hover:scale-105">
+                                    <!-- img -->
+                                    <div class="mx-auto aspect-square">
+                                        <img class="w-13 h-13" src="icons/elementor-about.png" alt="">
+                                    </div>
+                                    <!-- text -->
+                                    <div class="text-center">
+                                        <p class="text-lg text-[#BABABA]">Elementor</p>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+
+
+
+                    <!-- tech stack end -->
+                    </div>
 
 
 
