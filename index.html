@@ -30,16 +30,16 @@
         <div class="drawer-content">
             <!-- Page content here -->
             <header class="bg-[#070b1da1] backdrop-blur-[12px] sticky top-0 z-30">
-                <nav class="w-12/12 md:w-10/12 lg:w-10/12 mx-auto">
+                <nav class="w-12/12 md:w-10/12 lg:w-10/12 mx-auto px-1 lg:px-0">
                     <div class="navbar py-5">
                         <div class="navbar-start active:translate-y-0.5">
                             <a href="index.html"
-                                class="cursor-pointer select-none text-3xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow">Rahib
-                                Azam</a>
+                                class="cursor-pointer select-none text-3xl lg:text-4xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow">Rahib
+                                <span class="hidden lg:inline-block">Azam</span></a>
                         </div>
                         <div class="navbar-end">
                             <label for="my-drawer"
-                                class="btn btn-primary bg-[#0AC4FF] drawer-button text-black text-lg hover:scale-105 transition-all hover:drop-shadow-[0px_1px_2px_#0AC4FF]">Quick
+                                class="btn border-none bg-[#422ad5] p-4 lg:py-6 lg:px-5 text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase">Quick
                                 Links</label>
                         </div>
                     </div>
@@ -71,38 +71,8 @@
                             <h5 class="secondary-color text-2xl uppercase">Welcome To My Portfolio</h5>
                             <h1 class="text-white text-4xl lg:text-5xl font-light">A Front-End Web Developer</h1>
                             <h1 class="text-white text-4xl lg:text-5xl font-light">& HubSpot Specialist</h1>
-                            <!-- You can open the modal using ID.showModal() method -->
-                            <button
-                                class="btn btn-primary bg-[#0AC4FF] text-black text-xl hover:scale-105 transition-all  hover:drop-shadow-[0px_1px_5px_#0AC4FF]"
-                                onclick="my_heromodal.showModal()">About Me</button>
-                            <dialog id="my_heromodal" class="modal">
-                                <div
-                                    class="modal-box w-11/12 max-w-7xl bg-[#0AC4FF] space-y-4 px-5 lg:px-10 border border-white">
-                                    <h3 class="font-bold text-2xl lg:text-4xl mt-5">About Me</h3>
-                                    <p class="text-[#0A0F26] text-base lg:text-lg">I’m a web developer with a passion
-                                        for clean code,
-                                        responsive
-                                        design, and marketing-ready builds. With a strong foundation in HTML, CSS, and
-                                        modern CSS
-                                        frameworks, I bring digital
-                                        experiences to life—whether it’s a landing page, a full-blown website, or a
-                                        dynamic HubSpot
-                                        CMS project.</p>
-                                    <p class="text-[#0A0F26] text-base lg:text-lg">I currently work as a HubSpot
-                                        Specialist &
-                                        Implementation Partner at INSIDEA,
-                                        helping
-                                        companies streamline their marketing and web presence using HubSpot tools and
-                                        custom
-                                        development.</p>
-                                    <div class="modal-action">
-                                        <form method="dialog">
-                                            <!-- if there is a button, it will close the modal -->
-                                            <button class="btn btn-circle bg-[#0A0F26] text-white">X</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </dialog>
+                            <a href="about-me.html"><button
+                                    class="btn border-none bg-[#0AC4FF] py-5 px-6 lg:py-6 lg:px-8 text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#0AC4FF] text-shadow hover:shadow-[0px_0px_20px_#422ad5] hover:bg-[#422ad5] hover:scale-102 transition-all uppercase">About Me</button></a>
                         </div>
                     </div>
                 </section>
@@ -711,10 +681,11 @@
                                                     </div>
                                                 </div>
                                                 <!-- right column -->
-                                                <div class="w-4/12 lg:content-center mx-auto lg:mx-0 lg:flex lg:items-center mb-6 lg:mb-0">
+                                                <div
+                                                    class="w-4/12 lg:content-center mx-auto lg:mx-0 lg:flex lg:items-center mb-6 lg:mb-0">
                                                     <div>
                                                         <svg xmlns="http://www.w3.org/2000/svg"
-                                                        class="size-12/12 mx-auto lg:size-12/12"
+                                                            class="size-12/12 mx-auto lg:size-12/12"
                                                             viewBox="0 0 512 512">
                                                             <style>
                                                                 .wordpress {
@@ -843,6 +814,20 @@
                         </div>
                     </section>
 
+
+                    <div class="hidden">
+                        <!-- test -->
+                        <div class="py-50">
+                            <div class="w-3/5 mx-auto text-center">
+                                <h2 class="text-2xl text-white mb-15">Test Button</h2>
+                                <a href="#"><button
+                                        class="btn border-none bg-[#0AC4FF] p-6 text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#0AC4FF] text-shadow hover:shadow-[0px_0px_20px_#422ad5] hover:bg-[#422ad5] hover:scale-102 transition-all">TEST
+                                        BUTTON</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <!-- portfolio -->
                     <section class="py-20 lg:py-30">
                         <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto">
@@ -919,6 +904,7 @@
                         </div>
                     </section>
                 </section>
+
             </main>
 
             <footer class="relative z-20 bg-[#070B1D] pt-20">
