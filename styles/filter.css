@@ -1,0 +1,252 @@
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-btn:not(.active) {
+    background: rgba(255, 255, 255, 0.1);
+    color: #BABABA;
+}
+
+.filter-btn:not(.active):hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #0AC4FF, #422ad5);
+    color: #FAFAFA;
+    box-shadow: 0 10px 25px rgba(10, 196, 255, 0.3);
+}
+
+.filter-btn::before {
+    content: '🏷️';
+    font-size: 0.8rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    perspective: 1000px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+.card.initial-load {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.card.fade-out {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+    transition: all 0.4s ease-in;
+}
+
+.card.fade-in {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+    animation: smoothFadeIn 0.6s ease-out forwards;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(10, 196, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+.card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 250px);
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+    color: #FAFAFA;
+}
+
+.card:hover .card-title {
+    color: #0AC4FF;
+}
+
+.card-description {
+    color: #BABABA;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    background: linear-gradient(135deg, rgba(10, 196, 255, 0.2), rgba(66, 42, 213, 0.2));
+    color: #0AC4FF;
+    border-radius: 1rem;
+    border: 1px solid rgba(10, 196, 255, 0.3);
+}
+
+.card-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, #0AC4FF, #422ad5);
+    color: #FAFAFA;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.card-button:hover {
+    background: linear-gradient(135deg, #422ad5, #0AC4FF);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(10, 196, 255, 0.3);
+}
+
+.glow-effect {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10, 196, 255, 0.1), rgba(66, 42, 213, 0.1));
+    border-radius: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.card:hover .glow-effect {
+    opacity: 1;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 4rem 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.empty-state.visible {
+    opacity: 1;
+}
+
+.empty-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.empty-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #FAFAFA;
+}
+
+.empty-description {
+    color: #BABABA;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes smoothFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}
