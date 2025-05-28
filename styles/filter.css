@@ -7,7 +7,7 @@
 }
 
 .filter-btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.4rem 1.2rem;
     border: none;
     border-radius: 2rem;
     font-size: 0.9rem;
@@ -15,7 +15,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #0AC4FF;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -23,7 +23,7 @@
 
 .filter-btn:not(.active) {
     background: rgba(255, 255, 255, 0.1);
-    color: #BABABA;
+    color: #FAFAFA;
 }
 
 .filter-btn:not(.active):hover {
@@ -32,14 +32,14 @@
 }
 
 .filter-btn.active {
-    background: linear-gradient(135deg, #0AC4FF, #422ad5);
+    background: #422ad5;
+    text-shadow:
+    0 0 3px #0ac6ff,
+    0 0 7px #0ac6ff,
+    0 0 12px #0ac6ff,
+    0 0 17px #412ad5;
     color: #FAFAFA;
-    box-shadow: 0 10px 25px rgba(10, 196, 255, 0.3);
-}
-
-.filter-btn::before {
-    content: '🏷️';
-    font-size: 0.8rem;
+    box-shadow: 0 10px 25px rgba(10, 196, 255, 0.6);
 }
 
 .gallery {
@@ -51,7 +51,7 @@
 
 .card {
     background: rgba(255, 255, 255, 0.05);
-    border-radius: 1.5rem;
+    border-radius: 0.7rem;
     overflow: hidden;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -59,6 +59,7 @@
     position: relative;
     opacity: 1;
     transform: scale(1) translateY(0);
+    box-shadow: 0 0px 25px #422ad5 inset;
 }
 
 .card.initial-load {
@@ -141,14 +142,22 @@
     border: 1px solid rgba(10, 196, 255, 0.3);
 }
 
+
+
 .card-button {
     width: 100%;
     padding: 0.75rem 1rem;
-    background: linear-gradient(135deg, #0AC4FF, #422ad5);
+    /* background: linear-gradient(135deg, #0AC4FF, #422ad5); */
+    background: #422ad5;
+    text-shadow:
+    0 0 3px #0ac6ff,
+    0 0 7px #0ac6ff,
+    0 0 12px #0ac6ff,
+    0 0 17px #412ad5;
     color: #FAFAFA;
     border: none;
-    border-radius: 0.75rem;
-    font-size: 0.9rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -156,9 +165,10 @@
 }
 
 .card-button:hover {
-    background: linear-gradient(135deg, #422ad5, #0AC4FF);
+    /* background: linear-gradient(135deg, #422ad5, #0AC4FF); */
+    background: #0AC4FF;
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(10, 196, 255, 0.3);
+    box-shadow: 0 8px 20px #0AC4FF;
 }
 
 .glow-effect {
@@ -248,5 +258,14 @@
 
     .container {
         padding: 1rem;
+    }
+
+    .filter-container {
+        display: flex;
+        justify-content: left;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        gap: 0.75rem;
+        margin-bottom: 3rem;
     }
 }
