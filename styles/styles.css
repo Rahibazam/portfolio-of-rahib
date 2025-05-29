@@ -49,6 +49,29 @@ html {
   color: #FAFAFA;
 }
 
+#my-drawer:checked ~ * header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 30; /* maintain z-index */
+}
+
+header {
+    transition: transform 0.3s ease;
+}
+
+#my-drawer:checked ~ * .drawer-content {
+    margin-top: calc(-1 * var(--navbar-height, 80px));
+    transition: margin-top 0.3s ease;
+}
+
+.drawer-content {
+    transition: margin-top 0.3s ease;
+}
+
 
 .text-shadow {
   text-shadow:

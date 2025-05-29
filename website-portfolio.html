@@ -8,7 +8,7 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1280">
     <meta property="og:image:height" content="640">
-    <title>Portfolio of Websites</title>
+    <title>Portfolio</title>
     <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
 <body class="primary-font">
 
     <div class="drawer bg-[#070B1D]">
-        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <input id="my-drawer" type="checkbox" class="drawer-toggle"/>
         <div class="drawer-content">
             <!-- Page content here -->
             <header class="bg-[#070b1da1] backdrop-blur-[12px] sticky top-0 z-30">
@@ -461,7 +461,7 @@
                                 <a href="index.html">
                                     <li class="hover:scale-107 hover:text-[#0AC4FF] transition-all uppercase">Home</li>
                                 </a>
-                                <a href="#">
+                                <a href="website-portfolio.html">
                                     <li class="hover:scale-107 hover:text-[#0AC4FF] transition-all uppercase">Portfolio
                                     </li>
                                 </a>
@@ -547,28 +547,49 @@
         </div>
         <div class="drawer-side z-50">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-            <ul
-                class="menu bg-[rgb(255,255,255,0.08)] backdrop-blur-[8px] text-base-content min-h-full w-80 p-4 text-lg text-[#0AC4FF]">
+            <div
+                class="menu bg-[rgb(rgba(10, 15, 38, 0.9))] backdrop-blur-[20px] lg:bg-[rgb(255,255,255,0.09)] text-base-content min-h-full inset-shadow-[0px_0px_30px_#422ad5] w-full lg:w-80 p-4 text-2xl text-[#0AC4FF] text-shadow uppercase">
                 <!-- Sidebar content here -->
-                <li class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all">
-                    <a href="index.html">Homepage</a>
-                </li>
-                <li>
-                    <a
-                        class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all">Portfolio</a>
-                    <ul>
-                        <li class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all">
-                            <a>Websites</a>
-                        </li>
-                        <li class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all">
-                            <a>HubSpot</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all">
-                    <a href="about-me.html">About</a>
-                </li>
-            </ul>
+                <div class="space-y-5">
+                    <!-- top -->
+                    <div class="w-5/5 bg-[#422ad5] p-5 rounded-sm flex justify-between items-center tab-border">
+                        <div>
+                            <h4
+                                class="cursor-pointer select-none text-2xl lg:text-3xl text-white transition-all text-shadow uppercase">
+                                Rahib Azam
+                            </h4>
+                        </div>
+                        <div class="">
+                            <div class="tab-border p-2 rounded-full">
+                                <img class="w-[15px] lg:w-[20px] animate-spin" src="icons/logo.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- links box -->
+                    <div class="space-y-5">
+                        <div class="tab-border rounded-sm">
+                            <li><a href="index.html"
+                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl">Homepage</a>
+                            </li>
+                        </div>
+                        <div class="tab-border rounded-sm">
+                            <li><a href="website-portfolio.html"
+                                    class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl">Portfolio</a>
+                            </li>
+                        </div>
+                        <div class="tab-border rounded-sm">
+                            <li><a href="about-me.html"
+                                    class="hover:bg-[#0AC4FF] hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl">About</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-auto mb-5 lg:hidden">
+                    <label for="my-drawer"
+                        class="btn border-none bg-[#422ad5] px-4 py-6 text-xl primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase w-full">Close</label>
+                </div>
+            </div>
         </div>
     </div>
 </body>
