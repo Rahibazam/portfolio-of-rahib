@@ -1,11 +1,95 @@
-.cosmic-wrapper {
+html {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+
+/* .cosmic-wrapper {
     position: relative;
     background-image: url(/portfolio-of-rahib/images/common-hero-bg.webp);
     object-fit: cover;
-    background-attachment: local;
     background-position: center;
+    background-attachment: local;
     overflow: hidden;
+} */
+
+.cosmic-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex; /* or block, depending on your layout needs */
+    align-items: center; /* Center content vertically if needed */
+    justify-content: center; /* Center content horizontally if needed */
 }
+
+.cosmic-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-image: url(/portfolio-of-rahib/images/common-hero-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    animation: 
+        floatX 37s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite,
+        floatY 29s cubic-bezier(0.33, 0.62, 0.57, 0.88) infinite,
+        floatScale 43s cubic-bezier(0.42, 0.38, 0.58, 0.92) infinite,
+        floatRotate 31s cubic-bezier(0.28, 0.54, 0.72, 0.86) infinite;
+}
+
+@keyframes floatX {
+    0%, 100% { transform: translateX(0px); }
+    7% { transform: translateX(-35px); }
+    19% { transform: translateX(40px); }
+    31% { transform: translateX(-25px); }
+    44% { transform: translateX(45px); }
+    58% { transform: translateX(-50px); }
+    73% { transform: translateX(30px); }
+    87% { transform: translateX(-38px); }
+}
+
+@keyframes floatY {
+    0%, 100% { transform: translateY(0px); }
+    13% { transform: translateY(42px); }
+    26% { transform: translateY(-35px); }
+    41% { transform: translateY(48px); }
+    55% { transform: translateY(-40px); }
+    68% { transform: translateY(28px); }
+    82% { transform: translateY(-45px); }
+    95% { transform: translateY(32px); }
+}
+
+@keyframes floatScale {
+    0%, 100% { transform: scale(1); }
+    11% { transform: scale(1.08); }
+    23% { transform: scale(1.12); }
+    37% { transform: scale(1.04); }
+    49% { transform: scale(1.15); }
+    63% { transform: scale(1.06); }
+    78% { transform: scale(1.18); }
+    91% { transform: scale(1.05); }
+}
+
+@keyframes floatRotate {
+    0%, 100% { transform: rotate(0deg); }
+    16% { transform: rotate(2.5deg); }
+    29% { transform: rotate(-2deg); }
+    43% { transform: rotate(3deg); }
+    58% { transform: rotate(-1.5deg); }
+    71% { transform: rotate(2.8deg); }
+    85% { transform: rotate(-2.3deg); }
+    97% { transform: rotate(1deg); }
+}
+
+
+
+
 
 .stellar-field {
     position: absolute;
