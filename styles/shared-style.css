@@ -793,6 +793,20 @@ html {
     animation-duration: 3s;
 }
 
+/* Pure opacity animation - no transforms or positioning */
+.page-container {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.slide-down {
+    opacity: 0 !important;
+}
+
+.slide-up {
+    opacity: 1 !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
 

@@ -21,9 +21,51 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- external css file -->
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/shared-style.css">
+    <link rel="stylesheet" href="styles/filter.css">
+    <link rel="stylesheet" href="styles/loader.css">
 </head>
 
-<body class="primary-font">
+<body class="primary-font bg-[#070B1D]">
+
+    <div class="atomic-loader-container cosmic-wrapper" id="atomicLoader">
+        <div class="atomic-energy-waves"></div>
+
+        <div class="atomic-particle-field">
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+        </div>
+
+        <div class="atomic-atom">
+            <div class="atomic-nucleus"></div>
+
+            <div class="atomic-orbit atomic-orbit-1">
+                <div class="atomic-electron atomic-electron-1"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-2">
+                <div class="atomic-electron atomic-electron-2"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-3">
+                <div class="atomic-electron atomic-electron-3"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-4">
+                <div class="atomic-electron atomic-electron-4"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-5">
+                <div class="atomic-electron atomic-electron-5"></div>
+            </div>
+        </div>
+
+        <div class="atomic-loading-text">Loading</div>
+    </div>
 
     <div class="drawer bg-[#070B1D]">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
@@ -46,10 +88,9 @@
                 </nav>
             </header>
 
-            <main class="bg-[#070B1D]">
+            <main class="bg-[#070B1D] page-container" id="pageContainer">
 
                 <!-- hero section -->
-                <!-- <section class="lg:bg-[url(images/bg-img.png)] lg:bg-center lg:bg-fixed bg-[#070B1D]"> -->
                 <section class="bg-[#070B1D] relative h-screen pt-30 md:mb-60 glowing-background glowing-background">
                     <span></span>
                     <span></span>
@@ -1051,6 +1092,112 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+        // Check if this is the user's first visit
+        function isFirstVisit() {
+            return !sessionStorage.getItem('hasVisited');
+        }
+
+        // Mark that the user has visited
+        function markAsVisited() {
+            sessionStorage.setItem('hasVisited', 'true');
+        }
+
+        // Hide loader function
+        function hideAtomicLoader() {
+            const loader = document.getElementById('atomicLoader');
+            const mainContent = document.getElementById('atomicMainContent');
+
+            if (loader && mainContent) {
+                loader.classList.add('atomic-slide-up');
+                mainContent.classList.add('atomic-show');
+
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                }, 1200);
+            }
+        }
+
+        // Main loading logic
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('atomicLoader');
+            const mainContent = document.getElementById('atomicMainContent');
+
+            // If not first visit, hide loader immediately and show content
+            if (!isFirstVisit()) {
+                if (loader) {
+                    loader.style.display = 'none';
+                }
+                if (mainContent) {
+                    mainContent.classList.add('atomic-show');
+                }
+                return;
+            }
+
+            // Mark as visited for subsequent page loads/refreshes
+            markAsVisited();
+
+            // Simulate loading time for first visit only
+            setTimeout(function () {
+                // Slide loader up and fade out
+                if (loader) {
+                    loader.classList.add('atomic-slide-up');
+                }
+
+                // Show main content immediately with entrance animation
+                if (mainContent) {
+                    mainContent.classList.add('atomic-show');
+                }
+
+                // Remove loader from DOM after animation completes
+                setTimeout(function () {
+                    if (loader) {
+                        loader.style.display = 'none';
+                    }
+                }, 1200); // Matches the transition duration
+            }, 1000); // 1 second loading time - adjust as needed
+        });
+
+        // Optional: Manually hide loader when specific content is ready (first visit only)
+        function hideAtomicLoaderIfFirstVisit() {
+            if (isFirstVisit()) {
+                hideAtomicLoader();
+                markAsVisited();
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const pageContainer = document.getElementById('pageContainer');
+            const pageLinks = document.querySelectorAll('.page-link');
+
+            // Slide up the page when it loads
+            setTimeout(() => {
+                pageContainer.classList.add('slide-up');
+            }, 200);
+
+            // Add click event listeners to all page links
+            pageLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetUrl = this.href;
+
+                    // Start slide down animation
+                    pageContainer.classList.remove('slide-up');
+                    pageContainer.classList.add('slide-down');
+
+                    // Navigate to new page after slide down completes
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 600);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
