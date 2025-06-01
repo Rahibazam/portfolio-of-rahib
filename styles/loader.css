@@ -13,23 +13,35 @@
 }
 
 .atomic-loader-container::before {
-    content: '';
-    position: absolute;
-    height: 120vh;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    background-image: url(../images/loader-bg.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-    animation:
-        floatX 37s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite,
-        floatY 29s cubic-bezier(0.33, 0.62, 0.57, 0.88) infinite,
-        floatScale 43s cubic-bezier(0.42, 0.38, 0.58, 0.92) infinite,
-        floatRotate 31s cubic-bezier(0.28, 0.54, 0.72, 0.86) infinite;
+  content: '';
+  position: absolute;
+  height: 120vh;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: 
+    /* Central void core */
+    radial-gradient(circle at 50% 50%, transparent 0%, rgba(7, 11, 29, 0.6) 30%, #070B1D 70%),
+    /* Blue energy orbs */
+    radial-gradient(ellipse 800px 600px at 25% 20%, rgba(10, 196, 255, 0.12) 0%, transparent 40%),
+    radial-gradient(ellipse 600px 400px at 75% 80%, rgba(10, 196, 255, 0.08) 0%, transparent 35%),
+    /* Purple energy fields */
+    radial-gradient(ellipse 900px 700px at 80% 30%, rgba(66, 42, 213, 0.15) 0%, transparent 45%),
+    radial-gradient(ellipse 500px 800px at 20% 70%, rgba(66, 42, 213, 0.1) 0%, transparent 40%),
+    /* Subtle white/gray nebula effects */
+    radial-gradient(ellipse 1200px 300px at 60% 10%, rgba(186, 186, 186, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse 400px 600px at 10% 90%, rgba(255, 255, 255, 0.03) 0%, transparent 45%),
+    /* Deep space base gradients */
+    linear-gradient(45deg, #070B1D 0%, #0A0F26 30%, rgba(10, 15, 38, 0.9) 60%, #070B1D 100%),
+    linear-gradient(135deg, rgba(7, 11, 29, 0.8) 0%, transparent 50%, rgba(10, 15, 38, 0.6) 100%),
+    /* Final base layer */
+    linear-gradient(180deg, #0A0F26 0%, #070B1D 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  animation: floatX 37s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite, floatY 29s cubic-bezier(0.33, 0.62, 0.57, 0.88) infinite, floatScale 43s cubic-bezier(0.42, 0.38, 0.58, 0.92) infinite, floatRotate 31s cubic-bezier(0.28, 0.54, 0.72, 0.86) infinite;
 }
 
 @keyframes floatX {
