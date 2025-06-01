@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/shared-style.css">
     <link rel="stylesheet" href="styles/filter.css">
+    <link rel="stylesheet" href="styles/loader.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js">
     </script>
 </head>
@@ -30,8 +31,95 @@
 
 <body class="primary-font">
 
+    <!-- preloader -->
+    <div class="atomic-loader-container" id="atomicLoader">
+        <div class="loader-void-dimension"></div>
+        <div class="atomic-energy-waves"></div>
+
+        <div class="cosmic-mist"></div>
+
+        <div class="stellar-field">
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+        </div>
+
+        <div class="cosmic-dust">
+            <div class="dust-mote dust-cyan"></div>
+            <div class="dust-mote dust-violet"></div>
+            <div class="dust-mote dust-silver"></div>
+            <div class="dust-mote dust-cyan"></div>
+            <div class="dust-mote dust-violet"></div>
+            <div class="dust-mote dust-silver"></div>
+            <div class="dust-mote dust-cyan"></div>
+            <div class="dust-mote dust-violet"></div>
+            <div class="dust-mote dust-silver"></div>
+            <div class="dust-mote dust-cyan"></div>
+        </div>
+
+        <div class="meteor-field">
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+        </div>
+
+        <div class="atomic-particle-field">
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+        </div>
+
+        <div class="atomic-atom">
+            <div class="atomic-nucleus"></div>
+
+            <div class="atomic-orbit atomic-orbit-1">
+                <div class="atomic-electron atomic-electron-1"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-2">
+                <div class="atomic-electron atomic-electron-2"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-3">
+                <div class="atomic-electron atomic-electron-3"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-4">
+                <div class="atomic-electron atomic-electron-4"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-5">
+                <div class="atomic-electron atomic-electron-5"></div>
+            </div>
+        </div>
+
+        <div class="atomic-loading-text">Loading</div>
+    </div>
+
     <div class="drawer bg-[#070B1D]">
-        <input id="my-drawer" type="checkbox" class="drawer-toggle"/>
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
             <!-- Page content here -->
             <header class="bg-[#070b1da1] backdrop-blur-[12px] sticky top-0 z-30">
@@ -39,7 +127,7 @@
                     <div class="navbar py-5">
                         <div class="navbar-start active:translate-y-0.5">
                             <a href="index.html"
-                                class="cursor-pointer select-none text-3xl lg:text-4xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow uppercase">Rahib
+                                class="cursor-pointer select-none text-3xl lg:text-4xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow uppercase page-link">Rahib
                                 <span class="hidden lg:inline-block">Azam</span></a>
                         </div>
                         <div class="navbar-end">
@@ -51,247 +139,254 @@
                 </nav>
             </header>
 
-            <main class="bg-[#070B1D]">
+            <div class="page-container" id="pageContainer">
+                <main class="bg-[#070B1D]">
 
-                <section class="background-gradient relative z-20 min-h-screen">
+                    <section class="background-gradient relative z-20 min-h-screen">
 
-                    <!-- hero section -->
-                    <section class="bg-[#070B1D] pt-40 pb-50 lg:pt-70 lg:pb-90 cosmic-wrapper">
+                        <!-- hero section -->
+                        <section class="bg-[#070B1D] pt-40 pb-50 lg:pt-70 lg:pb-90 cosmic-wrapper">
 
-                        <div class="void-dimension"></div>
-                        <div class="cosmic-mist"></div>
+                            <div class="void-dimension"></div>
+                            <div class="cosmic-mist"></div>
 
-                        <div class="stellar-field">
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                            <div class="stellar-point"></div>
-                        </div>
-
-                        <div class="cosmic-dust">
-                            <div class="dust-mote dust-cyan"></div>
-                            <div class="dust-mote dust-violet"></div>
-                            <div class="dust-mote dust-silver"></div>
-                            <div class="dust-mote dust-cyan"></div>
-                            <div class="dust-mote dust-violet"></div>
-                            <div class="dust-mote dust-silver"></div>
-                            <div class="dust-mote dust-cyan"></div>
-                            <div class="dust-mote dust-violet"></div>
-                            <div class="dust-mote dust-silver"></div>
-                            <div class="dust-mote dust-cyan"></div>
-                        </div>
-
-                        <div class="meteor-field">
-                            <div class="shooting-star"></div>
-                            <div class="shooting-star"></div>
-                            <div class="shooting-star"></div>
-                            <div class="shooting-star"></div>
-                            <div class="shooting-star"></div>
-                        </div>
-
-                        <!-- container -->
-                        <div class="w-full z-10">
-
-                            <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-6">
-                                <h1
-                                    class="text-5xl lg:text-7xl primary-color text-shadow text-center font-extrabold uppercase">
-                                    Stuff I Made</h1>
-                                <p class="text-base lg:text-xl text-[#FAFAFA] text-shadow text-center">A collection of
-                                    finished projects, abandoned ideas, and experiments that didn’t explode (mostly).
-                                    Each one started with excitement, some made it to the finish line, others... took a
-                                    creative nap mid-sprint. But hey, every line of code had its moment.<br><br> Welcome
-                                    to my
-                                    digital scrapbook of triumphs and trial runs.</p>
-
-                                <a href="#next">
-                                    <div class="mouse-container">
-                                        <!-- Main Mouse -->
-                                        <div class="mouse">
-                                            <div class="scroll-wheel"></div>
-
-                                            <!-- Floating Particles -->
-                                            <div class="mouse-particle"></div>
-                                            <div class="mouse-particle"></div>
-                                            <div class="mouse-particle"></div>
-                                            <div class="mouse-particle"></div>
-                                            <div class="mouse-particle"></div>
-                                            <div class="mouse-particle"></div>
-                                        </div>
-
-                                        <!-- Orbital Ring -->
-                                        <div class="mouse-orbit">
-                                            <div class="orbit-dot"></div>
-                                        </div>
-                                    </div>
-                                </a>
-
-
+                            <div class="stellar-field">
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
+                                <div class="stellar-point"></div>
                             </div>
 
-                        </div>
-                    </section>
+                            <div class="cosmic-dust">
+                                <div class="dust-mote dust-cyan"></div>
+                                <div class="dust-mote dust-violet"></div>
+                                <div class="dust-mote dust-silver"></div>
+                                <div class="dust-mote dust-cyan"></div>
+                                <div class="dust-mote dust-violet"></div>
+                                <div class="dust-mote dust-silver"></div>
+                                <div class="dust-mote dust-cyan"></div>
+                                <div class="dust-mote dust-violet"></div>
+                                <div class="dust-mote dust-silver"></div>
+                                <div class="dust-mote dust-cyan"></div>
+                            </div>
 
-                    <section id="next" class="relative">
-                        <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30">
+                            <div class="meteor-field">
+                                <div class="shooting-star"></div>
+                                <div class="shooting-star"></div>
+                                <div class="shooting-star"></div>
+                                <div class="shooting-star"></div>
+                                <div class="shooting-star"></div>
+                            </div>
 
-                            <div>
+                            <!-- container -->
+                            <div class="w-full z-10">
 
-                                <div class="filter-container" id="filterContainer">
-                                    <!-- Filter buttons will be generated by JavaScript -->
+                                <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-6">
+                                    <h1
+                                        class="text-5xl lg:text-7xl primary-color text-shadow text-center font-extrabold uppercase">
+                                        Stuff I Made</h1>
+                                    <p class="text-base lg:text-xl text-[#FAFAFA] text-shadow text-center">A collection
+                                        of
+                                        finished projects, abandoned ideas, and experiments that didn’t explode
+                                        (mostly).
+                                        Each one started with excitement, some made it to the finish line, others...
+                                        took a
+                                        creative nap mid-sprint. But hey, every line of code had its moment.<br><br>
+                                        Welcome
+                                        to my
+                                        digital scrapbook of triumphs and trial runs.</p>
+
+                                    <a href="#next">
+                                        <div class="mouse-container">
+                                            <!-- Main Mouse -->
+                                            <div class="mouse">
+                                                <div class="scroll-wheel"></div>
+
+                                                <!-- Floating Particles -->
+                                                <div class="mouse-particle"></div>
+                                                <div class="mouse-particle"></div>
+                                                <div class="mouse-particle"></div>
+                                                <div class="mouse-particle"></div>
+                                                <div class="mouse-particle"></div>
+                                                <div class="mouse-particle"></div>
+                                            </div>
+
+                                            <!-- Orbital Ring -->
+                                            <div class="mouse-orbit">
+                                                <div class="orbit-dot"></div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+
                                 </div>
 
-                                <div class="gallery" id="gallery">
-                                    <!-- Cards will be generated by JavaScript -->
-                                </div>
+                            </div>
+                        </section>
 
-                                <div class="empty-state hidden" id="emptyState">
-                                    <div class="empty-icon">🔍</div>
-                                    <h3 class="empty-title">No projects found</h3>
-                                    <p class="empty-description">Try selecting different tags to see more projects</p>
-                                </div>
+                        <!-- portfolio gallery -->
+                        <section id="next" class="relative">
+                            <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto py-30">
 
-                                <script>
-                                    // Portfolio data
-                                    const portfolioItems = [
-                                        {
-                                            id: 1,
-                                            title: "Portfolio",
-                                            description: "A digital showcase of my work and skills, built during peak introvert hours with an abundance of caffeine. It was a hell of a project.",
-                                            image: "images/featured-img.png",
-                                            tags: ['TailWind', 'DaisyUI', 'CSS', 'JavaScript', 'Responsive'],
-                                            url: "https://rahibazam.github.io/portfolio-of-rahib/"
-                                        },
-                                        {
-                                            id: 2,
-                                            title: "Extreme Surfing",
-                                            description: "A vibrant, multi-page website concept for a fictional surf school and adventure sports company.",
-                                            image: "images/extreme-surfing.webp",
-                                            tags: ['Mega Site', 'TailWind', 'DaisyUI', 'WIP', 'Responsive'],
-                                            url: "https://rahibazam.github.io/extreme-surfing/"
-                                        },
-                                        {
-                                            id: 3,
-                                            title: "Rinterio",
-                                            description: "A modern website concept for an interior design brand, focused on clean visuals and a refined layout.",
-                                            image: "images/rinterio.webp",
-                                            tags: ['TailWind', 'DaisyUI', 'Responsive'],
-                                            url: "https://rahibazam.github.io/rinterio/"
-                                        },
-                                        {
-                                            id: 4,
-                                            title: "Legal Solutions",
-                                            description: "A clean and professional website concept for a fictional law firm, emphasizing clarity and trust through thoughtful design.",
-                                            image: "images/legal-solution.webp",
-                                            tags: ['TailWind', 'DaisyUI', 'Responsive'],
-                                            url: "https://rahibazam.github.io/legal-solutions/"
-                                        },
-                                        {
-                                            id: 5,
-                                            title: "Tea House",
-                                            description: "A vibrant, responsive tea house page with style! Built with Tailwind CSS, it offers a fresh design and smooth navigation for tea lovers.",
-                                            image: "images/tea-house.webp",
-                                            tags: ['TailWind', 'Responsive'],
-                                            url: "https://rahibazam.github.io/tea-house-built-with-tailwind/"
-                                        },
-                                        {
-                                            id: 6,
-                                            title: "Penguin Fashion",
-                                            description: "A sleek, responsive fashion e-commerce page! Built with Tailwind CSS, it offers bold design and smooth navigation for style lovers.",
-                                            image: "images/penguin-fashion.webp",
-                                            tags: ['TailWind', 'Responsive'],
-                                            url: "https://rahibazam.github.io/penguin-fashion-tailwind/"
-                                        },
-                                        {
-                                            id: 7,
-                                            title: "Influencer Gear",
-                                            description: "A sleek e-commerce concept for content creators, offering a curated selection of essential tools.",
-                                            image: "images/influencer-gear.webp",
-                                            tags: ['CSS', 'Responsive'],
-                                            url: "https://rahibazam.github.io/influencer-gear/"
-                                        },
-                                        {
-                                            id: 8,
-                                            title: "G3 Architect",
-                                            description: "A website concept for an architecture firm, combining clean design with a focus on professional aesthetics.",
-                                            image: "images/g3-architects.webp",
-                                            tags: ['CSS', 'Responsive'],
-                                            url: "https://rahibazam.github.io/g3-architect-website/"
-                                        },
-                                        {
-                                            id: 9,
-                                            title: "Developer Portfolio",
-                                            description: "A personal portfolio website showcasing development projects and skills, designed with a clean layout and intuitive navigation.",
-                                            image: "images/dev-portfolio.webp",
-                                            tags: ['CSS', 'Responsive'],
-                                            url: "https://rahibazam.github.io/portfolio/"
-                                        },
-                                        {
-                                            id: 10,
-                                            title: "Flower Shop",
-                                            description: "A vibrant website concept for a floral business, featuring a clean layout and engaging visuals to showcase products.",
-                                            image: "images/flower-shop.webp",
-                                            tags: ['CSS', 'Responsive'],
-                                            url: "https://rahibazam.github.io/flower-shop-assignment/"
-                                        },
-                                        {
-                                            id: 11,
-                                            title: "New Year",
-                                            description: "A festive, responsive landing page for New Year celebrations! It sparkles with vibrant design and smooth navigation.",
-                                            image: "images/new-year.webp",
-                                            tags: ['CSS', 'Responsive'],
-                                            url: "https://rahibazam.github.io/flower-shop-assignment/"
-                                        }
-                                    ];
+                                <div>
 
-                                    // Get all unique tags
-                                    const getAllTags = () => {
-                                        const tagSet = new Set();
-                                        portfolioItems.forEach(item => {
-                                            item.tags.forEach(tag => tagSet.add(tag));
-                                        });
-                                        return ['All', ...Array.from(tagSet)];
-                                    };
+                                    <div class="filter-container" id="filterContainer">
+                                        <!-- Filter buttons will be generated by JavaScript -->
+                                    </div>
 
-                                    // Current selected tags
-                                    let selectedTags = ['All'];
+                                    <div class="gallery" id="gallery">
+                                        <!-- Cards will be generated by JavaScript -->
+                                    </div>
 
-                                    // Generate filter buttons
-                                    const generateFilters = () => {
-                                        const filterContainer = document.getElementById('filterContainer');
-                                        const allTags = getAllTags();
+                                    <div class="empty-state hidden" id="emptyState">
+                                        <div class="empty-icon">🔍</div>
+                                        <h3 class="empty-title">No projects found</h3>
+                                        <p class="empty-description">Try selecting different tags to see more projects
+                                        </p>
+                                    </div>
 
-                                        filterContainer.innerHTML = allTags.map(tag => `
+                                    <script>
+                                        // Portfolio data
+                                        const portfolioItems = [
+                                            {
+                                                id: 1,
+                                                title: "Portfolio",
+                                                description: "A digital showcase of my work and skills, built during peak introvert hours with an abundance of caffeine. It was a hell of a project.",
+                                                image: "images/featured-img.png",
+                                                tags: ['TailWind', 'DaisyUI', 'CSS', 'JavaScript', 'Responsive'],
+                                                url: "https://rahibazam.github.io/portfolio-of-rahib/"
+                                            },
+                                            {
+                                                id: 2,
+                                                title: "Extreme Surfing",
+                                                description: "A vibrant, multi-page website concept for a fictional surf school and adventure sports company.",
+                                                image: "images/extreme-surfing.webp",
+                                                tags: ['Mega Site', 'TailWind', 'DaisyUI', 'WIP', 'Responsive'],
+                                                url: "https://rahibazam.github.io/extreme-surfing/"
+                                            },
+                                            {
+                                                id: 3,
+                                                title: "Rinterio",
+                                                description: "A modern website concept for an interior design brand, focused on clean visuals and a refined layout.",
+                                                image: "images/rinterio.webp",
+                                                tags: ['TailWind', 'DaisyUI', 'Responsive'],
+                                                url: "https://rahibazam.github.io/rinterio/"
+                                            },
+                                            {
+                                                id: 4,
+                                                title: "Legal Solutions",
+                                                description: "A clean and professional website concept for a fictional law firm, emphasizing clarity and trust through thoughtful design.",
+                                                image: "images/legal-solution.webp",
+                                                tags: ['TailWind', 'DaisyUI', 'Responsive'],
+                                                url: "https://rahibazam.github.io/legal-solutions/"
+                                            },
+                                            {
+                                                id: 5,
+                                                title: "Tea House",
+                                                description: "A vibrant, responsive tea house page with style! Built with Tailwind CSS, it offers a fresh design and smooth navigation for tea lovers.",
+                                                image: "images/tea-house.webp",
+                                                tags: ['TailWind', 'Responsive'],
+                                                url: "https://rahibazam.github.io/tea-house-built-with-tailwind/"
+                                            },
+                                            {
+                                                id: 6,
+                                                title: "Penguin Fashion",
+                                                description: "A sleek, responsive fashion e-commerce page! Built with Tailwind CSS, it offers bold design and smooth navigation for style lovers.",
+                                                image: "images/penguin-fashion.webp",
+                                                tags: ['TailWind', 'Responsive'],
+                                                url: "https://rahibazam.github.io/penguin-fashion-tailwind/"
+                                            },
+                                            {
+                                                id: 7,
+                                                title: "Influencer Gear",
+                                                description: "A sleek e-commerce concept for content creators, offering a curated selection of essential tools.",
+                                                image: "images/influencer-gear.webp",
+                                                tags: ['CSS', 'Responsive'],
+                                                url: "https://rahibazam.github.io/influencer-gear/"
+                                            },
+                                            {
+                                                id: 8,
+                                                title: "G3 Architect",
+                                                description: "A website concept for an architecture firm, combining clean design with a focus on professional aesthetics.",
+                                                image: "images/g3-architects.webp",
+                                                tags: ['CSS', 'Responsive'],
+                                                url: "https://rahibazam.github.io/g3-architect-website/"
+                                            },
+                                            {
+                                                id: 9,
+                                                title: "Developer Portfolio",
+                                                description: "A personal portfolio website showcasing development projects and skills, designed with a clean layout and intuitive navigation.",
+                                                image: "images/dev-portfolio.webp",
+                                                tags: ['CSS', 'Responsive'],
+                                                url: "https://rahibazam.github.io/portfolio/"
+                                            },
+                                            {
+                                                id: 10,
+                                                title: "Flower Shop",
+                                                description: "A vibrant website concept for a floral business, featuring a clean layout and engaging visuals to showcase products.",
+                                                image: "images/flower-shop.webp",
+                                                tags: ['CSS', 'Responsive'],
+                                                url: "https://rahibazam.github.io/flower-shop-assignment/"
+                                            },
+                                            {
+                                                id: 11,
+                                                title: "New Year",
+                                                description: "A festive, responsive landing page for New Year celebrations! It sparkles with vibrant design and smooth navigation.",
+                                                image: "images/new-year.webp",
+                                                tags: ['CSS', 'Responsive'],
+                                                url: "https://rahibazam.github.io/flower-shop-assignment/"
+                                            }
+                                        ];
+
+                                        // Get all unique tags
+                                        const getAllTags = () => {
+                                            const tagSet = new Set();
+                                            portfolioItems.forEach(item => {
+                                                item.tags.forEach(tag => tagSet.add(tag));
+                                            });
+                                            return ['All', ...Array.from(tagSet)];
+                                        };
+
+                                        // Current selected tags
+                                        let selectedTags = ['All'];
+
+                                        // Generate filter buttons
+                                        const generateFilters = () => {
+                                            const filterContainer = document.getElementById('filterContainer');
+                                            const allTags = getAllTags();
+
+                                            filterContainer.innerHTML = allTags.map(tag => `
                                         <button class="filter-btn ${selectedTags.includes(tag) ? 'active' : ''}" 
                                                 data-tag="${tag}" onclick="toggleFilter('${tag}')">
                                             ${tag}
                                         </button>
                                     `).join('');
-                                    };
+                                        };
 
-                                    // Generate portfolio cards with smooth transitions
-                                    const generateCards = (isUpdate = false) => {
-                                        const gallery = document.getElementById('gallery');
-                                        const filteredItems = getFilteredItems();
+                                        // Generate portfolio cards with smooth transitions
+                                        const generateCards = (isUpdate = false) => {
+                                            const gallery = document.getElementById('gallery');
+                                            const filteredItems = getFilteredItems();
 
-                                        if (isUpdate) {
-                                            // Smooth transition for updates - no CSS animation, only fade-in class
-                                            gallery.innerHTML = filteredItems.map((item, index) => `
+                                            if (isUpdate) {
+                                                // Smooth transition for updates - no CSS animation, only fade-in class
+                                                gallery.innerHTML = filteredItems.map((item, index) => `
                                             <div class="card fade-in" data-tags="${item.tags.join(',')}" style="animation-delay: ${index * 50}ms">
                                                 <div class="card-image">
                                                     <img src="${item.image}" alt="${item.title}">
@@ -308,15 +403,15 @@
                                             </div>
                                         `).join('');
 
-                                            // Remove fade-in class after animation
-                                            setTimeout(() => {
-                                                document.querySelectorAll('.card.fade-in').forEach(card => {
-                                                    card.classList.remove('fade-in');
-                                                });
-                                            }, 700);
-                                        } else {
-                                            // Initial load - use CSS animation
-                                            gallery.innerHTML = filteredItems.map((item, index) => `
+                                                // Remove fade-in class after animation
+                                                setTimeout(() => {
+                                                    document.querySelectorAll('.card.fade-in').forEach(card => {
+                                                        card.classList.remove('fade-in');
+                                                    });
+                                                }, 700);
+                                            } else {
+                                                // Initial load - use CSS animation
+                                                gallery.innerHTML = filteredItems.map((item, index) => `
                                             <div class="card initial-load" data-tags="${item.tags.join(',')}" style="animation-delay: ${index * 100}ms">
                                                 <div class="card-image">
                                                     <img src="${item.image}" alt="${item.title}">
@@ -332,76 +427,76 @@
                                                 <div class="glow-effect"></div>
                                             </div>
                                         `).join('');
-                                        }
-
-                                        // Show/hide empty state
-                                        const emptyState = document.getElementById('emptyState');
-                                        if (filteredItems.length === 0) {
-                                            emptyState.classList.add('visible');
-                                        } else {
-                                            emptyState.classList.remove('visible');
-                                        }
-                                    };
-
-                                    // Get filtered items
-                                    const getFilteredItems = () => {
-                                        if (selectedTags.includes('All')) {
-                                            return portfolioItems;
-                                        }
-                                        return portfolioItems.filter(item =>
-                                            item.tags.some(tag => selectedTags.includes(tag))
-                                        );
-                                    };
-
-                                    // Toggle filter with smooth animations
-                                    const toggleFilter = (tag) => {
-                                        if (tag === 'All') {
-                                            selectedTags = ['All'];
-                                        } else {
-                                            selectedTags = selectedTags.filter(t => t !== 'All');
-                                            if (selectedTags.includes(tag)) {
-                                                selectedTags = selectedTags.filter(t => t !== tag);
-                                                if (selectedTags.length === 0) {
-                                                    selectedTags = ['All'];
-                                                }
-                                            } else {
-                                                selectedTags.push(tag);
                                             }
-                                        }
 
-                                        // Update filter buttons immediately
-                                        generateFilters();
+                                            // Show/hide empty state
+                                            const emptyState = document.getElementById('emptyState');
+                                            if (filteredItems.length === 0) {
+                                                emptyState.classList.add('visible');
+                                            } else {
+                                                emptyState.classList.remove('visible');
+                                            }
+                                        };
 
-                                        // Smooth fade out current cards
-                                        const cards = document.querySelectorAll('.card');
-                                        cards.forEach((card, index) => {
-                                            card.style.animationDelay = `${index * 20}ms`;
-                                            card.classList.add('fade-out');
-                                        });
+                                        // Get filtered items
+                                        const getFilteredItems = () => {
+                                            if (selectedTags.includes('All')) {
+                                                return portfolioItems;
+                                            }
+                                            return portfolioItems.filter(item =>
+                                                item.tags.some(tag => selectedTags.includes(tag))
+                                            );
+                                        };
 
-                                        // Wait for fade out then show new cards
-                                        setTimeout(() => {
-                                            generateCards(true);
-                                        }, 300);
-                                    };
+                                        // Toggle filter with smooth animations
+                                        const toggleFilter = (tag) => {
+                                            if (tag === 'All') {
+                                                selectedTags = ['All'];
+                                            } else {
+                                                selectedTags = selectedTags.filter(t => t !== 'All');
+                                                if (selectedTags.includes(tag)) {
+                                                    selectedTags = selectedTags.filter(t => t !== tag);
+                                                    if (selectedTags.length === 0) {
+                                                        selectedTags = ['All'];
+                                                    }
+                                                } else {
+                                                    selectedTags.push(tag);
+                                                }
+                                            }
 
-                                    // Open project in new tab
-                                    const openProject = (id) => {
-                                        const project = portfolioItems.find(item => item.id === id);
-                                        if (project && project.url) {
-                                            window.open(project.url, '_blank');
-                                        } else {
-                                            console.log('No URL available for project:', id);
-                                            alert('Project URL not available yet!');
-                                        }
-                                    };
+                                            // Update filter buttons immediately
+                                            generateFilters();
 
-                                    // View project details (you can expand this for a modal or detailed view)
-                                    const viewProject = (id) => {
-                                        const project = portfolioItems.find(item => item.id === id);
-                                        if (project) {
-                                            // Create a simple alert with project details
-                                            const details = `
+                                            // Smooth fade out current cards
+                                            const cards = document.querySelectorAll('.card');
+                                            cards.forEach((card, index) => {
+                                                card.style.animationDelay = `${index * 20}ms`;
+                                                card.classList.add('fade-out');
+                                            });
+
+                                            // Wait for fade out then show new cards
+                                            setTimeout(() => {
+                                                generateCards(true);
+                                            }, 300);
+                                        };
+
+                                        // Open project in new tab
+                                        const openProject = (id) => {
+                                            const project = portfolioItems.find(item => item.id === id);
+                                            if (project && project.url) {
+                                                window.open(project.url, '_blank');
+                                            } else {
+                                                console.log('No URL available for project:', id);
+                                                alert('Project URL not available yet!');
+                                            }
+                                        };
+
+                                        // View project details (you can expand this for a modal or detailed view)
+                                        const viewProject = (id) => {
+                                            const project = portfolioItems.find(item => item.id === id);
+                                            if (project) {
+                                                // Create a simple alert with project details
+                                                const details = `
                                             Project: ${project.title}
                                             Description: ${project.description}
                                             Tags: ${project.tags.join(', ')}
@@ -409,140 +504,133 @@
                                             ${project.githubUrl ? `GitHub: ${project.githubUrl}` : ''}
                                             ${project.demoUrl ? `Demo: ${project.demoUrl}` : ''}
                                                             `.trim();
-                                            alert(details);
+                                                alert(details);
 
-                                            // Or you could implement a modal here instead
-                                            // showProjectModal(project);
-                                        }
-                                    };
+                                                // Or you could implement a modal here instead
+                                                // showProjectModal(project);
+                                            }
+                                        };
 
-                                    // Initialize the gallery
-                                    const init = () => {
-                                        generateFilters();
-                                        generateCards();
-                                    };
+                                        // Initialize the gallery
+                                        const init = () => {
+                                            generateFilters();
+                                            generateCards();
+                                        };
 
-                                    // Start the app
-                                    init();
-                                </script>
-
-
-
-
-
+                                        // Start the app
+                                        init();
+                                    </script>
+                                </div>
                             </div>
-
-
-                        </div>
+                        </section>
                     </section>
+                </main>
 
-
-
-
-
-                </section>
-            </main>
-
-            <footer class="relative z-20 bg-[#070B1D] pt-20">
-                <!-- footer container -->
-                <div
-                    class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto pt-20 lg:pt-30 pb-10 px-5 space-y-5 lg:space-y-13 border-t border-l border-r border-[#422ad5] shadow-[0_0px_25px_#422ad5] rounded-t-lg ">
-                    <!-- top -->
-                    <div class="lg:flex text-center lg:text-left space-y-5 lg:space-y-0">
-                        <!-- footer logo -->
-                        <div class="lg:navbar-start active:translate-y-0.5">
-                            <a href="index.html"
-                                class="cursor-pointer select-none text-3xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow uppercase">Rahib
-                                Azam</a>
-                        </div>
-                        <!-- footer nav -->
-                        <div class="navbar-center active:translate-y-0.5">
-                            <ul class="flex text-lg lg:text-xl text-white space-x-10">
-                                <a href="index.html">
-                                    <li class="hover:scale-107 hover:text-[#0AC4FF] transition-all uppercase">Home</li>
+                <footer class="relative z-20 bg-[#070B1D] pt-20">
+                    <!-- footer container -->
+                    <div
+                        class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto pt-20 lg:pt-30 pb-10 px-5 space-y-5 lg:space-y-13 border-t border-l border-r border-[#422ad5] shadow-[0_0px_25px_#422ad5] rounded-t-lg ">
+                        <!-- top -->
+                        <div class="lg:flex text-center lg:text-left space-y-5 lg:space-y-0">
+                            <!-- footer logo -->
+                            <div class="lg:navbar-start active:translate-y-0.5">
+                                <a href="index.html"
+                                    class="cursor-pointer select-none text-3xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow uppercase page-link">Rahib
+                                    Azam</a>
+                            </div>
+                            <!-- footer nav -->
+                            <div class="navbar-center active:translate-y-0.5">
+                                <ul class="flex text-lg lg:text-xl text-white space-x-10">
+                                    <a href="index.html" class="page-link">
+                                        <li class="hover:scale-107 hover:text-[#0AC4FF] transition-all uppercase">Home
+                                        </li>
+                                    </a>
+                                    <a href="website-portfolio.html" class="page-link">
+                                        <li class="hover:scale-107 hover:text-[#0AC4FF] transition-all uppercase">
+                                            Portfolio
+                                        </li>
+                                    </a>
+                                    <a href="about-me.html" class="page-link">
+                                        <li class="hover:scale-107 hover:text-[#0AC4FF] transition-all uppercase">About
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <!-- footer social -->
+                            <div class="lg:navbar-end space-x-3">
+                                <a href="https://www.facebook.com/rahib.ahmed.165/" class="page-link">
+                                    <div
+                                        class="btn btn-circle bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] hover:scale-105 active:translate-y-0.5 transition-all">
+                                        <img class="w-7/12" src="icons/facebook.png" alt="">
+                                    </div>
                                 </a>
-                                <a href="website-portfolio.html">
-                                    <li class="hover:scale-107 hover:text-[#0AC4FF] transition-all uppercase">Portfolio
-                                    </li>
+                                <a href="https://www.instagram.com/rahib.a7f/" class="page-link">
+                                    <div
+                                        class="btn btn-circle bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] hover:scale-105 active:translate-y-0.5 transition-all">
+                                        <img class="w-6/12" src="icons/instagram.png" alt="">
+                                    </div>
                                 </a>
-                                <a href="about-me.html">
-                                    <li class="hover:scale-107 hover:text-[#0AC4FF] transition-all uppercase">About</li>
+                                <a href="www.linkedin.com/in/rahib-azam" class="page-link">
+                                    <div
+                                        class="btn btn-circle bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] hover:scale-105 active:translate-y-0.5 transition-all">
+                                        <img class="w-7/12" src="icons/linkedin.png" alt="">
+                                    </div>
                                 </a>
-                            </ul>
+                                <a href="https://github.com/Rahibazam" class="page-link">
+                                    <div
+                                        class="btn btn-circle bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] hover:scale-105 active:translate-y-0.5 transition-all">
+                                        <img class="w-7/12" src="icons/github.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <!-- footer social -->
-                        <div class="lg:navbar-end space-x-3">
-                            <a href="https://www.facebook.com/rahib.ahmed.165/">
-                                <div
-                                    class="btn btn-circle bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] hover:scale-105 active:translate-y-0.5 transition-all">
-                                    <img class="w-7/12" src="icons/facebook.png" alt="">
+                        <!-- middle -->
+                        <div id="footer-mid" class="lg:flex justify-between mt-10 mb-15 lg:mt-25 lg:mb-25 items-center">
+                            <!-- left column -->
+                            <div class="space-y-6 flex-1 text-center lg:text-left">
+                                <div>
+                                    <h6 class="text-lg font-medium text-white uppercase heading-font">
+                                        <span
+                                            class="bg-[#0AC4FF] py-2 px-3 rounded-md heading-font mx-auto inline-flex">Contact
+                                            Me:</span>
+                                    </h6>
                                 </div>
-                            </a>
-                            <a href="https://www.instagram.com/rahib.a7f/">
-                                <div
-                                    class="btn btn-circle bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] hover:scale-105 active:translate-y-0.5 transition-all">
-                                    <img class="w-6/12" src="icons/instagram.png" alt="">
+                                <div class="flex space-x-2">
+                                    <p class="text-lg text-white">Email: <span
+                                            class="underline hover:text-[#0AC4FF] transition-all"><a
+                                                href="mailto:rahib.azam18@gmail.com">rahib.azam18@gmail.com</a></span>
+                                    </p>
+                                    <p></p>
                                 </div>
-                            </a>
-                            <a href="www.linkedin.com/in/rahib-azam">
-                                <div
-                                    class="btn btn-circle bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] hover:scale-105 active:translate-y-0.5 transition-all">
-                                    <img class="w-7/12" src="icons/linkedin.png" alt="">
-                                </div>
-                            </a>
-                            <a href="https://github.com/Rahibazam">
-                                <div
-                                    class="btn btn-circle bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] hover:scale-105 active:translate-y-0.5 transition-all">
-                                    <img class="w-7/12" src="icons/github.png" alt="">
-                                </div>
-                            </a>
+                            </div>
+                            <!-- right column -->
+                            <div
+                                class="border-1 border-[#0AC4FF] inset-shadow-[0px_0px_10px_#0AC4FF] rounded-lg content-center flex-1/5 px-5 py-10 lg:p-10 mt-10 lg:mt-0">
+                                <form class="space-x-3 grid grid-cols-2 lg:grid-cols-3 gap-4 space-y-5 lg:space-y-0"
+                                    method="post"
+                                    action="https://script.google.com/macros/s/AKfycbwZoqQ4kiDIyfOw2VNp4JQ593MRwKDpo4Kggbkowlxrr7c_SxTPa1pqi5xL1B4BK82D/exec">
+                                    <input
+                                        class="py-2 px-3 w-full border-white rounded-sm text-[#FAFAFA] inset-shadow-[0px_0px_10px_#FAFAFA] text-base lg:text-lg uppercase"
+                                        name="Email" type="email" placeholder="Email" required>
+                                    <input
+                                        class="py-2 px-3 w-full border-white rounded-sm text-[#FAFAFA] inset-shadow-[0px_0px_10px_#FAFAFA] text-base lg:text-lg uppercase"
+                                        name="Name" type="text" placeholder="Name" required>
+                                    <button
+                                        class="col-span-2 lg:col-span-1 btn border-none bg-[#0AC4FF] py-5 px-6 lg:py-6 lg:px-8 text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#0AC4FF] text-shadow hover:shadow-[0px_0px_20px_#422ad5] hover:bg-[#422ad5] hover:scale-102 transition-all uppercase"
+                                        type="submit">Send Query</button>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                    <!-- middle -->
-                    <div id="footer-mid" class="lg:flex justify-between mt-10 mb-15 lg:mt-25 lg:mb-25 items-center">
-                        <!-- left column -->
-                        <div class="space-y-6 flex-1 text-center lg:text-left">
+                        <!-- bottom -->
+                        <div class="space-y-6">
+                            <hr class="border-[#0AC4FF]">
                             <div>
-                                <h6 class="text-lg font-medium text-white uppercase heading-font">
-                                    <span
-                                        class="bg-[#0AC4FF] py-2 px-3 rounded-md heading-font mx-auto inline-flex">Contact
-                                        Me:</span>
-                                </h6>
-                            </div>
-                            <div class="flex space-x-2">
-                                <p class="text-lg text-white">Email: <span
-                                        class="underline hover:text-[#0AC4FF] transition-all"><a
-                                            href="mailto:rahib.azam18@gmail.com">rahib.azam18@gmail.com</a></span></p>
-                                <p></p>
+                                <p class="text-white text-center">© 2025 Rahib Azam. All Rights Reserved.</p>
                             </div>
                         </div>
-                        <!-- right column -->
-                        <div
-                            class="border-1 border-[#0AC4FF] inset-shadow-[0px_0px_10px_#0AC4FF] rounded-lg content-center flex-1/5 px-5 py-10 lg:p-10 mt-10 lg:mt-0">
-                            <form class="space-x-3 grid grid-cols-2 lg:grid-cols-3 gap-4 space-y-5 lg:space-y-0"
-                                method="post"
-                                action="https://script.google.com/macros/s/AKfycbwZoqQ4kiDIyfOw2VNp4JQ593MRwKDpo4Kggbkowlxrr7c_SxTPa1pqi5xL1B4BK82D/exec">
-                                <input
-                                    class="py-2 px-3 w-full border-white rounded-sm text-[#FAFAFA] inset-shadow-[0px_0px_10px_#FAFAFA] text-base lg:text-lg uppercase"
-                                    name="Email" type="email" placeholder="Email" required>
-                                <input
-                                    class="py-2 px-3 w-full border-white rounded-sm text-[#FAFAFA] inset-shadow-[0px_0px_10px_#FAFAFA] text-base lg:text-lg uppercase"
-                                    name="Name" type="text" placeholder="Name" required>
-                                <button
-                                    class="col-span-2 lg:col-span-1 btn border-none bg-[#0AC4FF] py-5 px-6 lg:py-6 lg:px-8 text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#0AC4FF] text-shadow hover:shadow-[0px_0px_20px_#422ad5] hover:bg-[#422ad5] hover:scale-102 transition-all uppercase"
-                                    type="submit">Send Query</button>
-                            </form>
-                        </div>
                     </div>
-                    <!-- bottom -->
-                    <div class="space-y-6">
-                        <hr class="border-[#0AC4FF]">
-                        <div>
-                            <p class="text-white text-center">© 2025 Rahib Azam. All Rights Reserved.</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
 
         </div>
         <div class="drawer-side z-50">
@@ -570,17 +658,17 @@
                     <div class="space-y-5">
                         <div class="tab-border rounded-sm">
                             <li><a href="index.html"
-                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl">Homepage</a>
+                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl page-link">Homepage</a>
                             </li>
                         </div>
                         <div class="tab-border rounded-sm">
                             <li><a href="website-portfolio.html"
-                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl">Portfolio</a>
+                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl page-link">Portfolio</a>
                             </li>
                         </div>
                         <div class="tab-border rounded-sm">
                             <li><a href="about-me.html"
-                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl">About</a>
+                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl page-link">About</a>
                             </li>
                         </div>
                     </div>
@@ -596,6 +684,111 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Check if this is the user's first visit
+        function isFirstVisit() {
+            return !sessionStorage.getItem('hasVisited');
+        }
+
+        // Mark that the user has visited
+        function markAsVisited() {
+            sessionStorage.setItem('hasVisited', 'true');
+        }
+
+        // Hide loader function
+        function hideAtomicLoader() {
+            const loader = document.getElementById('atomicLoader');
+            const mainContent = document.getElementById('atomicMainContent');
+
+            if (loader && mainContent) {
+                loader.classList.add('atomic-slide-up');
+                mainContent.classList.add('atomic-show');
+
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                }, 1200);
+            }
+        }
+
+        // Main loading logic
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('atomicLoader');
+            const mainContent = document.getElementById('atomicMainContent');
+
+            // If not first visit, hide loader immediately and show content
+            if (!isFirstVisit()) {
+                if (loader) {
+                    loader.style.display = 'none';
+                }
+                if (mainContent) {
+                    mainContent.classList.add('atomic-show');
+                }
+                return;
+            }
+
+            // Mark as visited for subsequent page loads/refreshes
+            markAsVisited();
+
+            // Simulate loading time for first visit only
+            setTimeout(function () {
+                // Slide loader up and fade out
+                if (loader) {
+                    loader.classList.add('atomic-slide-up');
+                }
+
+                // Show main content immediately with entrance animation
+                if (mainContent) {
+                    mainContent.classList.add('atomic-show');
+                }
+
+                // Remove loader from DOM after animation completes
+                setTimeout(function () {
+                    if (loader) {
+                        loader.style.display = 'none';
+                    }
+                }, 1200); // Matches the transition duration
+            }, 1000); // 1 second loading time - adjust as needed
+        });
+
+        // Optional: Manually hide loader when specific content is ready (first visit only)
+        function hideAtomicLoaderIfFirstVisit() {
+            if (isFirstVisit()) {
+                hideAtomicLoader();
+                markAsVisited();
+            }
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const pageContainer = document.getElementById('pageContainer');
+            const pageLinks = document.querySelectorAll('.page-link');
+
+            // Slide up the page when it loads
+            setTimeout(() => {
+                pageContainer.classList.add('slide-up');
+            }, 200);
+
+            // Add click event listeners to all page links
+            pageLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetUrl = this.href;
+
+                    // Start slide down animation
+                    pageContainer.classList.remove('slide-up');
+                    pageContainer.classList.add('slide-down');
+
+                    // Navigate to new page after slide down completes
+                    setTimeout(() => {
+                        window.location.href = targetUrl;
+                    }, 600);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

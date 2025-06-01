@@ -5,15 +5,6 @@ html {
 }
 
 
-/* .cosmic-wrapper {
-    position: relative;
-    background-image: url(/portfolio-of-rahib/images/common-hero-bg.webp);
-    object-fit: cover;
-    background-position: center;
-    background-attachment: local;
-    overflow: hidden;
-} */
-
 .cosmic-wrapper {
     position: relative;
     overflow: hidden;
