@@ -154,6 +154,9 @@
                             <span></span>
                             <span></span>
                             <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                             <div class="relative -z-10">
                                 <div id="parallax-text" class="fixed inset-y-48 lg:inset-y-20 w-full">
                                     <div class="pointer-events-none flex justify-center">
@@ -184,7 +187,7 @@
 
                     <section id="next-section" class="main-content">
                         <!-- skills -->
-                        <section class="py-20 lg:py-30">
+                        <section class="pb-20">
                             <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-15">
                                 <!-- section heading -->
                                 <div class="lg:flex gap-15 items-center space-y-10 lg:space-y-0">
@@ -1210,29 +1213,48 @@
     </div>
 
     <script>
-        // Parallax text fade effect
+        // Parallax text and background fade effect
         document.addEventListener('DOMContentLoaded', function () {
             const parallaxText = document.getElementById('parallax-text');
             const nextSection = document.getElementById('next-section');
+            const heroSection = document.getElementById('hero-section');
 
             // Exit if elements not found
-            if (!parallaxText || !nextSection) return;
+            if (!parallaxText || !nextSection || !heroSection) return;
 
-            // Add CSS for smooth transitions
+            // Get all spans within the hero section (background glow elements)
+            const backgroundSpans = heroSection.querySelectorAll('span');
+
+            // Add CSS for smooth transitions to text
             parallaxText.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
             parallaxText.style.zIndex = '50';
+
+            // Add CSS for smooth transitions to spans
+            backgroundSpans.forEach(span => {
+                span.style.transition = 'opacity 0.3s ease-out';
+            });
 
             // Create intersection observer
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        // Next section is visible - hide text
+                        // Next section is visible - hide text and spans
                         parallaxText.style.opacity = '0';
                         parallaxText.style.transform = 'translateY(-50px)';
+
+                        // Hide background spans
+                        backgroundSpans.forEach(span => {
+                            span.style.opacity = '0';
+                        });
                     } else {
-                        // Next section is not visible - show text
+                        // Next section is not visible - show text and spans
                         parallaxText.style.opacity = '1';
                         parallaxText.style.transform = 'translateY(0)';
+
+                        // Show background spans
+                        backgroundSpans.forEach(span => {
+                            span.style.opacity = '1';
+                        });
                     }
                 });
             }, {
