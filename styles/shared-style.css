@@ -26,7 +26,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: 1;
     animation: 
         floatX 37s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite,
         floatY 29s cubic-bezier(0.33, 0.62, 0.57, 0.88) infinite,
