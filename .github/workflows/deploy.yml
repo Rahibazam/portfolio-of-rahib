@@ -210,8 +210,8 @@
 
   </head>
 
-  <body class="logged-in env-production page-responsive min-height-full d-flex flex-column" style="word-wrap: break-word;">
-    <div data-turbo-body class="logged-in env-production page-responsive min-height-full d-flex flex-column" style="word-wrap: break-word;">
+  <body class="logged-in env-production page-responsive min-height-full d-flex flex-column" style="word-wrap; break-word;">
+    <div data-turbo-body class="logged-in env-production page-responsive min-height-full d-flex flex-column" style="word-wrap; break-word;">
       
 
 
