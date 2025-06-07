@@ -167,6 +167,17 @@ header {
   background: linear-gradient(135deg, #070B1D 0%, #0A0F26 50%, #422ad5 100%);
   z-index: 0;
   overflow: hidden;
+  
+}
+
+@keyframes colorchange {
+
+  
+  50% {
+    background: linear-gradient(135deg, #070B1D 0%, #0A0F26 50%, #ffffff 100%);
+  }
+
+ 
 }
 
 /* Grid Overlay */
