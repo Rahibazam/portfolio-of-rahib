@@ -69,6 +69,10 @@ header {
   transition: margin-top 0.3s ease;
 }
 
+#my-drawer:active~* .drawer {
+  display: none;
+}
+
 .drawer-content {
   transition: margin-top 0.3s ease;
 }

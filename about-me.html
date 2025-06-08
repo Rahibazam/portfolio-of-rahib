@@ -28,7 +28,11 @@
     <link rel="stylesheet" href="styles/loader.css">
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="animated-background.js"></script>
+    <script src="animated-background.js" defer></script>
+    <script src="loader.js"></script>
+    <script src="page-transition.js" defer></script>
+    <script src="drawer.js" defer></script>
+    <script src="playlist.js" defer></script>
 </head>
 
 
@@ -124,25 +128,25 @@
     <div class="drawer bg-[#070B1D]">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
-            <!-- Page content here -->
-            <header class="bg-[#070b1da1] backdrop-blur-[12px] sticky top-0 z-30">
-                <nav class="w-12/12 md:w-10/12 lg:w-10/12 mx-auto">
-                    <div class="navbar py-5">
-                        <div class="navbar-start active:translate-y-0.5">
-                            <a href="index.html"
-                                class="cursor-pointer select-none text-3xl lg:text-4xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow uppercase page-link">Rahib
-                                <span class="hidden lg:inline-block">Azam</span></a>
-                        </div>
-                        <div class="navbar-end">
-                            <label for="my-drawer"
-                                class="btn border-none bg-[#422ad5] p-4 lg:py-6 lg:px-5 text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase">Quick
-                                Links</label>
-                        </div>
-                    </div>
-                </nav>
-            </header>
 
             <div class="page-container" id="pageContainer">
+                <!-- Page content here -->
+                <header class="bg-[#070b1da1] backdrop-blur-[12px] sticky top-0 z-30">
+                    <nav class="w-12/12 md:w-10/12 lg:w-10/12 mx-auto">
+                        <div class="navbar py-5">
+                            <div class="navbar-start active:translate-y-0.5">
+                                <a href="index.html"
+                                    class="cursor-pointer select-none text-3xl lg:text-4xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow uppercase page-link">Rahib
+                                    <span class="hidden lg:inline-block">Azam</span></a>
+                            </div>
+                            <div class="navbar-end">
+                                <label for="my-drawer"
+                                    class="btn border-none bg-[#422ad5] p-4 lg:py-6 lg:px-5 text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase">Quick
+                                    Links</label>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
                 <main class="bg-[#070B1D]">
 
                     <!-- hero section -->
@@ -647,99 +651,7 @@
                                                     <audio id="audioPlayer"></audio>
                                                 </div>
 
-                                                <script>
-                                                    // Audio player functionality
-                                                    const audioPlayer = document.getElementById('audioPlayer');
-                                                    const playBtn = document.getElementById('playBtn');
-                                                    const prevBtn = document.getElementById('prevBtn');
-                                                    const nextBtn = document.getElementById('nextBtn');
-                                                    const playIcon = document.getElementById('playIcon');
-                                                    const pauseIcon = document.getElementById('pauseIcon');
-                                                    const songTitle = document.querySelector('.song-info h2');
-                                                    const songArtist = document.querySelector('.song-info p');
-                                                    const albumArt = document.querySelector('.album-art');
-
-                                                    // Track data
-                                                    const tracks = [
-                                                        {
-                                                            title: "This Fire",
-                                                            artist: "Killswitch Engage",
-                                                            src: "audio/this-fire.mp3",
-                                                            albumArt: "images/killswitch-engage-daylight-dies.webp"
-                                                        },
-                                                        {
-                                                            title: "Sleepwalking",
-                                                            artist: "Bring Me The Horizon",
-                                                            src: "audio/bmth-sleepwalking.mp3",
-                                                            albumArt: "images/bmth-sempiternal.webp"
-                                                        }
-                                                    ];
-
-                                                    let currentTrack = 0;
-
-                                                    // Initialize the audio player with the first track
-                                                    function initPlayer() {
-                                                        audioPlayer.src = tracks[0].src;
-                                                        audioPlayer.volume = 0.5;
-                                                        songTitle.textContent = tracks[0].title;
-                                                        songArtist.textContent = tracks[0].artist;
-                                                        albumArt.style.backgroundImage = `url('${tracks[0].albumArt}')`;
-                                                    }
-
-                                                    // Play or pause the current track
-                                                    function togglePlay() {
-                                                        if (audioPlayer.paused) {
-                                                            audioPlayer.play();
-                                                            playIcon.style.display = 'none';
-                                                            pauseIcon.style.display = 'block';
-                                                        } else {
-                                                            audioPlayer.pause();
-                                                            playIcon.style.display = 'block';
-                                                            pauseIcon.style.display = 'none';
-                                                        }
-                                                    }
-
-                                                    // Play a specific track
-                                                    function playTrack(index) {
-                                                        currentTrack = index;
-
-                                                        // Update player
-                                                        audioPlayer.src = tracks[index].src;
-                                                        songTitle.textContent = tracks[index].title;
-                                                        songArtist.textContent = tracks[index].artist;
-                                                        albumArt.style.backgroundImage = `url('${tracks[index].albumArt}')`;
-
-                                                        // Start playing
-                                                        audioPlayer.play();
-                                                        playIcon.style.display = 'none';
-                                                        pauseIcon.style.display = 'block';
-                                                    }
-
-                                                    // Play previous track
-                                                    function playPrevious() {
-                                                        let prevTrack = currentTrack - 1;
-                                                        if (prevTrack < 0) prevTrack = tracks.length - 1;
-                                                        playTrack(prevTrack);
-                                                    }
-
-                                                    // Play next track
-                                                    function playNext() {
-                                                        let nextTrack = currentTrack + 1;
-                                                        if (nextTrack >= tracks.length) nextTrack = 0;
-                                                        playTrack(nextTrack);
-                                                    }
-
-                                                    // When track ends, play next track
-                                                    audioPlayer.addEventListener('ended', playNext);
-
-                                                    // Event listeners
-                                                    playBtn.addEventListener('click', togglePlay);
-                                                    prevBtn.addEventListener('click', playPrevious);
-                                                    nextBtn.addEventListener('click', playNext);
-
-                                                    // Initialize player
-                                                    initPlayer();
-                                                </script>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -1332,127 +1244,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Check if this is the user's first visit
-        function isFirstVisit() {
-            return !sessionStorage.getItem('hasVisited');
-        }
-
-        // Mark that the user has visited
-        function markAsVisited() {
-            sessionStorage.setItem('hasVisited', 'true');
-        }
-
-        // Hide loader function
-        function hideAtomicLoader() {
-            const loader = document.getElementById('atomicLoader');
-            const mainContent = document.getElementById('atomicMainContent');
-
-            if (loader && mainContent) {
-                loader.classList.add('atomic-slide-up');
-                mainContent.classList.add('atomic-show');
-
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                }, 1200);
-            }
-        }
-
-        // Main loading logic
-        window.addEventListener('load', function () {
-            const loader = document.getElementById('atomicLoader');
-            const mainContent = document.getElementById('atomicMainContent');
-
-            // If not first visit, hide loader immediately and show content
-            if (!isFirstVisit()) {
-                if (loader) {
-                    loader.style.display = 'none';
-                }
-                if (mainContent) {
-                    mainContent.classList.add('atomic-show');
-                }
-                return;
-            }
-
-            // Mark as visited for subsequent page loads/refreshes
-            markAsVisited();
-
-            // Simulate loading time for first visit only
-            setTimeout(function () {
-                // Slide loader up and fade out
-                if (loader) {
-                    loader.classList.add('atomic-slide-up');
-                }
-
-                // Show main content immediately with entrance animation
-                if (mainContent) {
-                    mainContent.classList.add('atomic-show');
-                }
-
-                // Remove loader from DOM after animation completes
-                setTimeout(function () {
-                    if (loader) {
-                        loader.style.display = 'none';
-                    }
-                }, 1200); // Matches the transition duration
-            }, 1000); // 1 second loading time - adjust as needed
-        });
-
-        // Optional: Manually hide loader when specific content is ready (first visit only)
-        function hideAtomicLoaderIfFirstVisit() {
-            if (isFirstVisit()) {
-                hideAtomicLoader();
-                markAsVisited();
-            }
-        }
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const pageContainer = document.getElementById('pageContainer');
-            const pageLinks = document.querySelectorAll('.page-link');
-
-            // Function to show the page
-            function showPage() {
-                pageContainer.classList.remove('slide-down');
-                pageContainer.classList.add('slide-up');
-            }
-
-            // Initial page load
-            setTimeout(showPage, 200);
-
-            // Handle back button
-            window.addEventListener('pageshow', function (event) {
-                if (event.persisted) {
-                    // Page was loaded from cache (back button)
-                    showPage();
-                }
-            });
-
-            // Add click event listeners to all page links
-            pageLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetUrl = this.href;
-
-                    if (!targetUrl || targetUrl === 'undefined' || targetUrl.includes('undefined')) {
-                        console.error('Invalid link detected:', this);
-                        return;
-                    }
-
-                    // Start slide down animation
-                    pageContainer.classList.remove('slide-up');
-                    pageContainer.classList.add('slide-down');
-
-                    // Navigate to new page after slide down completes
-                    setTimeout(() => {
-                        window.location.href = targetUrl;
-                    }, 600);
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
