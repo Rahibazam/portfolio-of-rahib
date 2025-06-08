@@ -23,8 +23,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- external css file -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/shared-style.css">
+    <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="styles/styles.css"></noscript>
+    <link rel="preload" href="styles/shared-style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="styles/shared-style.css"></noscript>
     <link rel="stylesheet" href="styles/loader.css">
     <!-- js -->
     <script src="loader.js"></script>

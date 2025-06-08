@@ -12,6 +12,10 @@
     transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
+body.return-visit .atomic-loader-container {
+    display: none !important;
+}
+
 .atomic-loader-container::before {
   content: '';
   position: absolute;
