@@ -1,9 +1,14 @@
-// Ultra-optimized particle system for heavy-duty sites
+// Ultra-optimized particle system for heavy-duty sites - TBT Optimized
 class ParticleSystem {
     constructor() {
         this.container = document.getElementById('particles');
+        if (!this.container) {
+            console.error('Particles container not found');
+            return;
+        }
+        
         this.particles = [];
-        this.maxParticles = window.innerWidth < 768 ? 12 : 18; // More particles
+        this.maxParticles = window.innerWidth < 768 ? 12 : 18;
         this.animationId = null;
         this.isVisible = true;
         this.init();
@@ -11,31 +16,53 @@ class ParticleSystem {
     }
 
     init() {
-        // Use requestAnimationFrame for optimal timing
+        // Create initial particles with small delays to spread the work
         this.createParticles();
         this.scheduleNextParticle();
     }
 
     createParticles() {
-        for (let i = 0; i < this.maxParticles; i++) {
-            setTimeout(() => this.createParticle(), i * 800); // Slower spawn rate
-        }
+        // Create particles in smaller chunks to reduce blocking
+        const chunkSize = 3;
+        let created = 0;
+        
+        const createChunk = () => {
+            const end = Math.min(created + chunkSize, this.maxParticles);
+            
+            for (let i = created; i < end; i++) {
+                setTimeout(() => this.createParticle(), i * 800);
+            }
+            
+            created = end;
+            
+            if (created < this.maxParticles) {
+                // Small delay between chunks to avoid blocking
+                setTimeout(createChunk, 50);
+            }
+        };
+        
+        createChunk();
     }
 
     createParticle() {
-        if (!this.isVisible) return;
+        if (!this.isVisible || !this.container) return;
 
         const particle = document.createElement('div');
         particle.className = 'particle';
 
-        const size = Math.random() * 4 + 2; // Bigger particles (2-6px)
-        const side = Math.floor(Math.random() * 4); // 0: top, 1: right, 2: bottom, 3: left
-        const duration = Math.random() * 12 + 8; // Slower particles
+        const size = Math.random() * 4 + 2;
+        const side = Math.floor(Math.random() * 4);
+        const duration = Math.random() * 12 + 8;
         const drift = (Math.random() - 0.5) * 200;
 
-        particle.style.width = size + 'px';
-        particle.style.height = size + 'px';
-        particle.style.opacity = Math.random() * 0.6 + 0.4; // More visible
+        // Batch style updates to minimize reflows
+        const styles = {
+            width: size + 'px',
+            height: size + 'px',
+            opacity: Math.random() * 0.6 + 0.4
+        };
+        
+        Object.assign(particle.style, styles);
         particle.style.setProperty('--drift', drift + 'px');
 
         let startPos, animation;
@@ -72,21 +99,25 @@ class ParticleSystem {
         this.container.appendChild(particle);
         this.particles.push(particle);
 
-        // Auto-remove after animation
+        // Auto-remove after animation with better cleanup
         setTimeout(() => {
             if (particle.parentNode) {
                 particle.parentNode.removeChild(particle);
-                this.particles = this.particles.filter(p => p !== particle);
+                const index = this.particles.indexOf(particle);
+                if (index > -1) {
+                    this.particles.splice(index, 1);
+                }
             }
         }, duration * 1000);
     }
 
     scheduleNextParticle() {
         if (this.isVisible) {
+            const delay = Math.random() * 2000 + 1000;
             setTimeout(() => {
                 this.createParticle();
                 this.scheduleNextParticle();
-            }, Math.random() * 2000 + 1000); // Random spawn timing
+            }, delay);
         }
     }
 
@@ -99,11 +130,22 @@ class ParticleSystem {
             }
         });
     }
+
+    destroy() {
+        this.isVisible = false;
+        this.particles.forEach(particle => {
+            if (particle.parentNode) {
+                particle.parentNode.removeChild(particle);
+            }
+        });
+        this.particles = [];
+    }
 }
 
-// Initialize particle system when page loads
+// Initialize particle system when page loads - simple approach
 document.addEventListener('DOMContentLoaded', () => {
-    new ParticleSystem();
+    console.log('Initializing particle system...');
+    window.particleSystem = new ParticleSystem();
 });
 
 // Handle resize with debouncing and minimal impact
@@ -115,9 +157,18 @@ window.addEventListener('resize', () => {
         const newWidth = window.innerWidth;
         if (Math.abs(newWidth - (window.lastWidth || 0)) > 100) {
             window.lastWidth = newWidth;
+            
+            // Clean up existing system
+            if (window.particleSystem) {
+                window.particleSystem.destroy();
+            }
+            
             // Reinitialize particle system with new dimensions
-            document.getElementById('particles').innerHTML = '';
-            new ParticleSystem();
+            const container = document.getElementById('particles');
+            if (container) {
+                container.innerHTML = '';
+                window.particleSystem = new ParticleSystem();
+            }
         }
     }, 500);
 });
