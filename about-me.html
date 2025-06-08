@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="styles/loader.css">
     <!-- js -->
     <script src="loader.js"></script>
-    <script src="animated-background.js" defer></script>
+    <!-- <script src="animated-background.js" defer></script> -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="page-transition.js" defer></script>
     <script src="drawer.js" defer></script>
@@ -1244,6 +1244,130 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Inline particle system - TBT optimized version
+        (function () {
+            let container, particles = [], maxParticles, isVisible = true;
+
+            function init() {
+                container = document.getElementById('particles');
+                if (!container) return;
+
+                maxParticles = window.innerWidth < 768 ? 12 : 18;
+
+                // Spread initial particle creation over time to reduce blocking
+                for (let i = 0; i < Math.min(6, maxParticles); i++) {
+                    setTimeout(() => createParticle(), i * 200);
+                }
+
+                // Create remaining particles more gradually
+                setTimeout(() => {
+                    for (let i = 6; i < maxParticles; i++) {
+                        setTimeout(() => createParticle(), (i - 6) * 800);
+                    }
+                }, 1200);
+
+                // Start continuous spawning
+                setTimeout(scheduleNext, 2000);
+
+                // Visibility optimization
+                document.addEventListener('visibilitychange', () => {
+                    isVisible = !document.hidden;
+                    if (isVisible) setTimeout(scheduleNext, 1000);
+                });
+            }
+
+            function createParticle() {
+                if (!isVisible || !container) return;
+
+                const p = document.createElement('div');
+                p.className = 'particle';
+
+                const size = Math.random() * 4 + 2;
+                const side = Math.floor(Math.random() * 4);
+                const duration = Math.random() * 12 + 8;
+                const drift = (Math.random() - 0.5) * 200;
+
+                // Batch style changes
+                p.style.cssText = `
+                width: ${size}px;
+                height: ${size}px;
+                opacity: ${Math.random() * 0.6 + 0.4};
+                --drift: ${drift}px;
+            `;
+
+                let startPos, animation;
+
+                if (side === 0) {
+                    startPos = Math.random() * window.innerWidth;
+                    p.style.left = startPos + 'px';
+                    p.style.top = '-10px';
+                    animation = 'particleFromTop';
+                } else if (side === 1) {
+                    startPos = Math.random() * window.innerHeight;
+                    p.style.right = '-10px';
+                    p.style.top = startPos + 'px';
+                    animation = 'particleFromRight';
+                } else if (side === 2) {
+                    startPos = Math.random() * window.innerWidth;
+                    p.style.left = startPos + 'px';
+                    p.style.bottom = '-10px';
+                    animation = 'particleFromBottom';
+                } else {
+                    startPos = Math.random() * window.innerHeight;
+                    p.style.left = '-10px';
+                    p.style.top = startPos + 'px';
+                    animation = 'particleFromLeft';
+                }
+
+                p.style.animation = `${animation} ${duration}s linear forwards`;
+
+                container.appendChild(p);
+                particles.push(p);
+
+                // Cleanup
+                setTimeout(() => {
+                    if (p.parentNode) {
+                        p.parentNode.removeChild(p);
+                        particles = particles.filter(particle => particle !== p);
+                    }
+                }, duration * 1000);
+            }
+
+            function scheduleNext() {
+                if (isVisible) {
+                    setTimeout(() => {
+                        createParticle();
+                        scheduleNext();
+                    }, Math.random() * 2000 + 1000);
+                }
+            }
+
+            // Optimized resize handler
+            let resizeTimeout, lastWidth = window.innerWidth;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    const newWidth = window.innerWidth;
+                    if (Math.abs(newWidth - lastWidth) > 100) {
+                        lastWidth = newWidth;
+                        maxParticles = newWidth < 768 ? 12 : 18;
+                        container.innerHTML = '';
+                        particles = [];
+                        init();
+                    }
+                }, 500);
+            });
+
+            // Initialize when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
 </body>
 
 </html>
