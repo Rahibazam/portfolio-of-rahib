@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "animated-background.js",
   "scripts": {
-    "build:css": "npx @tailwindcss/cli -i app.css -o styles/output.css --minify"
+    "build:css": "npx @tailwindcss/cli -i app.css -o styles/output.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i app.css -o styles/output.css --watch"
   },
   "keywords": [],
   "author": "",
