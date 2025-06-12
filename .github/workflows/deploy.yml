@@ -3,43 +3,42 @@ name: Build and Deploy Portfolio
 
 on:
   push:
-    branches: [ main ]  # Change to your default branch name
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
-        
+
     - name: Install dependencies
       run: |
         npm init -y
         npm install --save-dev html-minifier-terser clean-css-cli terser
-        
+
+    - name: Build Tailwind CSS
+      run: |
+        npm install --save-dev tailwindcss @tailwindcss/cli daisyui
+        npx tailwindcss -i app.css -o styles/output.css --minify
+
+    - name: Prepare build directory
+      run: |
+        mkdir -p build
+        rsync -av --exclude=build --exclude=node_modules --exclude=.git --exclude=.github \
+          --exclude="app.css" --exclude="tailwind.config.js" \
+          . build/
+
     - name: Minify HTML files
       run: |
-        # Create a build directory
-        mkdir -p build
-        
-        # Copy all files to build directory first
-        cp -r * build/ 2>/dev/null || true
-        
-        # Remove the build directory from itself (avoid recursion)
-        rm -rf build/build 2>/dev/null || true
-        rm -rf build/.git 2>/dev/null || true
-        rm -rf build/.github 2>/dev/null || true
-        rm -rf build/node_modules 2>/dev/null || true
-        
-        # Minify HTML files
         find build -name "*.html" -type f -exec npx html-minifier-terser \
           --collapse-whitespace \
           --remove-comments \
@@ -51,15 +50,16 @@ jobs:
           --minify-css true \
           --minify-js true \
           {} --output {} \;
-          
-    - name: Minify CSS files
+
+    - name: Minify CSS files (excluding output.css)
       run: |
-        find build -name "*.css" -type f -exec npx cleancss -o {} {} \;
-        
+        find build -name "*.css" -type f ! -name "output.css" \
+          -exec npx cleancss -o {} {} \;
+
     - name: Minify JavaScript files
       run: |
         find build -name "*.js" -type f -exec npx terser {} -o {} --compress --mangle \;
-        
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
