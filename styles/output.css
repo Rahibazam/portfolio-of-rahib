@@ -2661,6 +2661,10 @@
     --tw-duration: 130ms;
     transition-duration: 130ms;
   }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
@@ -3187,6 +3191,11 @@
       padding-inline: calc(var(--spacing) * 8);
     }
   }
+  .lg\:px-10 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+  }
   .lg\:px-20 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 20);
@@ -3309,6 +3318,12 @@
   .lg\:text-\[19\.688vw\] {
     @media (width >= 64rem) {
       font-size: 19.688vw;
+    }
+  }
+  .lg\:leading-15 {
+    @media (width >= 64rem) {
+      --tw-leading: calc(var(--spacing) * 15);
+      line-height: calc(var(--spacing) * 15);
     }
   }
   .lg\:drop-shadow-\[1px_1px_20px_\#422ad5\] {
@@ -3816,6 +3831,10 @@
   inherits: false;
   initial-value: 1;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -3887,6 +3906,7 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+      --tw-leading: initial;
     }
   }
 }
