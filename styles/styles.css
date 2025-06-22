@@ -104,8 +104,10 @@ header {
     0 0 7px #0ac6ff,
     0 0 12px #0ac6ff,
     0 0 17px #412ad5;
+    transition: 0.2s ease-in-out;
 
 }
+
 
 .tab-border:checked {
   background-color: #422ad5;
