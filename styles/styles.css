@@ -108,6 +108,13 @@ header {
 
 }
 
+.tab-border:hover{
+  will-change: transform;
+  transform: scale(1.03);
+  background-color: #412ad58f;
+  color: #FAFAFA;
+}
+
 
 .tab-border:checked {
   background-color: #422ad5;
