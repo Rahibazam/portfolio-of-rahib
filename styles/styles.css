@@ -49,6 +49,10 @@ html {
   color: #FAFAFA;
 }
 
+.hubspot-accent {
+  color: #F57722;
+}
+
 #my-drawer:checked~* header {
   position: fixed;
   top: 0;
