@@ -819,6 +819,13 @@ html {
     opacity: 1 !important;
 }
 
+.tooltip-hubspot {
+    --tt-bg: #f5762200;
+    > :where(.tooltip-content), &:where([data-tip]):before {
+        font-size: 1rem !important;
+    }
+}
+
 /* Responsive */
 @media (max-width: 768px) {
 
