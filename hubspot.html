@@ -1098,15 +1098,91 @@
                                             src="icons/integration-zoom.svg" alt="zoom">
                                     </div>
                                     <!-- zapier -->
-                                   <div
+                                    <div
                                         class="h-20 px-3 content-center border-1 border-[#F57722]/0 bg-[#BABABA]/9 backdrop-blur-sm hover:border-1 hover:border-[#0ac6ff] hover:-translate-y-1 rounded-[4px] will-change-transform transition-all duration-300">
-                                        <img class="mx-auto h-13 object-contain"
-                                            src="icons/integration-zapier.svg" alt="zapier">
+                                        <img class="mx-auto h-13 object-contain" src="icons/integration-zapier.svg"
+                                            alt="zapier">
                                     </div>
 
                                 </div>
                             </div>
 
+                        </section>
+
+                        <!-- anonymous testimonials -->
+                        <section>
+                            <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-15 py-10 lg:py-20">
+                                <!-- section heading -->
+                                <div class="space-y-7">
+                                    <div>
+                                        <h2
+                                            class="text-2xl lg:text-4xl font-medium text-white uppercase heading-font text-center">
+                                            <span
+                                                class="bg-[#F57722] py-3 px-5 rounded-lg heading-font mx-auto inline-flex">Testimonials</span>
+                                        </h2>
+                                    </div>
+                                    <p class="text-base lg:text-lg text-white text-center">Praise from folks who didn’t
+                                        ask for a refund or having to bribe - just NDA'd<br>I don’t chase testimonials,
+                                        but every now and then, a client says something that makes me think, “Okay, I
+                                        didn’t completely mess that up.” These are real messages from people I’ve worked
+                                        with — untagged, unbranded, and slightly paraphrased for privacy (and grammar).
+                                    </p>
+                                </div>
+                                <!-- carousel -->
+                                <div>
+                                    <div id="carouselWrapper" class="relative w-full overflow-hidden">
+                                        <!-- Slides container -->
+                                        <div id="carousel"
+                                            class="flex w-full overflow-x-auto scroll-smooth snap-x snap-mandatory hide-scrollbar">
+                                            <!-- slider 1 -->
+                                            <div class="carousel-item w-full flex-shrink-0 snap-center">
+                                                <div
+                                                    class="relative group mx-auto w-full lg:w-9/12 py-5 px-4 border-l-4 lg:border-l-6 border-1 border-[#F57722] bg-[#BABABA]/10 rounded-md backdrop-blur-lg hover:border-[#0AC4FF] transition-all duration-300 content-center">
+                                                    <!-- quote -->
+                                                     <div class="absolute top-8 flex justify-between w-full lg:w-11/12 left-1/2 -translate-x-1/2">
+                                                        <img class="h-15 lg:h-25 invert brightness-0 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_9px_#0ac6ff,0_0_10px_#412ad5] transition-all duration-300" src="icons/quote.png" alt="">
+                                                        
+                                                     </div>
+                                                    <!-- content -->
+                                                    <div class="text-center space-y-3">
+                                                        <img class="h-10 mx-auto mb-7 object-cover brightness-200 invert group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_9px_#0ac6ff,0_0_10px_#412ad5] transition-all duration-300" src="icons/5-stars.svg" alt="">
+                                                        <h5 class="text-2xl lg:text-3xl font-bold uppercase group-hover:text-shadow-[0_0_5px_#0ac6ff,0_0_8px_#0ac6ff,0_0_13px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">Understood the Assignment</h5>
+                                                        <p class="text-base lg:text-lg text-[#FAFAFA] group-hover:text-shadow-[0_0_5px_#0ac6ff,0_0_8px_#0ac6ff,0_0_13px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                            Rahib made our HubSpot setup feel effortless — even when we gave him very little to go off of. He anticipated what we needed, stayed consistently prepared, and somehow translated our vague ideas into an actual functioning system. Every meeting felt like progress, and his follow-ups were on point. Highly recommend if you want someone who actually listens and delivers.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item w-full flex-shrink-0 snap-center">
+                                                <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                                                    class="w-full object-cover" />
+                                            </div>
+                                            <div class="carousel-item w-full flex-shrink-0 snap-center">
+                                                <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                                                    class="w-full object-cover" />
+                                            </div>
+                                            <div class="carousel-item w-full flex-shrink-0 snap-center">
+                                                <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                                                    class="w-full object-cover" />
+                                            </div>
+                                        </div>
+
+                                        <div class="mx-auto w-full lg:w-9/12 space-x-4 mt-4">
+                                            <!-- Static navigation buttons (outside of carousel items) -->
+                                            <button onclick="prevSlide()"
+                                                class="btn border-none bg-[#422ad5] text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase">
+                                                ❮
+                                            </button>
+
+                                            <button onclick="nextSlide()"
+                                                class="btn border-none bg-[#422ad5] text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase">
+                                                ❯
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </section>
 
                     </section>
@@ -1387,6 +1463,44 @@
             }
         })();
     </script>
+
+    <!-- carousel -->
+    <script>
+        const carousel = document.getElementById('carousel');
+        const slides = carousel.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            carousel.scrollTo({
+                left: slides[index].offsetLeft,
+                behavior: 'smooth'
+            });
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Auto-scroll every 9 seconds
+        setInterval(nextSlide, 9000);
+
+        // Optional: Sync index with scroll position (if user swipes manually)
+        carousel.addEventListener('scroll', () => {
+            const scrollLeft = carousel.scrollLeft;
+            slides.forEach((slide, i) => {
+                if (Math.abs(slide.offsetLeft - scrollLeft) < slide.offsetWidth / 2) {
+                    currentIndex = i;
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
