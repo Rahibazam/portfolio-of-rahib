@@ -290,162 +290,68 @@
 
 
 
-<!-- Anonymous Testimonials -->
-<section class="bg-[#0A0F26] py-16">
-  <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-12">
-    <!-- Section Heading -->
-    <div class="text-center space-y-6">
-      <h2 class="text-3xl lg:text-5xl font-bold text-white uppercase">
-        <span class="bg-[#F57722] py-2 px-6 rounded-lg inline-block">Testimonials</span>
-      </h2>
-      <p class="text-white text-base lg:text-lg">
-        Praise from folks who didn’t ask for a refund — just NDA’d.<br />
-        These are real messages — paraphrased for privacy (and grammar).
-      </p>
-    </div>
+                        <!-- Anonymous Testimonials -->
+                        <section>
+                            <section>
+                                <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-15 py-10 lg:py-20">
+                                    <div class="relative py-10 group mx-auto overflow-hidden rounded-xl">
 
-    <!-- Carousel -->
-    <div id="carouselWrapper" class="overflow-hidden relative">
-      <div id="carousel"
-        class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-1 touch-pan-x hide-scrollbar cursor-grab"
-        tabindex="0" aria-label="Testimonials carousel">
-        <!-- Slide 1 -->
-        <div class="shrink-0 snap-center min-w-[90%] md:min-w-[70%] lg:min-w-[50%]">
-          <div
-            class="bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-3xl p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
-            <div class="flex items-start gap-4 mb-4">
-              <img src="icons/quote.png" draggable="false" alt="quote" class="h-8 w-8 invert opacity-70" />
-              <h3 class="text-xl lg:text-2xl font-semibold uppercase leading-tight">
-                Understood the Assignment
-              </h3>
-            </div>
-            <p class="text-base lg:text-lg leading-relaxed italic">
-              “Rahib made our HubSpot setup feel effortless — even when we gave him very little to go off
-              of.”
-            </p>
-            <div class="mt-6">
-              <img src="icons/5-stars.svg" draggable="false" alt="stars" class="h-5 invert brightness-150" />
-            </div>
-          </div>
-        </div>
+                                    <!-- Layer 1: Normal HubSpot Gradient -->
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-b from-[#F57722] to-[#F57722]/60 transition-opacity duration-500 pointer-events-none group-hover:opacity-0 z-0">
+                                    </div>
 
-        <!-- Slide 2 -->
-        <div class="shrink-0 snap-center min-w-[90%] md:min-w-[70%] lg:min-w-[50%]">
-          <div
-            class="bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-3xl p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
-            <div class="flex items-start gap-4 mb-4">
-              <img src="icons/quote.png" alt="quote" class="h-8 w-8 invert opacity-70" />
-              <h3 class="text-xl lg:text-2xl font-semibold uppercase leading-tight">
-                Clarity Delivered
-              </h3>
-            </div>
-            <p class="text-base lg:text-lg leading-relaxed italic">
-              “We went from confusion to clarity in two sessions. Rahib is sharp, explains things well, and
-              finishes things without hand-holding.”
-            </p>
-            <div class="mt-6">
-              <img src="icons/5-stars.svg" alt="stars" class="h-5 invert brightness-150" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+                                    <!-- Layer 2: Hover Brand Gradient -->
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-b from-[#0AC4FF] to-[#0AC4FF]/60 opacity-0 transition-opacity duration-500 pointer-events-none group-hover:opacity-100 z-0">
+                                    </div>
 
-<style>
-  .hide-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+                                    <!-- Animated Background Blob + Grid -->
+                                    <div class="relative h-[400px] overflow-hidden transition-all duration-1000 ease-out group-hover:translate-y-16 translate-y-28 [mask-image:radial-gradient(50%_50%,white,transparent)] z-10">
 
-  .hide-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+                                        <div
+                                            class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_center,#0AC4FF,transparent_90%)] opacity-100">
+                                        </div>
+                                        <div
+                                            class="absolute -left-1/2 top-1/2 w-[200%] aspect-[1/1.7] border-2 border-b border-[#070b1d8c] rounded-[50%] bg-[#070B1D]/100">
+                                        </div>
+                                        <div
+                                            class="absolute inset-0 bg-[linear-gradient(to_right,#0000002c_1px,transparent_1px),linear-gradient(to_bottom,#0000001a_1px,transparent_1px)] bg-[size:70px_80px]">
+                                        </div>
 
-  #carousel.grabbing {
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-  }
+                                    </div>
 
-  #carousel {
-  user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-</style>
+                                    <!-- Content Box -->
+                                    <div
+                                        class="absolute top-0 left-1/2 transform -translate-x-1/2 w-10/12 lg:w-8/12 py-10 text-[#FAFAFA] text-center z-20 mt-10 md:mt-17">
 
-<script>
-  const carousel = document.getElementById('carousel');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-  let autoScrollInterval;
+                                        <h2 class="text-3xl md:text-5xl mb-3 md:mb-6 font-bold uppercase">
+                                            Let’s Make Something Cool and Pretend It Was Easy
+                                        </h2>
+                                        <p class="text-base md:text-xl text-[#FAFAFA]/90">You handle the pretending, I’ll handle the build. Just drop your email — I’ll try not to overthink the reply.</p>
 
-  carousel.addEventListener('mousedown', (e) => {
-    isDown = true;
-    carousel.classList.add('grabbing');
-    startX = e.pageX - carousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
-    clearInterval(autoScrollInterval);
-  });
+                                        <!-- Email Form -->
+                                        <form class="relative mt-10 w-12/12 md:w-9/12 mx-auto" novalidate>
+                                            <label for="email" class="sr-only">Email address</label>
+                                            <input type="email" id="email" name="CTAemail"
+                                                placeholder="Your email here..." required class="w-full px-6 py-4 rounded-3xl backdrop-blur-lg border border-[#FAFAFA] placeholder:text-muted  focus:outline-none transition-all" />
+                                            <button type="submit" aria-label="Send email"
+                                                class="absolute right-4 top-1/2 -translate-y-1/2 px-4 py-2 h-10 rounded-2xl text-sm bg-transparent hover:bg-[#0AC4FF]/40 cursor-pointer active:-rotate-45 transition-all duration-300 flex items-center justify-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#FAFAFA]"
+                                                    viewBox="0 0 512 512" fill="currentColor">
+                                                    <path
+                                                        d="m476.59 227.05-.16-.07L49.35 49.84A23.56 23.56 0 0 0 27.14 52 24.65 24.65 0 0 0 16 72.59v113.29a24 24 0 0 0 19.52 23.57l232.93 43.07a4 4 0 0 1 0 7.86L35.53 303.45A24 24 0 0 0 16 327v113.31A23.57 23.57 0 0 0 26.59 460a23.94 23.94 0 0 0 13.22 4 24.55 24.55 0 0 0 9.52-1.93L476.4 285.94l.19-.09a32 32 0 0 0 0-58.8z" />
+                                                </svg>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                            </section>
 
-  carousel.addEventListener('mouseup', () => {
-    isDown = false;
-    carousel.classList.remove('grabbing');
-    startAutoScroll();
-  });
 
-  carousel.addEventListener('mouseleave', () => {
-    if (isDown) {
-      isDown = false;
-      carousel.classList.remove('grabbing');
-      startAutoScroll();
-    }
-  });
-
-  carousel.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 30; // slower scroll speed for easier drag
-    carousel.scrollLeft = scrollLeft - walk;
-  });
-
-  // Touch support
-  carousel.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].pageX - carousel.offsetLeft;
-    scrollLeft = carousel.scrollLeft;
-    clearInterval(autoScrollInterval);
-  }, { passive: true });
-
-  carousel.addEventListener('touchmove', (e) => {
-    const x = e.touches[0].pageX - carousel.offsetLeft;
-    const walk = (x - startX) * 30;
-    carousel.scrollLeft = scrollLeft - walk;
-  }, { passive: true });
-
-  carousel.addEventListener('touchend', startAutoScroll);
-
-  // Auto-scroll functionality
-  function autoScroll() {
-    if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 1) {
-      carousel.scrollTo({ left: 0, behavior: 'smooth' });
-    } else {
-      carousel.scrollBy({ left: carousel.offsetWidth / 2, behavior: 'smooth' });
-    }
-  }
-
-  function startAutoScroll() {
-    autoScrollInterval = setInterval(autoScroll, 7000);
-  }
-
-  startAutoScroll();
-
-  // Pause auto-scroll on hover
-  carousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
-  carousel.addEventListener('mouseleave', () => startAutoScroll());
-</script>
+                        </section>
 
 
 
