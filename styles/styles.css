@@ -64,13 +64,25 @@ html {
   /* maintain z-index */
 }
 
-.hide-scrollbar {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
-}
 
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#carousel.grabbing {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+}
+
+#carousel {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 header {
@@ -90,11 +102,8 @@ header {
   transition: margin-top 0.3s ease;
 }
 
-.svg-drop-shadow { 
-  filter: drop-shadow(0 0 1px #0ac6ff)
-    drop-shadow(0 0 3px #0ac6ff)
-    drop-shadow(0 0 4px #0ac6ff)
-    drop-shadow(0 0 5px #412ad5);
+.svg-drop-shadow {
+  filter: drop-shadow(0 0 1px #0ac6ff) drop-shadow(0 0 3px #0ac6ff) drop-shadow(0 0 4px #0ac6ff) drop-shadow(0 0 5px #412ad5);
 }
 
 .text-shadow {
@@ -123,11 +132,11 @@ header {
     0 0 7px #0ac6ff,
     0 0 12px #0ac6ff,
     0 0 17px #412ad5;
-    transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 
 }
 
-.tab-border:hover{
+.tab-border:hover {
   will-change: transform;
   transform: scale(1.03);
   background-color: #412ad58f;
@@ -199,17 +208,17 @@ header {
   background: linear-gradient(135deg, #070B1D 0%, #0A0F26 50%, #422ad5 100%);
   z-index: 0;
   overflow: hidden;
-  
+
 }
 
 @keyframes colorchange {
 
-  
+
   50% {
     background: linear-gradient(135deg, #070B1D 0%, #0A0F26 50%, #ffffff 100%);
   }
 
- 
+
 }
 
 /* Grid Overlay */

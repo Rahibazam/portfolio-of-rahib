@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://i.ibb.co.com/zh1Wd4gg/featured-img.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta name="description"
+        content="I'm Rahib a quiet, creative web developer with a loud code editor. Learn how I turned overthinking and introversion into a career.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rahibazam.github.io/portfolio-of-rahib/about-me.html">
+    <title>HubSpot</title>
+    <link rel="shortcut icon" href="icons/logo.png" type="image/x-icon">
+    <!-- Preconnect (keep these) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Preload the exact fonts for your button (ADD THESE) -->
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/quantico/v17/rax5HiSdp9cPL3KIF7xsNjxQhmLZ.woff2"
+        type="font/woff2" crossorigin>
+    <link rel="preload" as="font"
+        href="https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2" type="font/woff2"
+        crossorigin>
+
+    <!-- Your existing Google Fonts CSS link (KEEP THIS) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quantico:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- tailwind cdn -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="styles/output.css">
+    <!-- Add this inline CSS for immediate font fallback -->
+    <style>
+        .primary-font {
+            font-family: 'Quantico', Arial, sans-serif;
+            font-display: swap;
+        }
+    </style>
+    <!-- external css file -->
+    <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript>
+        <link rel="stylesheet" href="styles/styles.css">
+    </noscript>
+    <link rel="preload" href="styles/shared-style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles/shared-style.css">
+    </noscript>
+    <link rel="stylesheet" href="styles/loader.css">
+    <!-- js -->
+    <script src="loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="page-transition.js" defer></script>
+    <script src="drawer.js" defer></script>
+    <script src="playlist.js" defer></script>
+</head>
+
+
+<body class="primary-font">
+
+    <!-- preloader -->
+    <div class="atomic-loader-container" id="atomicLoader">
+        <div class="loader-void-dimension"></div>
+        <div class="atomic-energy-waves"></div>
+
+        <div class="cosmic-mist"></div>
+
+        <div class="stellar-field">
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+            <div class="stellar-point"></div>
+        </div>
+
+        <div class="cosmic-dust">
+            <div class="dust-mote dust-cyan"></div>
+            <div class="dust-mote dust-violet"></div>
+            <div class="dust-mote dust-silver"></div>
+            <div class="dust-mote dust-cyan"></div>
+            <div class="dust-mote dust-violet"></div>
+            <div class="dust-mote dust-silver"></div>
+            <div class="dust-mote dust-cyan"></div>
+            <div class="dust-mote dust-violet"></div>
+            <div class="dust-mote dust-silver"></div>
+            <div class="dust-mote dust-cyan"></div>
+        </div>
+
+        <div class="meteor-field">
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+        </div>
+
+        <div class="atomic-particle-field">
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+            <div class="atomic-field-particle"></div>
+        </div>
+
+        <div class="atomic-atom">
+            <div class="atomic-nucleus"></div>
+
+            <div class="atomic-orbit atomic-orbit-1">
+                <div class="atomic-electron atomic-electron-1"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-2">
+                <div class="atomic-electron atomic-electron-2"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-3">
+                <div class="atomic-electron atomic-electron-3"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-4">
+                <div class="atomic-electron atomic-electron-4"></div>
+            </div>
+
+            <div class="atomic-orbit atomic-orbit-5">
+                <div class="atomic-electron atomic-electron-5"></div>
+            </div>
+        </div>
+
+        <div class="atomic-loading-text">Loading</div>
+    </div>
+
+    <div class="drawer bg-[#070B1D]">
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content">
+
+            <div class="page-container" id="pageContainer">
+                <!-- Page content here -->
+                <header class="bg-[#070b1da1] backdrop-blur-[12px] sticky top-0 z-30">
+                    <nav class="w-12/12 md:w-10/12 lg:w-10/12 mx-auto">
+                        <div class="navbar py-5">
+                            <div class="navbar-start active:translate-y-0.5">
+                                <a href="index.html"
+                                    class="cursor-pointer select-none text-3xl lg:text-4xl text-white hover:text-[#0AC4FF] hover:scale-105 transition-all text-shadow uppercase page-link">Rahib
+                                    <span class="hidden lg:inline-block">Azam</span></a>
+                            </div>
+                            <div class="navbar-end">
+                                <label for="my-drawer"
+                                    class="btn border-none bg-[#422ad5] p-4 lg:py-6 lg:px-5 text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase">Quick
+                                    Links</label>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+                <main class="bg-[#070B1D]">
+
+                    <!-- hero section -->
+                    <section class="bg-[#070B1D] pt-40 pb-50 lg:pt-70 lg:pb-90 cosmic-wrapper">
+
+                        <div class="void-dimension"></div>
+                        <div class="cosmic-mist"></div>
+
+                        <div class="stellar-field">
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                            <div class="stellar-point"></div>
+                        </div>
+
+                        <div class="cosmic-dust">
+                            <div class="dust-mote dust-cyan"></div>
+                            <div class="dust-mote dust-violet"></div>
+                            <div class="dust-mote dust-silver"></div>
+                            <div class="dust-mote dust-cyan"></div>
+                            <div class="dust-mote dust-violet"></div>
+                            <div class="dust-mote dust-silver"></div>
+                            <div class="dust-mote dust-cyan"></div>
+                            <div class="dust-mote dust-violet"></div>
+                            <div class="dust-mote dust-silver"></div>
+                            <div class="dust-mote dust-cyan"></div>
+                        </div>
+
+                        <div class="meteor-field">
+                            <div class="shooting-star"></div>
+                            <div class="shooting-star"></div>
+                            <div class="shooting-star"></div>
+                            <div class="shooting-star"></div>
+                            <div class="shooting-star"></div>
+                        </div>
+
+                        <!-- container -->
+                        <div class="w-full z-10">
+
+                            <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-6">
+                                <h1
+                                    class="text-5xl lg:text-7xl primary-color text-shadow text-center font-extrabold uppercase">
+                                    HubSp<span class="inline-block w-[1.2em] h-[1.2em] align-middle -m-2.5"><svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="size-8/12 mx-auto lg:size-9/12 aspect-square overflow-visible svg-drop-shadow"
+                                            viewBox="0 0 512 512">
+                                            <path class="fill-[#0A0F26]"
+                                                d="M267.4 211.6c-25.1 23.7-40.8 57.3-40.8 94.6 0 29.3 9.7 56.3 26 78L203.1 434c-4.4-1.6-9.1-2.5-14-2.5-10.8 0-20.9 4.2-28.5 11.8-7.6 7.6-11.8 17.8-11.8 28.6s4.2 20.9 11.8 28.5c7.6 7.6 17.8 11.6 28.5 11.6 10.8 0 20.9-3.9 28.6-11.6 7.6-7.6 11.8-17.8 11.8-28.5 0-4.2-.6-8.2-1.9-12.1l50-50.2c22 16.9 49.4 26.9 79.3 26.9 71.9 0 130-58.3 130-130.2 0-65.2-47.7-119.2-110.2-128.7V116c17.5-7.4 28.2-23.8 28.2-42.9 0-26.1-20.9-47.9-47-47.9S311.2 47 311.2 73.1c0 19.1 10.7 35.5 28.2 42.9v61.2c-15.2 2.1-29.6 6.7-42.7 13.6-27.6-20.9-117.5-85.7-168.9-124.8 1.2-4.4 2-9 2-13.8C129.8 23.4 106.3 0 77.4 0 48.6 0 25.2 23.4 25.2 52.2c0 28.9 23.4 52.3 52.2 52.3 9.8 0 18.9-2.9 26.8-7.6l163.2 114.7zm89.5 163.6c-38.1 0-69-30.9-69-69s30.9-69 69-69 69 30.9 69 69-30.9 69-69 69z" />
+                                        </svg></span>t</h1>
+                                <p class="text-base lg:text-xl text-[#FAFAFA] text-shadow text-center">HubSpot isn’t
+                                    just another tool in my belt — it’s my playground. I help businesses untangle messy
+                                    CRMs, automate repetitive tasks, and build marketing flows that actually convert —
+                                    all without the usual headaches or endless tabs. Think of me as your
+                                    behind-the-scenes HubSpot specialist, turning complexity into clarity, so your team
+                                    can focus on what matters.<br><br>Yes, I’m a HubSpot specialist who knows front-end
+                                    stuff too — basically, I speak fluent workflow and also a little CSS when I’m
+                                    feeling spicy.</p>
+
+                                <a href="#next">
+                                    <div class="mouse-container">
+                                        <!-- Main Mouse -->
+                                        <div class="mouse">
+                                            <div class="scroll-wheel"></div>
+
+                                            <!-- Floating Particles -->
+                                            <div class="mouse-particle"></div>
+                                            <div class="mouse-particle"></div>
+                                            <div class="mouse-particle"></div>
+                                            <div class="mouse-particle"></div>
+                                            <div class="mouse-particle"></div>
+                                            <div class="mouse-particle"></div>
+                                        </div>
+
+                                        <!-- Orbital Ring -->
+                                        <div class="mouse-orbit">
+                                            <div class="orbit-dot"></div>
+                                        </div>
+                                    </div>
+                                </a>
+
+
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- Fixed Background -->
+                    <div class="bg-container">
+                        <!-- Grid Overlay -->
+                        <div class="grid-overlay"></div>
+
+                        <!-- Floating Gradient Orbs -->
+                        <div class="gradient-orb"></div>
+                        <div class="gradient-orb"></div>
+                        <div class="gradient-orb"></div>
+                        <div class="gradient-orb"></div>
+                        <div class="gradient-orb"></div>
+
+                        <!-- Particles Container -->
+                        <div class="particles" id="particles"></div>
+                    </div>
+
+                    <section class="main-content">
+
+
+
+<!-- Anonymous Testimonials -->
+<section class="bg-[#0A0F26] py-16">
+  <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-12">
+    <!-- Section Heading -->
+    <div class="text-center space-y-6">
+      <h2 class="text-3xl lg:text-5xl font-bold text-white uppercase">
+        <span class="bg-[#F57722] py-2 px-6 rounded-lg inline-block">Testimonials</span>
+      </h2>
+      <p class="text-white text-base lg:text-lg">
+        Praise from folks who didn’t ask for a refund — just NDA’d.<br />
+        These are real messages — paraphrased for privacy (and grammar).
+      </p>
+    </div>
+
+    <!-- Carousel -->
+    <div id="carouselWrapper" class="overflow-hidden relative">
+      <div id="carousel"
+        class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-1 touch-pan-x hide-scrollbar cursor-grab"
+        tabindex="0" aria-label="Testimonials carousel">
+        <!-- Slide 1 -->
+        <div class="shrink-0 snap-center min-w-[90%] md:min-w-[70%] lg:min-w-[50%]">
+          <div
+            class="bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-3xl p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
+            <div class="flex items-start gap-4 mb-4">
+              <img src="icons/quote.png" draggable="false" alt="quote" class="h-8 w-8 invert opacity-70" />
+              <h3 class="text-xl lg:text-2xl font-semibold uppercase leading-tight">
+                Understood the Assignment
+              </h3>
+            </div>
+            <p class="text-base lg:text-lg leading-relaxed italic">
+              “Rahib made our HubSpot setup feel effortless — even when we gave him very little to go off
+              of.”
+            </p>
+            <div class="mt-6">
+              <img src="icons/5-stars.svg" draggable="false" alt="stars" class="h-5 invert brightness-150" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="shrink-0 snap-center min-w-[90%] md:min-w-[70%] lg:min-w-[50%]">
+          <div
+            class="bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-3xl p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
+            <div class="flex items-start gap-4 mb-4">
+              <img src="icons/quote.png" alt="quote" class="h-8 w-8 invert opacity-70" />
+              <h3 class="text-xl lg:text-2xl font-semibold uppercase leading-tight">
+                Clarity Delivered
+              </h3>
+            </div>
+            <p class="text-base lg:text-lg leading-relaxed italic">
+              “We went from confusion to clarity in two sessions. Rahib is sharp, explains things well, and
+              finishes things without hand-holding.”
+            </p>
+            <div class="mt-6">
+              <img src="icons/5-stars.svg" alt="stars" class="h-5 invert brightness-150" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  #carousel.grabbing {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  #carousel {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+</style>
+
+<script>
+  const carousel = document.getElementById('carousel');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  let autoScrollInterval;
+
+  carousel.addEventListener('mousedown', (e) => {
+    isDown = true;
+    carousel.classList.add('grabbing');
+    startX = e.pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+    clearInterval(autoScrollInterval);
+  });
+
+  carousel.addEventListener('mouseup', () => {
+    isDown = false;
+    carousel.classList.remove('grabbing');
+    startAutoScroll();
+  });
+
+  carousel.addEventListener('mouseleave', () => {
+    if (isDown) {
+      isDown = false;
+      carousel.classList.remove('grabbing');
+      startAutoScroll();
+    }
+  });
+
+  carousel.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 30; // slower scroll speed for easier drag
+    carousel.scrollLeft = scrollLeft - walk;
+  });
+
+  // Touch support
+  carousel.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].pageX - carousel.offsetLeft;
+    scrollLeft = carousel.scrollLeft;
+    clearInterval(autoScrollInterval);
+  }, { passive: true });
+
+  carousel.addEventListener('touchmove', (e) => {
+    const x = e.touches[0].pageX - carousel.offsetLeft;
+    const walk = (x - startX) * 30;
+    carousel.scrollLeft = scrollLeft - walk;
+  }, { passive: true });
+
+  carousel.addEventListener('touchend', startAutoScroll);
+
+  // Auto-scroll functionality
+  function autoScroll() {
+    if (carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 1) {
+      carousel.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      carousel.scrollBy({ left: carousel.offsetWidth / 2, behavior: 'smooth' });
+    }
+  }
+
+  function startAutoScroll() {
+    autoScrollInterval = setInterval(autoScroll, 7000);
+  }
+
+  startAutoScroll();
+
+  // Pause auto-scroll on hover
+  carousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+  carousel.addEventListener('mouseleave', () => startAutoScroll());
+</script>
+
+
+
+
+
+                    </section>
+                </main>
+
+
+            </div>
+        </div>
+
+        <div class="drawer-side z-50">
+            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+            <div
+                class="menu bg-[rgb(rgba(10, 15, 38, 0.9))] backdrop-blur-[20px] lg:bg-[rgb(255,255,255,0.09)] text-base-content min-h-full inset-shadow-[0px_0px_30px_#422ad5] w-full lg:w-80 p-4 text-2xl text-[#0AC4FF] text-shadow uppercase">
+                <!-- Sidebar content here -->
+                <div class="space-y-5">
+                    <!-- top -->
+                    <div class="w-5/5 bg-[#422ad5] p-5 rounded-sm flex justify-between items-center tab-border">
+                        <div>
+                            <h4
+                                class="cursor-pointer select-none text-2xl lg:text-3xl text-white transition-all text-shadow uppercase">
+                                Rahib Azam
+                            </h4>
+                        </div>
+                        <div class="">
+                            <div class="tab-border p-2 rounded-full">
+                                <img class="w-[15px] lg:w-[20px] animate-spin" src="icons/logo.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- links box -->
+                    <div class="space-y-5">
+                        <div class="tab-border rounded-sm">
+                            <li><a href="index.html"
+                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl page-link">Homepage</a>
+                            </li>
+                        </div>
+                        <div class="tab-border rounded-sm">
+                            <li><a href="website-portfolio.html"
+                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl page-link">Portfolio</a>
+                            </li>
+                        </div>
+                        <div class="tab-border rounded-sm">
+                            <li><a href="about-me.html"
+                                    class="hover:bg-[#0AC4FF] text-white hover:text-[#0A0F26] hover:scale-103 rounded-sm transition-all py-3 px-5 text-xl page-link">About</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <!-- img -->
+                <div class="mt-auto py-4 lg:py-5 overflow-hidden lg:overflow-auto h-65 lg:h-auto pointer-events-none">
+                    <img class="object-fill" src="images/dummy-code-ss.webp" alt="">
+                </div>
+                <div class="mt-auto mb-5 lg:hidden">
+                    <label for="my-drawer"
+                        class="btn border-none bg-[#422ad5] px-4 py-6 text-xl primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase w-full">Close</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Inline particle system - TBT optimized version
+        (function () {
+            let container, particles = [], maxParticles, isVisible = true;
+
+            function init() {
+                container = document.getElementById('particles');
+                if (!container) return;
+
+                maxParticles = window.innerWidth < 768 ? 12 : 18;
+
+                // Spread initial particle creation over time to reduce blocking
+                for (let i = 0; i < Math.min(6, maxParticles); i++) {
+                    setTimeout(() => createParticle(), i * 200);
+                }
+
+                // Create remaining particles more gradually
+                setTimeout(() => {
+                    for (let i = 6; i < maxParticles; i++) {
+                        setTimeout(() => createParticle(), (i - 6) * 800);
+                    }
+                }, 1200);
+
+                // Start continuous spawning
+                setTimeout(scheduleNext, 2000);
+
+                // Visibility optimization
+                document.addEventListener('visibilitychange', () => {
+                    isVisible = !document.hidden;
+                    if (isVisible) setTimeout(scheduleNext, 1000);
+                });
+            }
+
+            function createParticle() {
+                if (!isVisible || !container) return;
+
+                const p = document.createElement('div');
+                p.className = 'particle';
+
+                const size = Math.random() * 4 + 2;
+                const side = Math.floor(Math.random() * 4);
+                const duration = Math.random() * 12 + 8;
+                const drift = (Math.random() - 0.5) * 200;
+
+                // Batch style changes
+                p.style.cssText = `
+                width: ${size}px;
+                height: ${size}px;
+                opacity: ${Math.random() * 0.6 + 0.4};
+                --drift: ${drift}px;
+            `;
+
+                let startPos, animation;
+
+                if (side === 0) {
+                    startPos = Math.random() * window.innerWidth;
+                    p.style.left = startPos + 'px';
+                    p.style.top = '-10px';
+                    animation = 'particleFromTop';
+                } else if (side === 1) {
+                    startPos = Math.random() * window.innerHeight;
+                    p.style.right = '-10px';
+                    p.style.top = startPos + 'px';
+                    animation = 'particleFromRight';
+                } else if (side === 2) {
+                    startPos = Math.random() * window.innerWidth;
+                    p.style.left = startPos + 'px';
+                    p.style.bottom = '-10px';
+                    animation = 'particleFromBottom';
+                } else {
+                    startPos = Math.random() * window.innerHeight;
+                    p.style.left = '-10px';
+                    p.style.top = startPos + 'px';
+                    animation = 'particleFromLeft';
+                }
+
+                p.style.animation = `${animation} ${duration}s linear forwards`;
+
+                container.appendChild(p);
+                particles.push(p);
+
+                // Cleanup
+                setTimeout(() => {
+                    if (p.parentNode) {
+                        p.parentNode.removeChild(p);
+                        particles = particles.filter(particle => particle !== p);
+                    }
+                }, duration * 1000);
+            }
+
+            function scheduleNext() {
+                if (isVisible) {
+                    setTimeout(() => {
+                        createParticle();
+                        scheduleNext();
+                    }, Math.random() * 2000 + 1000);
+                }
+            }
+
+            // Optimized resize handler
+            let resizeTimeout, lastWidth = window.innerWidth;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    const newWidth = window.innerWidth;
+                    if (Math.abs(newWidth - lastWidth) > 100) {
+                        lastWidth = newWidth;
+                        maxParticles = newWidth < 768 ? 12 : 18;
+                        container.innerHTML = '';
+                        particles = [];
+                        init();
+                    }
+                }, 500);
+            });
+
+            // Initialize when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+
+
+
+</body>
+
+</html>

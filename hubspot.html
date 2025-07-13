@@ -1128,59 +1128,190 @@
                                         with — untagged, unbranded, and slightly paraphrased for privacy (and grammar).
                                     </p>
                                 </div>
-                                <!-- carousel -->
-                                <div>
-                                    <div id="carouselWrapper" class="relative w-full overflow-hidden">
-                                        <!-- Slides container -->
-                                        <div id="carousel"
-                                            class="flex w-full overflow-x-auto scroll-smooth snap-x snap-mandatory hide-scrollbar">
-                                            <!-- slider 1 -->
-                                            <div class="carousel-item w-full flex-shrink-0 snap-center">
-                                                <div
-                                                    class="relative group mx-auto w-full lg:w-9/12 py-5 px-4 border-l-4 lg:border-l-6 border-1 border-[#F57722] bg-[#BABABA]/10 rounded-md backdrop-blur-lg hover:border-[#0AC4FF] transition-all duration-300 content-center">
-                                                    <!-- quote -->
-                                                     <div class="absolute top-8 flex justify-between w-full lg:w-11/12 left-1/2 -translate-x-1/2">
-                                                        <img class="h-15 lg:h-25 invert brightness-0 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_9px_#0ac6ff,0_0_10px_#412ad5] transition-all duration-300" src="icons/quote.png" alt="">
-                                                        
-                                                     </div>
-                                                    <!-- content -->
-                                                    <div class="text-center space-y-3">
-                                                        <img class="h-10 mx-auto mb-7 object-cover brightness-200 invert group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_9px_#0ac6ff,0_0_10px_#412ad5] transition-all duration-300" src="icons/5-stars.svg" alt="">
-                                                        <h5 class="text-2xl lg:text-3xl font-bold uppercase group-hover:text-shadow-[0_0_5px_#0ac6ff,0_0_8px_#0ac6ff,0_0_13px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">Understood the Assignment</h5>
-                                                        <p class="text-base lg:text-lg text-[#FAFAFA] group-hover:text-shadow-[0_0_5px_#0ac6ff,0_0_8px_#0ac6ff,0_0_13px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
-                                                            Rahib made our HubSpot setup feel effortless — even when we gave him very little to go off of. He anticipated what we needed, stayed consistently prepared, and somehow translated our vague ideas into an actual functioning system. Every meeting felt like progress, and his follow-ups were on point. Highly recommend if you want someone who actually listens and delivers.
-                                                        </p>
-                                                    </div>
+                                <!-- Carousel -->
+                                <div id="carouselWrapper" class="overflow-hidden relative">
+                                    <div id="carousel"
+                                        class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-1 touch-pan-x hide-scrollbar cursor-grab"
+                                        tabindex="0" aria-label="Testimonials carousel">
+                                        <!-- Slide 1 -->
+                                        <div class="shrink-0 snap-start max-w-[100%] lg:max-w-[58%]">
+                                            <div
+                                                class="group bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-md p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
+                                                <div class="flex items-center justify-between gap-4 mb-4">
+                                                    <h3
+                                                        class="text-xl lg:text-2xl font-semibold uppercase group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] leading-tight transition-all duration-300">
+                                                        Understood the Assignment
+                                                    </h3>
+                                                    <img src="icons/quote.png" draggable="false" alt="quote"
+                                                        class="h-10 w-10 invert brightness-0 -scale-x-90 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300" />
+                                                </div>
+                                                <p
+                                                    class="text-base lg:text-lg leading-relaxed italic tracking-wider group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                    "Rahib made our HubSpot setup feel effortless. He figured out what
+                                                    we needed with barely any input and delivered a clean, functional
+                                                    system. Super prepared, super sharp.”
+                                                </p>
+                                                <div class="mt-6">
+                                                    <img src="icons/5-stars.svg" draggable="false" alt="stars"
+                                                        class="h-7 invert brightness-150 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
                                                 </div>
                                             </div>
-                                            <div class="carousel-item w-full flex-shrink-0 snap-center">
-                                                <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
-                                                    class="w-full object-cover" />
-                                            </div>
-                                            <div class="carousel-item w-full flex-shrink-0 snap-center">
-                                                <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
-                                                    class="w-full object-cover" />
-                                            </div>
-                                            <div class="carousel-item w-full flex-shrink-0 snap-center">
-                                                <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-                                                    class="w-full object-cover" />
+                                        </div>
+
+                                        <!-- Slide 2 -->
+                                        <div class="shrink-0 snap-start max-w-[100%] lg:max-w-[58%]">
+                                            <div
+                                                class="group bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-md p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
+                                                <div class="flex items-center justify-between gap-4 mb-4">
+                                                    <h3
+                                                        class="text-xl lg:text-2xl font-semibold uppercase group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] leading-tight transition-all duration-300">
+                                                        More Than Just a Demo
+                                                    </h3>
+                                                    <img src="icons/quote.png" draggable="false" alt="quote"
+                                                        class="h-10 w-10 invert brightness-0 -scale-x-90 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300" />
+                                                </div>
+                                                <p
+                                                    class="text-base lg:text-lg leading-relaxed italic tracking-wider group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                    "Rahib didn’t just explain HubSpot — he made sure we understood it.
+                                                    Clear walkthroughs, helpful materials, and actual support between
+                                                    sessions. You could tell he cared.”
+                                                </p>
+                                                <div class="mt-6">
+                                                    <img src="icons/5-stars.svg" draggable="false" alt="stars"
+                                                        class="h-7 invert brightness-150 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="mx-auto w-full lg:w-9/12 space-x-4 mt-4">
-                                            <!-- Static navigation buttons (outside of carousel items) -->
-                                            <button onclick="prevSlide()"
-                                                class="btn border-none bg-[#422ad5] text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase">
-                                                ❮
-                                            </button>
-
-                                            <button onclick="nextSlide()"
-                                                class="btn border-none bg-[#422ad5] text-base lg:text-lg primary-font text-white font-semibold shadow-[0px_0px_20px_#422ad5] text-shadow hover:shadow-[0px_0px_20px_#0AC4FF] hover:bg-[#0AC4FF] hover:scale-102 transition-all uppercase">
-                                                ❯
-                                            </button>
+                                        <!-- Slide 3 -->
+                                        <div class="shrink-0 snap-start max-w-[100%] lg:max-w-[58%]">
+                                            <div
+                                                class="group bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-md p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
+                                                <div class="flex items-center justify-between gap-4 mb-4">
+                                                    <h3
+                                                        class="text-xl lg:text-2xl font-semibold uppercase group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] leading-tight transition-all duration-300">
+                                                        Smooth, Actually Useful Onboarding
+                                                    </h3>
+                                                    <img src="icons/quote.png" draggable="false" alt="quote"
+                                                        class="h-10 w-10 invert brightness-0 -scale-x-90 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300" />
+                                                </div>
+                                                <p
+                                                    class="text-base lg:text-lg leading-relaxed italic tracking-wider group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                    “Probably the easiest platform switch we’ve done. Rahib tailored
+                                                    everything to our team, explained what mattered, and left us
+                                                    actually excited to use HubSpot.”
+                                                </p>
+                                                <div class="mt-6">
+                                                    <img src="icons/5-stars.svg" draggable="false" alt="stars"
+                                                        class="h-7 invert brightness-150 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                </div>
+                                            </div>
                                         </div>
+
+                                        <!-- Slide 4 -->
+                                        <div class="shrink-0 snap-start max-w-[100%] lg:max-w-[58%]">
+                                            <div
+                                                class="group bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-md p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
+                                                <div class="flex items-center justify-between gap-4 mb-4">
+                                                    <h3
+                                                        class="text-xl lg:text-2xl font-semibold uppercase group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] leading-tight transition-all duration-300">
+                                                        Taught Us Like Real People
+                                                    </h3>
+                                                    <img src="icons/quote.png" draggable="false" alt="quote"
+                                                        class="h-10 w-10 invert brightness-0 -scale-x-90 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300" />
+                                                </div>
+                                                <p
+                                                    class="text-base lg:text-lg leading-relaxed italic tracking-wider group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                    “The live calls were gold. Rahib walked us through real examples,
+                                                    explained things in plain language, and left us with recordings we
+                                                    still use. Onboarding that sticks.”
+                                                </p>
+                                                <div class="mt-6">
+                                                    <img src="icons/5-stars.svg" draggable="false" alt="stars"
+                                                        class="h-7 invert brightness-150 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Slide 5 -->
+                                        <div class="shrink-0 snap-start max-w-[100%] lg:max-w-[58%]">
+                                            <div
+                                                class="group bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-md p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
+                                                <div class="flex items-center justify-between gap-4 mb-4">
+                                                    <h3
+                                                        class="text-xl lg:text-2xl font-semibold uppercase group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] leading-tight transition-all duration-300">
+                                                        Quietly Brilliant
+                                                    </h3>
+                                                    <img src="icons/quote.png" draggable="false" alt="quote"
+                                                        class="h-10 w-10 invert brightness-0 -scale-x-90 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300" />
+                                                </div>
+                                                <p
+                                                    class="text-base lg:text-lg leading-relaxed italic tracking-wider group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                    “Rahib wasn’t the one making noise — he was the one quietly fixing
+                                                    everything while we were still explaining the problem. Calm,
+                                                    thoughtful, and honestly just really good at what he does. Never
+                                                    felt rushed, never felt lost.”
+                                                </p>
+                                                <div class="mt-6">
+                                                    <img src="icons/5-stars.svg" draggable="false" alt="stars"
+                                                        class="h-7 invert brightness-150 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Slide 6 -->
+                                        <div class="shrink-0 snap-start max-w-[100%] lg:max-w-[58%]">
+                                            <div
+                                                class="group bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-md p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
+                                                <div class="flex items-center justify-between gap-4 mb-4">
+                                                    <h3
+                                                        class="text-xl lg:text-2xl font-semibold uppercase group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] leading-tight transition-all duration-300">
+                                                        Young, Sharp, Gets It
+                                                    </h3>
+                                                    <img src="icons/quote.png" draggable="false" alt="quote"
+                                                        class="h-10 w-10 invert brightness-0 -scale-x-90 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300" />
+                                                </div>
+                                                <p
+                                                    class="text-base lg:text-lg leading-relaxed italic tracking-wider group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                    “We weren’t sure what to expect, but Rahib showed up prepared,
+                                                    listened more than he talked, and absolutely nailed the setup. He
+                                                    didn’t oversell or overtalk — just got straight to the point and
+                                                    made things work. Respect.”
+                                                </p>
+                                                <div class="mt-6">
+                                                    <img src="icons/5-stars.svg" draggable="false" alt="stars"
+                                                        class="h-7 invert brightness-150 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Slide 7 -->
+                                        <div class="shrink-0 snap-start max-w-[100%] lg:max-w-[58%]">
+                                            <div
+                                                class="group bg-white/5 text-white backdrop-blur-lg border-l-4 border-[#F57722] rounded-md p-8 shadow-xl hover:border-[#0AC4FF] transition-all duration-300 h-full">
+                                                <div class="flex items-center justify-between gap-4 mb-4">
+                                                    <h3
+                                                        class="text-xl lg:text-2xl font-semibold uppercase group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] leading-tight transition-all duration-300">
+                                                        Wise Beyond His Age
+                                                    </h3>
+                                                    <img src="icons/quote.png" draggable="false" alt="quote"
+                                                        class="h-10 w-10 invert brightness-0 -scale-x-90 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300" />
+                                                </div>
+                                                <p
+                                                    class="text-base lg:text-lg leading-relaxed italic tracking-wider group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                    “Honestly? We were surprised by how young Rahib is. But five minutes
+                                                    in, it was clear — he knew more about HubSpot than people twice his
+                                                    age. No fluff, no ego. Just someone who clearly lives in this stuff
+                                                    and quietly gets things done.”
+                                                </p>
+                                                <div class="mt-6">
+                                                    <img src="icons/5-stars.svg" draggable="false" alt="stars"
+                                                        class="h-7 invert brightness-150 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-
                                 </div>
                             </div>
                         </section>
@@ -1467,38 +1598,85 @@
     <!-- carousel -->
     <script>
         const carousel = document.getElementById('carousel');
-        const slides = carousel.querySelectorAll('.carousel-item');
-        let currentIndex = 0;
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        let autoScrollInterval;
 
-        function showSlide(index) {
-            carousel.scrollTo({
-                left: slides[index].offsetLeft,
-                behavior: 'smooth'
-            });
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        // Auto-scroll every 9 seconds
-        setInterval(nextSlide, 9000);
-
-        // Optional: Sync index with scroll position (if user swipes manually)
-        carousel.addEventListener('scroll', () => {
-            const scrollLeft = carousel.scrollLeft;
-            slides.forEach((slide, i) => {
-                if (Math.abs(slide.offsetLeft - scrollLeft) < slide.offsetWidth / 2) {
-                    currentIndex = i;
-                }
-            });
+        carousel.addEventListener('mousedown', (e) => {
+            isDown = true;
+            carousel.classList.add('grabbing');
+            startX = e.pageX - carousel.offsetLeft;
+            scrollLeft = carousel.scrollLeft;
+            clearInterval(autoScrollInterval);
         });
+
+        carousel.addEventListener('mouseup', () => {
+            isDown = false;
+            carousel.classList.remove('grabbing');
+            startAutoScroll();
+        });
+
+        carousel.addEventListener('mouseleave', () => {
+            if (isDown) {
+                isDown = false;
+                carousel.classList.remove('grabbing');
+                startAutoScroll();
+            }
+        });
+
+        carousel.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - carousel.offsetLeft;
+            const walk = (x - startX) * 5; // slower scroll speed for easier drag
+            carousel.scrollLeft = scrollLeft - walk;
+        });
+
+        // Touch support
+        carousel.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].pageX - carousel.offsetLeft;
+            scrollLeft = carousel.scrollLeft;
+            clearInterval(autoScrollInterval);
+        }, { passive: true });
+
+        carousel.addEventListener('touchmove', (e) => {
+            const x = e.touches[0].pageX - carousel.offsetLeft;
+            const walk = (x - startX) * 0.5;
+            carousel.scrollLeft = scrollLeft - walk;
+        }, { passive: true });
+
+        carousel.addEventListener('touchend', startAutoScroll);
+
+        // Auto-scroll functionality
+        function autoScroll() {
+            const firstCard = carousel.querySelector('div.shrink-0');
+            if (!firstCard) return;
+
+            const cardWidth = firstCard.offsetWidth + 24; // 24px = Tailwind gap-6
+            const maxScrollLeft = carousel.scrollWidth - carousel.offsetWidth;
+
+            if (carousel.scrollLeft >= maxScrollLeft - 5) {
+                carousel.scrollTo({ left: 0, behavior: 'smooth' }); // ← changed from 'smooth' to 'instant'
+
+                clearInterval(autoScrollInterval);
+                setTimeout(startAutoScroll, 7000); // give card #1 time to show before moving again
+            } else {
+                carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            }
+
+        }
+
+
+        function startAutoScroll() {
+            autoScrollInterval = setInterval(autoScroll, 7000);
+        }
+
+        startAutoScroll();
+
+        // Pause auto-scroll on hover
+        carousel.addEventListener('mouseenter', () => clearInterval(autoScrollInterval));
+        carousel.addEventListener('mouseleave', () => startAutoScroll());
     </script>
 
 </body>
