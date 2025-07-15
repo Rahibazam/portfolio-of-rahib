@@ -3189,6 +3189,10 @@
     --tw-inset-shadow: inset 0px 0px 10px var(--tw-inset-shadow-color, #0AC4FF);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  .inset-shadow-\[0px_0px_10px_\#422ad5\] {
+    --tw-inset-shadow: inset 0px 0px 10px var(--tw-inset-shadow-color, #422ad5);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .inset-shadow-\[0px_0px_10px_\#FAFAFA\] {
     --tw-inset-shadow: inset 0px 0px 10px var(--tw-inset-shadow-color, #FAFAFA);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -3675,6 +3679,12 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+  .hover\:translate-x-\[1rem\] {
+    &:hover {
+      --tw-translate-x: 1rem;
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
   .hover\:translate-x-\[2rem\] {
     &:hover {
       --tw-translate-x: 2rem;
@@ -3820,6 +3830,18 @@
     &:hover {
       --tw-font-weight: var(--font-weight-bold);
       font-weight: var(--font-weight-bold);
+    }
+  }
+  .hover\:tracking-\[2px\] {
+    &:hover {
+      --tw-tracking: 2px;
+      letter-spacing: 2px;
+    }
+  }
+  .hover\:tracking-\[3px\] {
+    &:hover {
+      --tw-tracking: 3px;
+      letter-spacing: 3px;
     }
   }
   .hover\:tracking-\[6px\] {
@@ -4652,6 +4674,12 @@
     @media (width >= 64rem) {
       --tw-leading: calc(var(--spacing) * 15);
       line-height: calc(var(--spacing) * 15);
+    }
+  }
+  .lg\:inset-shadow-\[0px_0px_30px_\#422ad5\] {
+    @media (width >= 64rem) {
+      --tw-inset-shadow: inset 0px 0px 30px var(--tw-inset-shadow-color, #422ad5);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
   .lg\:drop-shadow-\[1px_1px_20px_\#422ad5\] {
