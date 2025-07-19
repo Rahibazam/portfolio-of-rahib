@@ -1152,9 +1152,7 @@ header {
 
 @media only screen and (max-width: 600px) {
 
-  .glowing-background::before,
-  .glowing-background::after,
-  .glowing-background span {
+  .glowing-background::after{
     display: none;
   }
 
