@@ -475,8 +475,19 @@
 
                                     <!-- faqs -->
                                     <div class="flex-2/3">
-                                        <div class="join join-vertical bg-base-100">
-                                            <div class="collapse collapse-arrow join-item border-base-300 border">
+                                        <!-- name of each tab group should be unique -->
+                                        <div class="tabs grid grid-cols-2">
+                                            <input type="radio" name="my_tabs_6" class="tab" aria-label="Tab 1" />
+                                            <div class="tab-content bg-base-100 border-base-300 p-6 col-span-2">Tab content 1</div>
+
+                                            <input type="radio" name="my_tabs_6" class="tab" aria-label="Tab 2"
+                                                checked="checked" />
+                                            <div class="tab-content bg-base-100 border-base-300 p-6  col-span-2">Tab content 2</div>
+                                        </div>
+
+                                        <div class="join join-vertical bg-[#bababa]/10 backdrop-blur-xl">
+                                            <div
+                                                class="collapse collapse-arrow join-item border-base-300 border has-checked:bg-[#0AC4FF]/10">
                                                 <input type="radio" name="my-accordion-4" checked="checked" />
                                                 <div class="collapse-title font-semibold">How do I create an account?
                                                 </div>
