@@ -440,7 +440,8 @@
                                 </div>
 
                                 <!-- faq container -->
-                                <div class="lg:flex gap-10 justify-between mt-10 md:mt-15 space-y-13 lg:space-y-0">
+                                <div
+                                    class="lg:flex lg:gap-5 xl:gap-10 justify-between mt-10 md:mt-15 space-y-13 lg:space-y-0">
                                     <!-- content -->
                                     <div class="relative">
                                         <p class="text-lg md:text-xl text-[#fafafa] font-bold">Can’t find what you’re
@@ -476,65 +477,199 @@
                                     <!-- faqs -->
                                     <div class="flex-2/3">
                                         <!-- name of each tab group should be unique -->
-                                        <div class="tabs flex gap-x-5 justify-start">
+                                        <div
+                                            class="tabs flex tabs-md xl:tabs-lg md:gap-x-5 justify-evenly md:justify-start lg:justify-center xl:justify-start">
                                             <!-- hubspot -->
                                             <input type="radio" name="my_tabs_6"
-                                                class="tab px-7 h-13 bg-[#bababa]/5 backdrop-blur-lg checked:border-t-5 border-[#0AC4FF] text-lg transition-all duration-150"
+                                                class="tab px-4 md:px-5 lg:px-7 h-13 bg-gradient-to-tl from-[#0A0F26]/5 from-35% to-[#bababa]/10 to-100% backdrop-blur-3xl checked:border-t-5 border-[#0AC4FF] text-lg checked:text-shadow-[0_0_5px_#0ac6ff,0_0_10px_#0ac6ff,0_0_16px_#0ac6ff,0_0_21px_#412ad5] transition-all duration-150"
                                                 aria-label="HubSpot" checked="checked" />
-                                            <div
-                                                class="tab-content border-0 p-6 bg-[#bababa]/5 backdrop-blur-lg border-t-1 border-[#0AC4FF] flex justify-center">
+                                            <div class="tab-content border-0 bg-none border-t-1 border-[#0AC4FF]">
                                                 <!-- accordion -->
                                                 <div
-                                                    class="join join-vertical bg-[#bababa]/5 backdrop-blur-xl w-full">
+                                                    class="join join-vertical bg-[#0A0F26]/20 backdrop-blur-3xl w-full rounded-sm">
                                                     <div
-                                                        class="collapse collapse-arrow join-item border-base-300 border has-checked:bg-[#0AC4FF]/10">
-                                                        <input type="radio" name="my-accordion-4" checked="checked" />
-                                                        <div class="collapse-title font-semibold">How do I create an
-                                                            account?
-                                                        </div>
-                                                        <div class="collapse-content text-sm">Click the "Sign Up" button
-                                                            in the
-                                                            top right corner and follow the registration process.</div>
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="hubspot-accordion"
+                                                            checked="checked" />
+                                                        <div class="collapse-title font-bold text-lg">What
+                                                            areas of HubSpot do you work in?</div>
+                                                        <div class="collapse-content text-base">Marketing Hub and CMS
+                                                            Hub — I do workflows, emails, landing pages, reports, and
+                                                            campaigns. Basically, if it’s in the orange ecosystem and
+                                                            not behind an Ops paywall, I’ve probably wrangled it.</div>
                                                     </div>
                                                     <div
-                                                        class="collapse collapse-arrow join-item border-base-300 border">
-                                                        <input type="radio" name="my-accordion-4" />
-                                                        <div class="collapse-title font-semibold">I forgot my password.
-                                                            What
-                                                            should I do?</div>
-                                                        <div class="collapse-content text-sm">Click on "Forgot Password"
-                                                            on the
-                                                            login page and follow the instructions sent to your email.
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="hubspot-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Can you build
+                                                            custom HubSpot pages from scratch?</div>
+                                                        <div class="collapse-content text-base">Yep. I work with HTML,
+                                                            CSS, JS, and the drag-and-drop editor when needed. I’ve
+                                                            built full sites and landing pages without relying on
+                                                            sketchy templates or pasting Stack Overflow into the void.
                                                         </div>
                                                     </div>
                                                     <div
-                                                        class="collapse collapse-arrow join-item border-base-300 border">
-                                                        <input type="radio" name="my-accordion-4" />
-                                                        <div class="collapse-title font-semibold">How do I update my
-                                                            profile
-                                                            information?</div>
-                                                        <div class="collapse-content text-sm">Go to "My Account"
-                                                            settings and
-                                                            select "Edit Profile" to make changes.</div>
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="hubspot-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Are you familiar
+                                                            with HubSpot reports and dashboards?</div>
+                                                        <div class="collapse-content text-base">I’ve built dashboards
+                                                            that actually tell a story, not just throw pie charts at
+                                                            you. Engagement tracking, lead funnels, email metrics, and
+                                                            sad little conversion rates — I visualize it all.</div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="hubspot-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Can you automate
+                                                            things in HubSpot without paying for Ops Hub?</div>
+                                                        <div class="collapse-content text-base">Depends but yes. Give me
+                                                            a workflow, a few custom properties, and the patience of a
+                                                            monk. I’ve pulled off automations that probably weren’t
+                                                            meant to happen with just lists and Marketing Hub tools.
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl">
+                                                        <input type="radio" name="hubspot-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Do you talk to
+                                                            your workflows like they’re sentient?</div>
+                                                        <div class="collapse-content text-base">Only when they break at
+                                                            2 AM and start sending emails from 2021. Then it becomes a
+                                                            full-on intervention. ("You were doing so well. What
+                                                            happened?")</div>
                                                     </div>
                                                 </div>
                                             </div>
 
                                             <!-- web dev -->
                                             <input type="radio" name="my_tabs_6"
-                                                class="tab px-7 h-13 bg-[#bababa]/5 backdrop-blur-lg checked:border-t-5 border-[#0AC4FF] text-lg transition-all duration-150"
+                                                class="tab px-4 md:px-5 lg:px-7 h-13 bg-gradient-to-tl from-[#0A0F26]/5 from-35% to-[#bababa]/10 to-100% backdrop-blur-3xl checked:border-t-5 border-[#0AC4FF] text-lg checked:text-shadow-[0_0_5px_#0ac6ff,0_0_10px_#0ac6ff,0_0_16px_#0ac6ff,0_0_21px_#412ad5] transition-all duration-150"
                                                 aria-label="Web Dev" />
-                                            <div
-                                                class="tab-content border-0 p-6 bg-[#bababa]/5 backdrop-blur-lg border-t-1 border-[#0AC4FF]">
-                                                Tab content 2</div>
+                                            <div class="tab-content border-0 bg-none border-t-1 border-[#0AC4FF]">
+                                                <!-- accordion -->
+                                                <div
+                                                    class="join join-vertical bg-[#0A0F26]/20 backdrop-blur-3xl w-full rounded-sm">
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="web-dev-accordion"
+                                                            checked="checked" />
+                                                        <div class="collapse-title font-bold text-lg">What
+                                                            areas of HubSpot do you work in?</div>
+                                                        <div class="collapse-content text-base">Marketing Hub and CMS
+                                                            Hub — I do workflows, emails, landing pages, reports, and
+                                                            campaigns. Basically, if it’s in the orange ecosystem and
+                                                            not behind an Ops paywall, I’ve probably wrangled it.</div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="web-dev-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Can you build
+                                                            custom HubSpot pages from scratch?</div>
+                                                        <div class="collapse-content text-base">Yep. I work with HTML,
+                                                            CSS, JS, and the drag-and-drop editor when needed. I’ve
+                                                            built full sites and landing pages without relying on
+                                                            sketchy templates or pasting Stack Overflow into the void.
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="web-dev-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Are you familiar
+                                                            with HubSpot reports and dashboards?</div>
+                                                        <div class="collapse-content text-base">I’ve built dashboards
+                                                            that actually tell a story, not just throw pie charts at
+                                                            you. Engagement tracking, lead funnels, email metrics, and
+                                                            sad little conversion rates — I visualize it all.</div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="web-dev-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Can you automate
+                                                            things in HubSpot without paying for Ops Hub?</div>
+                                                        <div class="collapse-content text-base">Depends but yes. Give me
+                                                            a workflow, a few custom properties, and the patience of a
+                                                            monk. I’ve pulled off automations that probably weren’t
+                                                            meant to happen with just lists and Marketing Hub tools.
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl">
+                                                        <input type="radio" name="web-dev-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Do you talk to
+                                                            your workflows like they’re sentient?</div>
+                                                        <div class="collapse-content text-base">Only when they break at
+                                                            2 AM and start sending emails from 2021. Then it becomes a
+                                                            full-on intervention. ("You were doing so well. What
+                                                            happened?")</div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                             <!-- general -->
                                             <input type="radio" name="my_tabs_6"
-                                                class="tab px-7 h-13 bg-[#bababa]/5 backdrop-blur-lg checked:border-t-5 border-[#0AC4FF] text-lg transition-all duration-150"
+                                                class="tab px-4 md:px-5 lg:px-7 h-13 bg-gradient-to-tl from-[#0A0F26]/5 from-35% to-[#bababa]/10 to-100% backdrop-blur-3xl checked:border-t-5 border-[#0AC4FF] text-lg checked:text-shadow-[0_0_5px_#0ac6ff,0_0_10px_#0ac6ff,0_0_16px_#0ac6ff,0_0_21px_#412ad5] transition-all duration-150"
                                                 aria-label="General" />
-                                            <div
-                                                class="tab-content border-0 p-6 bg-[#bababa]/5 backdrop-blur-lg border-t-1 border-[#0AC4FF]">
-                                                Tab content 3</div>
+                                            <div class="tab-content border-0 bg-none border-t-1 border-[#0AC4FF]">
+                                                <!-- accordion -->
+                                                <div
+                                                    class="join join-vertical bg-[#0A0F26]/20 backdrop-blur-3xl w-full rounded-sm">
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="general-accordion"
+                                                            checked="checked" />
+                                                        <div class="collapse-title font-bold text-lg">What
+                                                            areas of HubSpot do you work in?</div>
+                                                        <div class="collapse-content text-base">Marketing Hub and CMS
+                                                            Hub — I do workflows, emails, landing pages, reports, and
+                                                            campaigns. Basically, if it’s in the orange ecosystem and
+                                                            not behind an Ops paywall, I’ve probably wrangled it.</div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="general-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Can you build
+                                                            custom HubSpot pages from scratch?</div>
+                                                        <div class="collapse-content text-base">Yep. I work with HTML,
+                                                            CSS, JS, and the drag-and-drop editor when needed. I’ve
+                                                            built full sites and landing pages without relying on
+                                                            sketchy templates or pasting Stack Overflow into the void.
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="general-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Are you familiar
+                                                            with HubSpot reports and dashboards?</div>
+                                                        <div class="collapse-content text-base">I’ve built dashboards
+                                                            that actually tell a story, not just throw pie charts at
+                                                            you. Engagement tracking, lead funnels, email metrics, and
+                                                            sad little conversion rates — I visualize it all.</div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl border-b-1 border-[#0AC4FF]">
+                                                        <input type="radio" name="general-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Can you automate
+                                                            things in HubSpot without paying for Ops Hub?</div>
+                                                        <div class="collapse-content text-base">Depends but yes. Give me
+                                                            a workflow, a few custom properties, and the patience of a
+                                                            monk. I’ve pulled off automations that probably weren’t
+                                                            meant to happen with just lists and Marketing Hub tools.
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="collapse collapse-arrow join-item  bg-gradient-to-tr from-[#0A0F26]/10 from-30% to-[#bababa]/15 to-100% backdrop-blur-3xl">
+                                                        <input type="radio" name="general-accordion" />
+                                                        <div class="collapse-title font-bold text-lg">Do you talk to
+                                                            your workflows like they’re sentient?</div>
+                                                        <div class="collapse-content text-base">Only when they break at
+                                                            2 AM and start sending emails from 2021. Then it becomes a
+                                                            full-on intervention. ("You were doing so well. What
+                                                            happened?")</div>
+                                                    </div>
+                                                </div>    
+                                            </div>
                                         </div>
 
 
