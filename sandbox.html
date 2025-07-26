@@ -292,203 +292,96 @@
 
                         <!-- Anonymous Testimonials -->
                         <section>
-                            <section class="max-w-3xl mx-auto p-8 bg-gradient-to-br from-indigo-900 via-purple-900 to-blue-900 rounded-3xl shadow-xl text-white font-sans select-none">
-  <h2 class="text-4xl font-extrabold mb-10 text-center tracking-wide drop-shadow-lg">
-    Frequently Asked <span class="text-indigo-400">Questions</span>
-  </h2>
+                            <div>
+  <h3 class="text-2xl md:text-3xl xl:text-4xl text-[#fafafa] text-left uppercase mb-6">
+    Professional <span class="text-[#fafafa] text-shadow-[0_0_5px_#0ac6ff]">Stats</span>
+  </h3>
+</div>
 
-  <!-- Filter Buttons -->
-  <div class="flex justify-center gap-6 mb-12">
-    <button
-      data-filter="all"
-      class="faq-filter-btn px-6 py-3 rounded-full bg-indigo-500/80 hover:bg-indigo-600 transition duration-300 shadow-lg shadow-indigo-700 text-white font-semibold focus:outline-none focus:ring-4 focus:ring-indigo-400"
-      aria-pressed="true"
-    >
-      All
-    </button>
-    <button
-      data-filter="hubspot"
-      class="faq-filter-btn px-6 py-3 rounded-full bg-indigo-700/50 hover:bg-indigo-600 transition duration-300 shadow-md shadow-indigo-800 text-indigo-300 font-semibold focus:outline-none focus:ring-4 focus:ring-indigo-400"
-      aria-pressed="false"
-    >
-      HubSpot
-    </button>
-    <button
-      data-filter="webdev"
-      class="faq-filter-btn px-6 py-3 rounded-full bg-indigo-700/50 hover:bg-indigo-600 transition duration-300 shadow-md shadow-indigo-800 text-indigo-300 font-semibold focus:outline-none focus:ring-4 focus:ring-indigo-400"
-      aria-pressed="false"
-    >
-      Web Dev
-    </button>
-  </div>
-
-  <!-- FAQs -->
-  <div id="faq-list" class="space-y-6">
-
-    <!-- HubSpot FAQ -->
-    <div
-      class="faq-item bg-indigo-800/30 backdrop-blur-md rounded-xl p-6 border border-indigo-500 border-opacity-40 cursor-pointer shadow-inner hover:shadow-lg hover:border-indigo-400 transition duration-400"
-      data-category="hubspot"
-      tabindex="0"
-      role="button"
-      aria-expanded="false"
-    >
-      <h3 class="faq-question flex justify-between items-center text-xl font-semibold tracking-wide">
-        How do I connect HubSpot forms to my website?
-        <svg
-          class="faq-icon w-6 h-6 text-indigo-300 transition-transform duration-400"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </h3>
-      <p class="faq-answer mt-4 text-indigo-200 leading-relaxed max-w-prose hidden">
-        You can embed HubSpot forms by copying the embed code from HubSpot and pasting it into your website's HTML. Alternatively, use HubSpot’s JavaScript API for more advanced integrations.
-      </p>
-    </div>
-
-    <div
-      class="faq-item bg-indigo-800/30 backdrop-blur-md rounded-xl p-6 border border-indigo-500 border-opacity-40 cursor-pointer shadow-inner hover:shadow-lg hover:border-indigo-400 transition duration-400"
-      data-category="hubspot"
-      tabindex="0"
-      role="button"
-      aria-expanded="false"
-    >
-      <h3 class="faq-question flex justify-between items-center text-xl font-semibold tracking-wide">
-        Can I automate follow-up emails in HubSpot?
-        <svg
-          class="faq-icon w-6 h-6 text-indigo-300 transition-transform duration-400"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </h3>
-      <p class="faq-answer mt-4 text-indigo-200 leading-relaxed max-w-prose hidden">
-        Yes! HubSpot’s workflows allow you to automate follow-up emails based on user behavior, form submissions, and more.
-      </p>
-    </div>
-
-    <!-- Web Dev FAQ -->
-    <div
-      class="faq-item bg-indigo-800/30 backdrop-blur-md rounded-xl p-6 border border-indigo-500 border-opacity-40 cursor-pointer shadow-inner hover:shadow-lg hover:border-indigo-400 transition duration-400"
-      data-category="webdev"
-      tabindex="0"
-      role="button"
-      aria-expanded="false"
-    >
-      <h3 class="faq-question flex justify-between items-center text-xl font-semibold tracking-wide">
-        What's the best way to optimize website load speed?
-        <svg
-          class="faq-icon w-6 h-6 text-indigo-300 transition-transform duration-400"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </h3>
-      <p class="faq-answer mt-4 text-indigo-200 leading-relaxed max-w-prose hidden">
-        Optimize images, leverage browser caching, minify CSS/JS, and use a CDN. Lazy loading and efficient code also help.
-      </p>
-    </div>
-
-    <div
-      class="faq-item bg-indigo-800/30 backdrop-blur-md rounded-xl p-6 border border-indigo-500 border-opacity-40 cursor-pointer shadow-inner hover:shadow-lg hover:border-indigo-400 transition duration-400"
-      data-category="webdev"
-      tabindex="0"
-      role="button"
-      aria-expanded="false"
-    >
-      <h3 class="faq-question flex justify-between items-center text-xl font-semibold tracking-wide">
-        How do I make my website responsive?
-        <svg
-          class="faq-icon w-6 h-6 text-indigo-300 transition-transform duration-400"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-        </svg>
-      </h3>
-      <p class="faq-answer mt-4 text-indigo-200 leading-relaxed max-w-prose hidden">
-        Use flexible grids, CSS media queries, and relative units (%, rem). Tailwind CSS provides utilities that make responsiveness easy.
-      </p>
-    </div>
-  </div>
-</section>
-
-<script>
-  const faqItems = document.querySelectorAll('.faq-item');
-  const filterButtons = document.querySelectorAll('.faq-filter-btn');
-
-  // Toggle FAQ answer open/close
-  faqItems.forEach(item => {
-    item.addEventListener('click', () => {
-      const answer = item.querySelector('.faq-answer');
-      const icon = item.querySelector('.faq-icon');
-      const expanded = item.getAttribute('aria-expanded') === 'true';
-
-      if (expanded) {
-        answer.classList.add('hidden');
-        icon.style.transform = 'rotate(0deg)';
-        item.setAttribute('aria-expanded', 'false');
-      } else {
-        answer.classList.remove('hidden');
-        icon.style.transform = 'rotate(180deg)';
-        item.setAttribute('aria-expanded', 'true');
-      }
-    });
-
-    // Allow toggle on keyboard Enter / Space
-    item.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        item.click();
-      }
-    });
-  });
-
-  // Filter FAQs
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filter = btn.getAttribute('data-filter');
-
-      filterButtons.forEach(b => {
-        b.classList.remove('bg-indigo-500', 'text-white');
-        b.classList.add('bg-indigo-700/50', 'text-indigo-300');
-        b.setAttribute('aria-pressed', 'false');
-      });
-
-      btn.classList.add('bg-indigo-500', 'text-white');
-      btn.classList.remove('bg-indigo-700/50', 'text-indigo-300');
-      btn.setAttribute('aria-pressed', 'true');
-
-      faqItems.forEach(item => {
-        if (filter === 'all' || item.dataset.category === filter) {
-          item.style.display = '';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    });
-  });
-</script>
-
-
+<div class="overflow-hidden rounded-md border border-[#bababa]/20 bg-[#bababa]/10 backdrop-blur-md shadow-sm">
+  <table class="w-full text-sm text-left text-[#bababa]">
+    <thead class="bg-[#bababa]/20 text-xs uppercase tracking-wide text-[#bababa]/70">
+      <tr>
+        <th class="px-4 py-3">Metric</th>
+        <th class="px-4 py-3">Value</th>
+        <th class="px-4 py-3">Notes / Quirk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Projects Launched</td>
+        <td class="px-4 py-3">87+</td>
+        <td class="px-4 py-3">Lost count during all-nighters</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Coffee Intake</td>
+        <td class="px-4 py-3">High</td>
+        <td class="px-4 py-3">Mostly during deploys and debugging</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">HubSpot Campaigns</td>
+        <td class="px-4 py-3">50+</td>
+        <td class="px-4 py-3">Workflows flow like a boss</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Rage Quits</td>
+        <td class="px-4 py-3">0*</td>
+        <td class="px-4 py-3">(*Almost once, but coffee saved the day)</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">WordPress Sites Built</td>
+        <td class="px-4 py-3">35+</td>
+        <td class="px-4 py-3">Mostly without crying (sometimes)</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Favorite Playlist</td>
+        <td class="px-4 py-3">Metalcore & Rain Ambience</td>
+        <td class="px-4 py-3">Face melting with occasional zen vibes</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Average Response Time</td>
+        <td class="px-4 py-3">&lt; 12 hours</td>
+        <td class="px-4 py-3">Faster if you mention good music</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Tabs Open (avg)</td>
+        <td class="px-4 py-3">25–40</td>
+        <td class="px-4 py-3">Controlled chaos</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Divs Perfectly Centered</td>
+        <td class="px-4 py-3">~99.7%</td>
+        <td class="px-4 py-3">That 0.3% haunts me</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Notifications Handling</td>
+        <td class="px-4 py-3">Zero red dot policy</td>
+        <td class="px-4 py-3">OCD-approved digital workspace</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Debugging Method</td>
+        <td class="px-4 py-3"><code>console.log()</code> + stare</td>
+        <td class="px-4 py-3">Intense focus, occasional existential crisis</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Client Return Rate</td>
+        <td class="px-4 py-3">80%</td>
+        <td class="px-4 py-3">Guess they like me?</td>
+      </tr>
+      <tr class="border-t border-[#bababa]/10 hover:bg-[#bababa]/20 transition-colors">
+        <td class="px-4 py-3">Fun Fact</td>
+        <td class="px-4 py-3">Built a site faster than domain propagation</td>
+        <td class="px-4 py-3">Time well spent</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
                         </section>
+
+
+
+                       
 
 
 
