@@ -57,7 +57,7 @@
 </head>
 
 
-<body class="primary-font">
+<body class="primary-font hide-scrollbar">
 
     <!-- preloader -->
     <div class="atomic-loader-container" id="atomicLoader">
@@ -537,167 +537,150 @@
         <div class="drawer-side z-50">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
             <div
-                class="menu bg-gradient-to-tl from-[#0A0F26]/5 from-35% to-[#bababa]/10 to-100% backdrop-blur-lg min-h-full w-full pt-[clamp(3rem,1vw,10rem)] pb-[clamp(3rem,1vw,10rem)] pl-[clamp(1rem,1vw,10rem)] pr-[clamp(1rem,1vw,10rem)]">
+                class="menu overflow-hidden relative bg-gradient-to-tl from-[#0A0F26]/20 from-35% via-[#422ad5]/20 via-50% to-[#bababa]/10 to-100% backdrop-blur-lg min-h-screen max-h-screen w-full p-0 lg:pl-[clamp(1rem,1vw,10rem)]">
                 <!-- Sidebar content here -->
-                <div class="w-full max-w-[clamp(20rem,100vw,100rem)] mx-auto">
+                <div class="sm:pl-[clamp(3rem,5vw,10rem)]">
                     <!-- top -->
-                    <div class="flex justify-between items-center">
-                        <a href="index.html">
-                            <div class="group flex items-center gap-5">
-                                <img class="w-full max-w-[clamp(3.3rem,1vw,4rem)] invert brightness-0 drop-shadow-[0_0_1px_#0ac6ff,0_0_3px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#412ad5] md:group-hover:opacity-0 transition-all duration-500 will-change-transform"
-                                    src="icons/logo.webp" alt="">
-                                <h3
-                                    class="text-[clamp(2.5rem,1vw,3.5rem)] text-bold hidden md:block tracking-widest uppercase text-white text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] group-hover:-translate-x-15 transition-all duration-500 will-change-transform">
-                                    Rahib Azam</h3>
-                                <img class="w-full max-w-[clamp(3.3rem,1vw,4rem)] invert brightness-0 drop-shadow-[0_0_1px_#0ac6ff,0_0_3px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#412ad5] opacity-0 group-hover:-translate-x-15 group-hover:opacity-100 transition-all duration-500 will-change-transform"
-                                    src="icons/logo.webp" alt="">
+                    <div class="sm:flex">
+                        <div
+                            class="flex-2/3 flex flex-col pt-[clamp(2rem,1vw,5rem)] pl-[clamp(2rem,1vw,5rem)] pr-[clamp(2rem,1vw,5rem)] sm:pl-0 sm:pr-0">
+                            <div class="flex items-center justify-between">
+                                <div class="">
+                                    <a class="flex" href="index.html">
+                                        <div class="group flex items-center gap-5">
+                                            <img class="w-full max-w-[clamp(3.3rem,1vw,4rem)] invert brightness-0 drop-shadow-[0_0_1px_#0ac6ff,0_0_3px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#412ad5] md:group-hover:opacity-0 transition-all duration-500 will-change-transform"
+                                                src="icons/logo.webp" alt="">
+                                            <h3
+                                                class="text-[clamp(2.2rem,1vw,3rem)] lg:text-[clamp(3rem,1vw,4rem)] text-bold hidden sm:block tracking-widest uppercase text-white text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] group-hover:-translate-x-15 transition-all duration-500 will-change-transform">
+                                                Rahib Azam</h3>
+                                            <img class="w-full max-w-[clamp(3.3rem,1vw,4rem)] invert brightness-0 drop-shadow-[0_0_1px_#0ac6ff,0_0_3px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#412ad5] opacity-0 group-hover:-translate-x-15 group-hover:opacity-100 transition-all duration-500 will-change-transform"
+                                                src="icons/logo.webp" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block sm:hidden">
+                                    <div class="flex justify-center">
+                                        <label for="my-drawer"
+                                            class="btn border-none bg-transparent shadow-none no-underline text-[clamp(1.5rem,1vw,3.5rem)] primary-font text-white font-semibold group transition-all uppercase w-full max-w-[clamp(10rem,2vw,16rem)] text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5]"><span
+                                                class="hidden sm:block">Close </span><span
+                                                class="font-bold text-[clamp(2rem,1vw,3rem)] scale-y-110 ml-2 group-hover:rotate-180 transition-all duration-300">x</span></label>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
-                        <div>
-                            <label for="my-drawer"
-                                class="btn border-none bg-transparent shadow-none no-underline text-[clamp(1.5rem,1vw,3.5rem)] primary-font text-white font-semibold group transition-all uppercase w-full max-w-[clamp(10rem,2vw,16rem)] text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5]"><span
-                                    class="hidden md:block">Close </span><span
-                                    class="font-bold text-[clamp(2rem,1vw,3rem)] scale-y-110 ml-2 group-hover:rotate-180 transition-all duration-300">x</span></label>
+                            <div class="grow">
+                                <div class="w-full mt-[clamp(10rem,5vw,20rem)]">
+                                    <!-- nav links -->
+                                    <div class="space-y-5 flex flex-col">
+                                        <a href="index.html"
+                                            class="page-link flex items-center group/link relative group">
+                                            <div
+                                                class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] -z-10 bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
+
+                                            </div>
+                                            <div
+                                                class="group flex-1/4 text-[clamp(2.5rem,3vw,6rem)] sm:text-[clamp(3rem,3vw,6.5rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2.41rem,3vw,6rem)] sm:max-h-[clamp(3rem,3vw,6.5rem)]">
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
+                                                    Homepage</p>
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
+                                                    Homepage</p>
+                                            </div>
+                                        </a>
+
+                                        <a href="website-portfolio.html"
+                                            class="page-link flex items-center group/link relative group">
+                                            <div
+                                                class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] -z-10 bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
+
+                                            </div>
+                                            <div
+                                                class="group flex-1/4 text-[clamp(2.5rem,3vw,6rem)] sm:text-[clamp(3rem,3vw,6.5rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2.41rem,3vw,6rem)] sm:max-h-[clamp(3rem,3vw,6.5rem)]">
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
+                                                    Portfolio</p>
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
+                                                    Portfolio</p>
+                                            </div>
+                                        </a>
+
+                                        <a href="hubspot.html"
+                                            class="page-link flex items-center group/link relative group">
+                                            <div
+                                                class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] -z-10 bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
+
+                                            </div>
+                                            <div
+                                                class="group flex-1/4 text-[clamp(2.5rem,3vw,6rem)] sm:text-[clamp(3rem,3vw,6.5rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2.41rem,3vw,6rem)] sm:max-h-[clamp(3rem,3vw,6.5rem)]">
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
+                                                    HubSpot</p>
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
+                                                    HubSpot</p>
+                                            </div>
+                                        </a>
+
+                                        <a href="about-me.html"
+                                            class="page-link flex items-center group/link relative group">
+                                            <div
+                                                class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] -z-10 bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
+
+                                            </div>
+                                            <div
+                                                class="group flex-1/4 text-[clamp(2.5rem,3vw,6rem)] sm:text-[clamp(3rem,3vw,6.5rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2.41rem,3vw,6rem)] sm:max-h-[clamp(3rem,3vw,6.5rem)]">
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
+                                                    About</p>
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
+                                                    About</p>
+                                            </div>
+                                        </a>
+
+                                        <a href="contact-rahib.html"
+                                            class="page-link flex items-center group/link relative group">
+                                            <div
+                                                class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] -z-10 bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
+
+                                            </div>
+                                            <div
+                                                class="group flex-1/4 text-[clamp(2.5rem,3vw,6rem)] sm:text-[clamp(3rem,3vw,6.5rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2.41rem,3vw,6rem)] sm:max-h-[clamp(3rem,3vw,6.5rem)]">
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
+                                                    Contact</p>
+                                                <p
+                                                    class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
+                                                    Contact</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="sm:bg-linear-to-t from-[#0AC4FF]/40 from-15% to-[#422ad5]/20 to-100% h-screen flex-1/7 pt-[clamp(2.5rem,1vw,5.5rem)]">
+                            <div class="hidden sm:flex justify-center">
+                                <label for="my-drawer"
+                                    class="btn border-none bg-transparent shadow-none no-underline text-[clamp(1.5rem,1vw,3.5rem)] md:text-[clamp(2rem,1vw,3.5rem)] primary-font text-white font-semibold group transition-all uppercase w-full max-w-[clamp(10rem,2vw,16rem)] text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5]"><span
+                                        class="hidden md:block font-normal">Close </span><span
+                                        class="font-bold text-[clamp(2rem,1vw,3rem)] scale-y-110 ml-2 group-hover:rotate-180 transition-all duration-300">x</span></label>
+                            </div>
+                            <div class="h-[110vh] flex flex-col justify-center items-center">
+
+                                <!-- socials -->
+                                <div class="w-full pl-[clamp(2rem,1vw,5rem)] pr-[clamp(2rem,1vw,5rem)] space-y-5">
+                                    <!-- github -->
+                                    <a class="flex items-center justify-center gap-3 active:translate-y-0.5 bg-cyan-500 w-full text-[clamp(1.5rem,1vw,3.5rem)] uppercase tracking-widest text-center" href=""><img class="aspect-square w-full max-w-[clamp(3rem,1vw,8rem)]" src="icons/github.png"
+                                            alt="github profile"><span class="hidden md:block">GitHub</span></a>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
-                    <!-- middle -->
-                    <div
-                        class="flex flex-col lg:flex-row gap-5 justify-between items-center mt-[clamp(10rem,5vw,15rem)]">
-                        <!-- left column -->
-                        <div class="flex-1">
-                            <!-- nav links -->
-                            <div class="space-y-5 flex flex-col">
-                                <a href="index.html" class="page-link flex items-center group/link relative group">
-                                    <div class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
-                                        
-                                    </div>
-                                    <div
-                                        class="group flex-1/4 text-[clamp(2rem,3vw,6rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2rem,3vw,6rem)]">
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
-                                            Homepage</p>
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
-                                            Homepage</p>
-                                    </div>
-                                    <div class="group w-[8%] absolute inset-x-100 opacity-0 group-hover/link:opacity-100 transition-all duration-450"
-                                        id="lottieGroup">
-                                        <script
-                                            src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
-                                            type="module"></script>
-                                        <dotlottie-wc
-                                            src="https://lottie.host/72d88429-9ac5-4a88-affd-3ba53723d4cf/8Pot3uO1Mn.lottie"
-                                            style="" class="drop-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]" speed="1" autoplay loop></dotlottie-wc>
-                                    </div>
-                                </a>
 
-                                <a href="index.html" class="page-link flex items-center group/link relative group">
-                                    <div class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
-                                        
-                                    </div>
-                                    <div
-                                        class="group flex-1/4 text-[clamp(2rem,3vw,6rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2rem,3vw,6rem)]">
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
-                                            Homepage</p>
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
-                                            Homepage</p>
-                                    </div>
-                                    <div class="group w-[8%] absolute inset-x-100 opacity-0 group-hover/link:opacity-100 transition-all duration-450"
-                                        id="lottieGroup">
-                                        <script
-                                            src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
-                                            type="module"></script>
-                                        <dotlottie-wc
-                                            src="https://lottie.host/72d88429-9ac5-4a88-affd-3ba53723d4cf/8Pot3uO1Mn.lottie"
-                                            style="" class="drop-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]" speed="1" autoplay loop></dotlottie-wc>
-                                    </div>
-                                </a>
-
-                                <a href="index.html" class="page-link flex items-center group/link relative group">
-                                    <div class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
-                                        
-                                    </div>
-                                    <div
-                                        class="group flex-1/4 text-[clamp(2rem,3vw,6rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2rem,3vw,6rem)]">
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
-                                            Homepage</p>
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
-                                            Homepage</p>
-                                    </div>
-                                    <div class="group w-[8%] absolute inset-x-100 opacity-0 group-hover/link:opacity-100 transition-all duration-450"
-                                        id="lottieGroup">
-                                        <script
-                                            src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
-                                            type="module"></script>
-                                        <dotlottie-wc
-                                            src="https://lottie.host/72d88429-9ac5-4a88-affd-3ba53723d4cf/8Pot3uO1Mn.lottie"
-                                            style="" class="drop-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]" speed="1" autoplay loop></dotlottie-wc>
-                                    </div>
-                                </a>
-
-                                <a href="index.html" class="page-link flex items-center group/link relative group">
-                                    <div class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
-                                        
-                                    </div>
-                                    <div
-                                        class="group flex-1/4 text-[clamp(2rem,3vw,6rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2rem,3vw,6rem)]">
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
-                                            Homepage</p>
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
-                                            Homepage</p>
-                                    </div>
-                                    <div class="group w-[8%] absolute inset-x-100 opacity-0 group-hover/link:opacity-100 transition-all duration-450"
-                                        id="lottieGroup">
-                                        <script
-                                            src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
-                                            type="module"></script>
-                                        <dotlottie-wc
-                                            src="https://lottie.host/72d88429-9ac5-4a88-affd-3ba53723d4cf/8Pot3uO1Mn.lottie"
-                                            style="" class="drop-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]" speed="1" autoplay loop></dotlottie-wc>
-                                    </div>
-                                </a>
-
-                                <a href="index.html" class="page-link flex items-center group/link relative group">
-                                    <div class="h-full max-h-[clamp(2.3rem,4vw,6.3rem)] bg-gradient-to-r to-[#bababa]/20 via-[#422ad5]/15 from-[#0AC4FF]/10 py-9 transition-all duration-400 w-0 group-hover:w-full absolute">
-                                        
-                                    </div>
-                                    <div
-                                        class="group flex-1/4 text-[clamp(2rem,3vw,6rem)] leading-none uppercase tracking-widest flex flex-col justify-between overflow-hidden h-full max-h-[clamp(2rem,3vw,6rem)]">
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-18">
-                                            Homepage</p>
-                                        <p
-                                            class="will-change-transform transition-all duration-250 translate-y-0 group-hover:-translate-y-2/2 group-hover:translate-x-5 text-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]">
-                                            Homepage</p>
-                                    </div>
-                                    <div class="group w-[8%] absolute inset-x-100 opacity-0 group-hover/link:opacity-100 transition-all duration-450"
-                                        id="lottieGroup">
-                                        <script
-                                            src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
-                                            type="module"></script>
-                                        <dotlottie-wc
-                                            src="https://lottie.host/72d88429-9ac5-4a88-affd-3ba53723d4cf/8Pot3uO1Mn.lottie"
-                                            style="" class="drop-shadow-[0_0_2px_#0ac6ff,0_0_5px_#0ac6ff,0_0_7px_#0ac6ff,0_0_10px_#412ad5]" speed="1" autoplay loop></dotlottie-wc>
-                                    </div>
-                                </a>
-                                
-                                    
-                                
-                            </div>
-                        </div>
-
-                        <!-- right column -->
-                        <div>
-
-                        </div>
-                    </div>
                 </div>
 
 
@@ -709,10 +692,14 @@
 
 
 
+    <!-- drawer vertical scrollbar hide -->
+    <script>
+        const drawerToggle = document.getElementById("my-drawer");
 
-
-
-
+        drawerToggle.addEventListener("change", () => {
+            document.documentElement.classList.toggle("hide-scrollbar", drawerToggle.checked);
+        });
+    </script>
 
     <script>
         // Inline particle system - TBT optimized version
