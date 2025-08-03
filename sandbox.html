@@ -537,11 +537,11 @@
         <div class="drawer-side z-50">
             <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
             <div
-                class="menu overflow-hidden relative bg-gradient-to-tl from-[#0A0F26]/20 from-35% via-[#422ad5]/20 via-50% to-[#bababa]/10 to-100% backdrop-blur-lg min-h-screen max-h-screen w-full p-0 lg:pl-[clamp(1rem,1vw,10rem)]">
+                class="menu overflow-hidden relative bg-gradient-to-tl from-[#0A0F26]/20 from-35% via-[#422ad5]/20 via-50% to-[#bababa]/10 to-100% backdrop-blur-lg min-h-screen w-full p-0 lg:pl-[clamp(1rem,1vw,10rem)]">
                 <!-- Sidebar content here -->
-                <div class="sm:pl-[clamp(3rem,5vw,10rem)]">
+                <div class="sm:pl-[clamp(3rem,5vw,10rem)] min-h-screen">
                     <!-- top -->
-                    <div class="sm:flex">
+                    <div class="sm:flex min-h-screen">
                         <div
                             class="flex-2/3 flex flex-col pt-[clamp(2rem,1vw,5rem)] pl-[clamp(2rem,1vw,5rem)] pr-[clamp(2rem,1vw,5rem)] sm:pl-0 sm:pr-0">
                             <div class="flex items-center justify-between">
@@ -568,7 +568,7 @@
                                 </div>
                             </div>
                             <div class="grow">
-                                <div class="w-full mt-[clamp(10rem,5vw,20rem)]">
+                                <div class="w-full mt-[clamp(5rem,10vw,20rem)]">
                                     <!-- nav links -->
                                     <div class="space-y-5 flex flex-col">
                                         <a href="index.html"
@@ -661,18 +661,17 @@
                             </div>
                         </div>
                         <div
-                            class="sm:bg-linear-to-b from-[#0A0F26]/70 from-80% to-[#422ad5]/20 to-100% sm:backdrop-blur-3xl h-screen w-full max-w-[clamp(12.4rem,20vw,40rem)] pt-[clamp(2.5rem,1vw,5.5rem)]">
+                            class="flex flex-col sm:bg-linear-to-b from-[#0A0F26]/70 from-80% to-[#422ad5]/20 to-100% sm:backdrop-blur-3xl sm:h-screen w-full sm:max-w-[clamp(12.4rem,20vw,40rem)] pt-[clamp(2.5rem,1vw,5.5rem)]">
                             <div class="hidden sm:flex justify-center">
                                 <label for="my-drawer"
                                     class="btn border-none bg-transparent shadow-none no-underline text-[clamp(1.5rem,1vw,3.5rem)] md:text-[clamp(2rem,1vw,3.5rem)] primary-font text-white font-semibold group transition-all uppercase w-full max-w-[clamp(10rem,2vw,16rem)] text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5]"><span
                                         class="hidden md:block font-normal">Close </span><span
                                         class="font-bold text-[clamp(2rem,1vw,3rem)] scale-y-110 ml-2 group-hover:rotate-180 transition-all duration-300">x</span></label>
                             </div>
-                            <div class="h-[110vh] flex flex-col justify-center items-center">
-
+                            <div class="h-90 sm:h-[90vh] flex flex-col items-center">
                                 <!-- socials -->
                                 <div
-                                    class="w-full pl-[clamp(2rem,1vw,5rem)] pr-[clamp(2rem,1vw,5rem)] flex justify-center items-center gap-5 flex-wrap">
+                                    class="mt-auto w-full pl-[clamp(2rem,1vw,5rem)] pr-[clamp(2rem,1vw,5rem)] flex sm:justify-center items-center gap-5 flex-wrap">
                                     <!-- github -->
                                     <a class="group flex items-center justify-center gap-3 active:translate-y-0.5 bg-linear-to-bl rounded-sm from-[#0AC4FF] from-10% to-[#422ad5] to-100% w-full max-w-[clamp(4rem,4.5vw,10rem)] p-4 aspect-square"
                                         href="https://github.com/Rahibazam" target="_blank"><img
@@ -681,27 +680,36 @@
 
                                     <!-- linkedin -->
                                     <a class="group flex items-center justify-center gap-3 active:translate-y-0.5 bg-linear-to-b rounded-sm from-[#0AC4FF] from-10% to-[#422ad5] to-100% w-full max-w-[clamp(4rem,4.5vw,10rem)] p-4 aspect-square"
-                                        href="https://github.com/Rahibazam" target="_blank"><img
+                                        href="https://www.linkedin.com/in/rahib-azam" target="_blank"><img
                                             class="aspect-square w-full group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300"
-                                            src="icons/github.png" alt="github profile"></a>
+                                            src="icons/linkedin.png" alt="linkedin profile"></a>
 
                                     <!-- instagram -->
                                     <a class="group flex items-center justify-center gap-3 active:translate-y-0.5 bg-linear-to-br rounded-sm from-[#0AC4FF] from-10% to-[#422ad5] to-100% w-full max-w-[clamp(4rem,4.5vw,10rem)] p-4 aspect-square"
-                                        href="https://github.com/Rahibazam" target="_blank"><img
+                                        href="https://www.instagram.com/rahib.1x1/" target="_blank"><img
                                             class="aspect-square w-full group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300"
-                                            src="icons/github.png" alt="github profile"></a>
+                                            src="icons/instagram.png" alt="instagram profile"></a>
 
                                     <!-- facebook -->
                                     <a class="group flex items-center justify-center gap-3 active:translate-y-0.5 bg-linear-to-bl rounded-sm from-[#0AC4FF] from-10% to-[#422ad5] to-100% w-full max-w-[clamp(4rem,4.5vw,10rem)] p-4 aspect-square"
-                                        href="https://github.com/Rahibazam" target="_blank"><img
+                                        href="https://www.facebook.com/rahib.ahmed.165/" target="_blank"><img
                                             class="aspect-square w-full group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300"
-                                            src="icons/github.png" alt="github profile"></a>
+                                            src="icons/facebook.png" alt="facebook profile"></a>
 
                                     <!-- spotify -->
                                     <a class="group flex items-center justify-center gap-3 active:translate-y-0.5 bg-linear-to-br rounded-sm from-[#0AC4FF] from-10% to-[#422ad5] to-100% w-full max-w-[clamp(4rem,4.5vw,10rem)] p-4 aspect-square"
-                                        href="https://github.com/Rahibazam" target="_blank"><img
+                                        href="https://open.spotify.com/user/317hi3rvqhayq7j2dt2iwkuyua6u?si=b74add915b924b09"
+                                        target="_blank"><img
                                             class="aspect-square w-full group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300"
-                                            src="icons/github.png" alt="github profile"></a>
+                                            src="icons/spotify-about.webp" alt="spotify profile"></a>
+                                </div>
+
+
+                                <!-- sidepanel bottom text -->
+                                <div
+                                    class="mt-auto pb-[clamp(1rem,1vw,3rem)] px-2">
+                                    <p class="hidden sm:block text-[clamp(1.2rem,1vw,3rem)] text-center italic uppercase">Not sure why I made this full screen either.</p>
+                                    <p class="block sm:hidden text-[clamp(1.2rem,1vw,3rem)] text-center italic uppercase">Is this… too much for a mobile nav? Probably.</p>
                                 </div>
 
                             </div>
