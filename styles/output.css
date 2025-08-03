@@ -3898,11 +3898,23 @@
   .text-\[clamp\(1rem\,1\.3vw\,1\.25rem\)\] {
     font-size: clamp(1rem, 1.3vw, 1.25rem);
   }
+  .text-\[clamp\(2\.2rem\,1\.5vw\,3\.2rem\)\] {
+    font-size: clamp(2.2rem, 1.5vw, 3.2rem);
+  }
   .text-\[clamp\(2\.2rem\,1vw\,3rem\)\] {
     font-size: clamp(2.2rem, 1vw, 3rem);
   }
+  .text-\[clamp\(2\.2rem\,2vw\,3\.2rem\)\] {
+    font-size: clamp(2.2rem, 2vw, 3.2rem);
+  }
+  .text-\[clamp\(2\.3rem\,2vw\,3\.5rem\)\] {
+    font-size: clamp(2.3rem, 2vw, 3.5rem);
+  }
   .text-\[clamp\(2\.5rem\,3vw\,6rem\)\] {
     font-size: clamp(2.5rem, 3vw, 6rem);
+  }
+  .text-\[clamp\(2rem\,1\.2vw\,3rem\)\] {
+    font-size: clamp(2rem, 1.2vw, 3rem);
   }
   .text-\[clamp\(2rem\,1\.5vw\,4rem\)\] {
     font-size: clamp(2rem, 1.5vw, 4rem);
@@ -5134,6 +5146,11 @@
       text-align: center;
     }
   }
+  .sm\:text-\[clamp\(1\.5rem\,1vw\,3\.5rem\)\] {
+    @media (width >= 40rem) {
+      font-size: clamp(1.5rem, 1vw, 3.5rem);
+    }
+  }
   .sm\:text-\[clamp\(3rem\,3vw\,6\.5rem\)\] {
     @media (width >= 40rem) {
       font-size: clamp(3rem, 3vw, 6.5rem);
@@ -5365,6 +5382,11 @@
     @media (width >= 48rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .md\:text-\[clamp\(2rem\,1\.3vw\,3rem\)\] {
+    @media (width >= 48rem) {
+      font-size: clamp(2rem, 1.3vw, 3rem);
     }
   }
   .md\:text-\[clamp\(2rem\,1vw\,3\.5rem\)\] {
