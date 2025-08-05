@@ -2619,6 +2619,18 @@
   .max-w-\[clamp\(20rem\,83vw\,80rem\)\] {
     max-width: clamp(20rem, 83vw, 80rem);
   }
+  .max-w-\[clamp\(25rem\,86vw\,85rem\)\] {
+    max-width: clamp(25rem, 86vw, 85rem);
+  }
+  .max-w-\[clamp\(25rem\,90vw\,85rem\)\] {
+    max-width: clamp(25rem, 90vw, 85rem);
+  }
+  .max-w-\[clamp\(25rem\,90vw\,90rem\)\] {
+    max-width: clamp(25rem, 90vw, 90rem);
+  }
+  .max-w-\[clamp\(25rem\,90vw\,95rem\)\] {
+    max-width: clamp(25rem, 90vw, 95rem);
+  }
   .max-w-\[clamp\(35rem\,10vw\,60rem\)\] {
     max-width: clamp(35rem, 10vw, 60rem);
   }
