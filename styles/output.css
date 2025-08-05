@@ -3638,9 +3638,6 @@
   .pr-\[clamp\(1rem\,2vw\,3rem\)\] {
     padding-right: clamp(1rem, 2vw, 3rem);
   }
-  .pr-\[clamp\(1rem\,3vw\,3rem\)\] {
-    padding-right: clamp(1rem, 3vw, 3rem);
-  }
   .pr-\[clamp\(2rem\,1vw\,4rem\)\] {
     padding-right: clamp(2rem, 1vw, 4rem);
   }
@@ -3679,9 +3676,6 @@
   }
   .pl-\[clamp\(1rem\,2vw\,3rem\)\] {
     padding-left: clamp(1rem, 2vw, 3rem);
-  }
-  .pl-\[clamp\(1rem\,3vw\,3rem\)\] {
-    padding-left: clamp(1rem, 3vw, 3rem);
   }
   .pl-\[clamp\(2rem\,1vw\,4rem\)\] {
     padding-left: clamp(2rem, 1vw, 4rem);
