@@ -168,7 +168,7 @@
                         </div>
                     </nav>
                 </header>
-                <main class="bg-[#070B1D]">
+                <main class="bg-[#070B1D] overflow-clip">
 
                     <!-- hero section -->
                     <section class="bg-[#070B1D] pt-40 pb-50 lg:pt-70 lg:pb-90 cosmic-wrapper">
@@ -220,10 +220,10 @@
                             <div class="shooting-star"></div>
                         </div>
 
-                        <!-- container -->
+                        <!-- hero content container -->
                         <div class="w-full z-10">
 
-                            <div class="w-full max-w-[clamp(20rem,83vw,80rem)] mx-auto space-y-6">
+                            <div class="w-full max-w-[clamp(20rem,83vw,80rem)] pl-[clamp(0.6rem,2vw,3rem)] pr-[clamp(0.6rem,2vw,3rem)] mx-auto space-y-6">
                                 <h1
                                     class="text-[clamp(3rem,10vw,5rem)] leading-none primary-color text-shadow text-center font-extrabold uppercase">
                                     About Me</h1>
@@ -285,11 +285,11 @@
                             <!-- misc container -->
                             <div>
                                 <div
-                                    class="w-11/12 md:w-10/12 lg:w-8/12 py-10 lg:py-20 mx-auto grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-4">
+                                    class="w-full max-w-[clamp(20rem,83vw,80rem)] px-3 py-10 lg:py-20 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 lg:grid-rows-2 gap-4">
                                     <!-- objectives -->
                                     <div
-                                        class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all py-10 px-5 space-y-5 row-span-2">
-                                        <h5 class="secondary-color font-bold text-lg lg:text-xl text-center uppercase">
+                                        class="border border-[#412ad5] bg-[#bababa]/5 backdrop-blur-lg rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all duration-300 py-10 px-5 space-y-5 row-span-2">
+                                        <h5 class="text-[#fafafa] text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] font-bold text-lg lg:text-xl text-center uppercase">
                                             Tech
                                             Stack Objectives</h5>
                                         <div>
@@ -297,7 +297,7 @@
                                                 <!-- hubspot -->
                                                 <li>
                                                     <div
-                                                        class="timeline-start timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-start timeline-boxpx-1 lg:text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         HubSpot</div>
                                                     <div class="timeline-middle">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -307,7 +307,7 @@
                                                                 clip-rule="evenodd" />
                                                         </svg>
                                                     </div>
-                                                    <hr class="bg-white" />
+                                                    <hr class="bg-white pb-3" />
                                                 </li>
                                                 <!-- wordpress -->
                                                 <li>
@@ -321,7 +321,7 @@
                                                         </svg>
                                                     </div>
                                                     <div
-                                                        class="timeline-end timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-end timeline-box px-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         WordPress</div>
                                                     <hr class="bg-white" />
                                                 </li>
@@ -329,7 +329,7 @@
                                                 <li>
                                                     <hr class="bg-white pt-3" />
                                                     <div
-                                                        class="timeline-start timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-start timeline-box px-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         TailWind</div>
                                                     <div class="timeline-middle">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -353,7 +353,7 @@
                                                         </svg>
                                                     </div>
                                                     <div
-                                                        class="timeline-end timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-end timeline-boxpx-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         Bootstrap</div>
                                                     <hr class="bg-white" />
                                                 </li>
@@ -361,7 +361,7 @@
                                                 <li>
                                                     <hr class="bg-white pt-3" />
                                                     <div
-                                                        class="timeline-start timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-start timeline-box px-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         JavaScript</div>
                                                     <div class="timeline-middle">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -385,7 +385,7 @@
                                                         </svg>
                                                     </div>
                                                     <div
-                                                        class="timeline-end timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-end timeline-box px-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         React</div>
                                                     <hr class="bg-white" />
                                                 </li>
@@ -393,7 +393,7 @@
                                                 <li>
                                                     <hr class="bg-white pt-3" />
                                                     <div
-                                                        class="timeline-start timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-start timeline-box px-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         Firebase</div>
                                                     <div class="timeline-middle">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -417,7 +417,7 @@
                                                         </svg>
                                                     </div>
                                                     <div
-                                                        class="timeline-end timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-end timeline-box px-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         NodeJS</div>
                                                     <hr class="bg-white" />
                                                 </li>
@@ -425,7 +425,7 @@
                                                 <li>
                                                     <hr class="bg-white pt-3" />
                                                     <div
-                                                        class="timeline-start timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-start timeline-box px-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         ExpressJS</div>
                                                     <div class="timeline-middle">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -449,7 +449,7 @@
                                                         </svg>
                                                     </div>
                                                     <div
-                                                        class="timeline-end timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-end timeline-box px-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         MongoDB</div>
                                                     <hr class="bg-white" />
                                                 </li>
@@ -457,7 +457,7 @@
                                                 <li>
                                                     <hr class="bg-white pt-3" />
                                                     <div
-                                                        class="timeline-start timeline-box text-base font-semibold bg-[#0AC4FF] rounded-sm hover:bg-[#070B1D] border border-[#0AC4FF] hover:text-[#0AC4FF] hover:inset-shadow-[0px_0px_20px_#0AC4FF] transition-all cursor-pointer">
+                                                        class="timeline-start timeline-box px-1 text-[clamp(1rem,1.3vw,1.2rem)] leading-none font-semibold bg-transparent border-none text-[#fafafa] hover:text-shadow-[0_0_5px_#0ac6ff,0_0_9px_#0ac6ff,0_0_15px_#0ac6ff,0_0_20px_#412ad5] transition-all duration-300 cursor-pointer">
                                                         HubL</div>
                                                     <div class="timeline-middle">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -474,14 +474,14 @@
 
                                     <!-- quote -->
                                     <div
-                                        class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all py-10 px-5 space-y-5 row-span-1">
+                                        class="border border-[#412ad5] bg-[#bababa]/5 backdrop-blur-lg rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all py-10 px-5 space-y-5 row-span-1">
                                         <!-- quote img -->
                                         <div>
-                                            <img class="w-3/12" src="icons/quote.png" alt="">
+                                            <img class="w-3/12 invert brightness-0 drop-shadow-[0_0_1px_#0ac6ff,0_0_3px_#0ac6ff,0_0_5px_#0ac6ff,0_0_8px_#412ad5]" src="icons/quote.png" alt="">
                                         </div>
                                         <!-- quote text -->
                                         <div>
-                                            <p class="text-xl lg:text-2xl text-white font-bold">Every section you
+                                            <p class="text-[clamp(1.25rem,1.23vw,1.5rem)] leading-snug text-white font-bold">Every section you
                                                 see
                                                 here
                                                 has
@@ -496,7 +496,7 @@
 
                                     <!-- video -->
                                     <div
-                                        class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all h-80 lg:h-auto">
+                                        class="border border-[#412ad5] rounded-md inset-shadow-[0px_0px_20px_#412ad5] hover:inset-shadow-[0px_0px_40px_#412ad5] transition-all h-80 sm:h-auto">
                                         <video class="h-full w-full object-cover object-[90%_100%] rounded-md" autoplay
                                             loop muted playsinline preload="metadata"
                                             src="images/fav-game.webm"></video>
