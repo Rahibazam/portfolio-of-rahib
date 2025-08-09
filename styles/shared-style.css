@@ -852,3 +852,29 @@ html {
         left: -20px;
     }
 }
+
+@media (max-width: 1023px) {
+
+    .mouse-container {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    }
+
+    .mouse {
+        width: 25px;
+        height: 40px;
+    }
+
+    .scroll-wheel {
+        width: 3px;
+        height: 6px;
+    }
+
+    .mouse-orbit {
+        width: 80px;
+        height: 80px;
+        top: -17px;
+        left: -28px;
+    }
+}
