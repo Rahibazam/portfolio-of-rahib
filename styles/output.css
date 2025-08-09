@@ -2154,6 +2154,9 @@
   .ml-10 {
     margin-left: calc(var(--spacing) * 10);
   }
+  .box-border {
+    box-sizing: border-box;
+  }
   .badge {
     display: inline-flex;
     align-items: center;
@@ -2505,6 +2508,15 @@
   .max-h-\[clamp\(2\.41rem\,3vw\,6rem\)\] {
     max-height: clamp(2.41rem, 3vw, 6rem);
   }
+  .max-h-\[clamp\(2rem\,3vw\,5rem\)\] {
+    max-height: clamp(2rem, 3vw, 5rem);
+  }
+  .max-h-\[clamp\(10rem\,10vw\,12rem\)\] {
+    max-height: clamp(10rem, 10vw, 12rem);
+  }
+  .max-h-\[clamp\(10rem\,12vw\,15rem\)\] {
+    max-height: clamp(10rem, 12vw, 15rem);
+  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -2589,17 +2601,74 @@
   .max-w-\[100\%\] {
     max-width: 100%;
   }
+  .max-w-\[clamp\(2rem\,3vw\,5rem\)\] {
+    max-width: clamp(2rem, 3vw, 5rem);
+  }
   .max-w-\[clamp\(3\.3rem\,1vw\,4rem\)\] {
     max-width: clamp(3.3rem, 1vw, 4rem);
+  }
+  .max-w-\[clamp\(3\.5rem\,3\.5vw\,5rem\)\] {
+    max-width: clamp(3.5rem, 3.5vw, 5rem);
+  }
+  .max-w-\[clamp\(3\.5rem\,3vw\,5rem\)\] {
+    max-width: clamp(3.5rem, 3vw, 5rem);
+  }
+  .max-w-\[clamp\(3rem\,3vw\,5rem\)\] {
+    max-width: clamp(3rem, 3vw, 5rem);
+  }
+  .max-w-\[clamp\(3rem\,3vw\,6rem\)\] {
+    max-width: clamp(3rem, 3vw, 6rem);
+  }
+  .max-w-\[clamp\(3rem\,5vw\,5rem\)\] {
+    max-width: clamp(3rem, 5vw, 5rem);
+  }
+  .max-w-\[clamp\(3rem\,5vw\,7rem\)\] {
+    max-width: clamp(3rem, 5vw, 7rem);
   }
   .max-w-\[clamp\(4rem\,4\.5vw\,10rem\)\] {
     max-width: clamp(4rem, 4.5vw, 10rem);
   }
+  .max-w-\[clamp\(6rem\,10vw\,8rem\)\] {
+    max-width: clamp(6rem, 10vw, 8rem);
+  }
+  .max-w-\[clamp\(6rem\,10vw\,10rem\)\] {
+    max-width: clamp(6rem, 10vw, 10rem);
+  }
+  .max-w-\[clamp\(7rem\,6vw\,10rem\)\] {
+    max-width: clamp(7rem, 6vw, 10rem);
+  }
+  .max-w-\[clamp\(7rem\,8vw\,10rem\)\] {
+    max-width: clamp(7rem, 8vw, 10rem);
+  }
+  .max-w-\[clamp\(7rem\,10vw\,10rem\)\] {
+    max-width: clamp(7rem, 10vw, 10rem);
+  }
+  .max-w-\[clamp\(8rem\,6vw\,10rem\)\] {
+    max-width: clamp(8rem, 6vw, 10rem);
+  }
   .max-w-\[clamp\(10rem\,2vw\,16rem\)\] {
     max-width: clamp(10rem, 2vw, 16rem);
   }
+  .max-w-\[clamp\(10rem\,10vw\,10rem\)\] {
+    max-width: clamp(10rem, 10vw, 10rem);
+  }
+  .max-w-\[clamp\(10rem\,10vw\,12rem\)\] {
+    max-width: clamp(10rem, 10vw, 12rem);
+  }
+  .max-w-\[clamp\(10rem\,10vw\,15rem\)\] {
+    max-width: clamp(10rem, 10vw, 15rem);
+  }
+  .max-w-\[clamp\(10rem\,12vw\,15rem\)\] {
+    max-width: clamp(10rem, 12vw, 15rem);
+  }
+  .max-w-\[clamp\(12rem\,10vw\,15rem\)\] {
+    max-width: clamp(12rem, 10vw, 15rem);
+  }
   .max-w-\[clamp\(15rem\,5vw\,25rem\)\] {
     max-width: clamp(15rem, 5vw, 25rem);
+  }
+  .max-w-\[clamp\(15rem\,10vw\,17rem\)\] {
+    max-width: clamp(15rem, 10vw, 17rem);
   }
   .max-w-\[clamp\(20rem\,83vw\,80rem\)\] {
     max-width: clamp(20rem, 83vw, 80rem);
@@ -2780,6 +2849,9 @@
   }
   .flex-col-reverse {
     flex-direction: column-reverse;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .flex-row-reverse {
     flex-direction: row-reverse;
@@ -4038,6 +4110,15 @@
   .text-\[clamp\(2\.5rem\,3vw\,6rem\)\] {
     font-size: clamp(2.5rem, 3vw, 6rem);
   }
+  .text-\[clamp\(2\.25\,5vw\,3rem\)\] {
+    font-size: clamp(2.25, 5vw, 3rem);
+  }
+  .text-\[clamp\(2\.25rem\,5vw\,3rem\)\] {
+    font-size: clamp(2.25rem, 5vw, 3rem);
+  }
+  .text-\[clamp\(3\.3rem\,6vw\,4\.3rem\)\] {
+    font-size: clamp(3.3rem, 6vw, 4.3rem);
+  }
   .text-\[clamp\(3\.5rem\,5\.3vw\,5rem\)\] {
     font-size: clamp(3.5rem, 5.3vw, 5rem);
   }
@@ -4061,6 +4142,12 @@
   }
   .text-\[clamp\(3rem\,5vw\,5rem\)\] {
     font-size: clamp(3rem, 5vw, 5rem);
+  }
+  .text-\[clamp\(3rem\,6vw\,3\.5rem\)\] {
+    font-size: clamp(3rem, 6vw, 3.5rem);
+  }
+  .text-\[clamp\(3rem\,6vw\,4rem\)\] {
+    font-size: clamp(3rem, 6vw, 4rem);
   }
   .text-\[clamp\(3rem\,7vw\,5rem\)\] {
     font-size: clamp(3rem, 7vw, 5rem);
@@ -4196,8 +4283,17 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
+  .text-\[\#0ac6ff\] {
+    color: #0ac6ff;
+  }
   .text-\[\#000000\] {
     color: #000000;
+  }
+  .text-\[\#070B1D\] {
+    color: #070B1D;
+  }
+  .text-\[\#412ad5\] {
+    color: #412ad5;
   }
   .text-\[\#BABABA\] {
     color: #BABABA;
@@ -4612,6 +4708,18 @@
   }
   .text-shadow-\[0_0_5px_\#0ac6ff\] {
     text-shadow: 0 0 5px var(--tw-text-shadow-color, #0ac6ff);
+  }
+  .text-shadow-\[0_0_5px_\#070B1D\,0_0_9px_\#0A0F26\,0_0_15px_\#0ac6ff\,0_0_20px_\#412ad5\] {
+    text-shadow: 0 0 5px var(--tw-text-shadow-color, #070B1D), 0 0 9px var(--tw-text-shadow-color, #0A0F26), 0 0 15px var(--tw-text-shadow-color, #0ac6ff), 0 0 20px var(--tw-text-shadow-color, #412ad5);
+  }
+  .text-shadow-\[0_0_5px_\#070B1D\,0_0_9px_\#0A0F26\,0_0_15px_\#bababa\,0_0_20px_\#0A0F26\] {
+    text-shadow: 0 0 5px var(--tw-text-shadow-color, #070B1D), 0 0 9px var(--tw-text-shadow-color, #0A0F26), 0 0 15px var(--tw-text-shadow-color, #bababa), 0 0 20px var(--tw-text-shadow-color, #0A0F26);
+  }
+  .text-shadow-\[0_0_5px_\#070B1D\,0_0_9px_\#0A0F26\,0_0_15px_\#bababa\,0_0_20px_\#fafafa\] {
+    text-shadow: 0 0 5px var(--tw-text-shadow-color, #070B1D), 0 0 9px var(--tw-text-shadow-color, #0A0F26), 0 0 15px var(--tw-text-shadow-color, #bababa), 0 0 20px var(--tw-text-shadow-color, #fafafa);
+  }
+  .text-shadow-\[0_0_5px_\#070B1D\,0_0_9px_\#0ac6ff\,0_0_15px_\#0ac6ff\,0_0_20px_\#412ad5\] {
+    text-shadow: 0 0 5px var(--tw-text-shadow-color, #070B1D), 0 0 9px var(--tw-text-shadow-color, #0ac6ff), 0 0 15px var(--tw-text-shadow-color, #0ac6ff), 0 0 20px var(--tw-text-shadow-color, #412ad5);
   }
   .group-hover\:pointer-events-auto {
     &:is(:where(.group):hover *) {
@@ -5559,6 +5667,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .md\:grid-cols-4 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
@@ -6443,6 +6556,11 @@
   .xl\:grid-cols-4 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .xl\:grid-cols-8 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(8, minmax(0, 1fr));
     }
   }
   .xl\:justify-start {
