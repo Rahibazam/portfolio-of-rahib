@@ -9,13 +9,12 @@
 .filter-btn {
     padding: 0.4rem 1.2rem;
     border: none;
-    border-radius: 2rem;
-    font-size: 0.9rem;
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     backdrop-filter: blur(10px);
-    border: 1px solid #0AC4FF;
+    border: 1px solid #bababa22;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -33,13 +32,14 @@
 
 .filter-btn.active {
     background: #422ad5;
+    border-top: 3px solid #0AC4FF;
     text-shadow:
     0 0 3px #0ac6ff,
     0 0 7px #0ac6ff,
     0 0 12px #0ac6ff,
     0 0 17px #412ad5;
     color: #FAFAFA;
-    box-shadow: 0 10px 25px rgba(10, 196, 255, 0.6);
+    box-shadow: 0 0 25px rgba(10, 196, 255, 0.6);
 }
 
 .gallery {
@@ -109,7 +109,7 @@
 }
 
 .card-title {
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
     font-weight: bold;
     margin-bottom: 0.5rem;
     transition: color 0.3s ease;
@@ -121,7 +121,8 @@
 }
 
 .card-description {
-    color: #BABABA;
+    font-size: clamp(1rem, 1.3vw, 1.2rem);
+    color: #fafafa;
     margin-bottom: 1rem;
     line-height: 1.6;
 }
