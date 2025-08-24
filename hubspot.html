@@ -222,9 +222,10 @@
                         <!-- container -->
                         <div class="w-full z-10">
 
-                            <div class="w-11/12 md:w-10/12 lg:w-8/12 mx-auto space-y-6">
+                            <div
+                                class="w-full max-w-[clamp(20rem,83vw,80rem)] pl-[clamp(0.6rem,2vw,3rem)] pr-[clamp(0.6rem,2vw,3rem)] mx-auto space-y-6">
                                 <h1
-                                    class="text-5xl lg:text-7xl primary-color text-shadow text-center font-extrabold uppercase">
+                                    class="text-[clamp(3rem,10vw,5rem)] leading-none primary-color text-shadow text-center font-extrabold uppercase">
                                     HubSp<span class="inline-block w-[1.2em] h-[1.2em] align-middle -m-2.5"><svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             class="size-8/12 mx-auto lg:size-9/12 aspect-square overflow-visible svg-drop-shadow"
@@ -232,7 +233,8 @@
                                             <path class="fill-[#0A0F26]"
                                                 d="M267.4 211.6c-25.1 23.7-40.8 57.3-40.8 94.6 0 29.3 9.7 56.3 26 78L203.1 434c-4.4-1.6-9.1-2.5-14-2.5-10.8 0-20.9 4.2-28.5 11.8-7.6 7.6-11.8 17.8-11.8 28.6s4.2 20.9 11.8 28.5c7.6 7.6 17.8 11.6 28.5 11.6 10.8 0 20.9-3.9 28.6-11.6 7.6-7.6 11.8-17.8 11.8-28.5 0-4.2-.6-8.2-1.9-12.1l50-50.2c22 16.9 49.4 26.9 79.3 26.9 71.9 0 130-58.3 130-130.2 0-65.2-47.7-119.2-110.2-128.7V116c17.5-7.4 28.2-23.8 28.2-42.9 0-26.1-20.9-47.9-47-47.9S311.2 47 311.2 73.1c0 19.1 10.7 35.5 28.2 42.9v61.2c-15.2 2.1-29.6 6.7-42.7 13.6-27.6-20.9-117.5-85.7-168.9-124.8 1.2-4.4 2-9 2-13.8C129.8 23.4 106.3 0 77.4 0 48.6 0 25.2 23.4 25.2 52.2c0 28.9 23.4 52.3 52.2 52.3 9.8 0 18.9-2.9 26.8-7.6l163.2 114.7zm89.5 163.6c-38.1 0-69-30.9-69-69s30.9-69 69-69 69 30.9 69 69-30.9 69-69 69z" />
                                         </svg></span>t</h1>
-                                <p class="text-base lg:text-xl text-[#FAFAFA] text-shadow text-center">HubSpot isn’t
+                                <p class="text-[clamp(1rem,2vw,1.35rem)] text-[#FAFAFA] text-shadow text-center">HubSpot
+                                    isn’t
                                     just another tool in my belt — it’s my playground. I help businesses untangle messy
                                     CRMs, automate repetitive tasks, and build marketing flows that actually convert —
                                     all without the usual headaches or endless tabs. Think of me as your
@@ -288,121 +290,117 @@
                     <section class="main-content">
                         <!-- why me -->
                         <section class="pt-10" id="next">
-                            <div class="w-11/12 md:w-10/12 lg:w-8/12 lg:h-150 mx-auto space-y-15 py-10 lg:py-20">
+                            <div class="w-full max-w-[clamp(20rem,83vw,80rem)] px-3 mx-auto space-y-15 py-10 lg:py-20">
                                 <!-- section heading -->
                                 <div class="lg:flex gap-15 items-center space-y-10 lg:space-y-0">
                                     <div>
                                         <h2
-                                            class="text-2xl lg:text-4xl font-medium text-white uppercase heading-font text-center">
+                                            class="text-[clamp(1.875rem,5vw,3rem)] leading-snug text-[#fafafa] uppercase text-center lg:text-left">
                                             <span
-                                                class="bg-[#F57722] py-3 px-5 rounded-lg heading-font mx-auto inline-flex">Why
+                                                class="bg-[#F57722] py-3 px-5 rounded-md tracking-widest mx-auto inline-flex">Why
                                                 Me?</span>
                                         </h2>
                                     </div>
-                                    <p class="text-base lg:text-lg text-white text-center lg:text-left flex-1">(aka: Why
+                                    <p
+                                        class="text-[clamp(1rem,2vw,1.35rem)] leading-snug text-[#fafafa] text-center lg:text-left flex-1">
+                                        (aka: Why
                                         your HubSpot won’t ghost you again)<br>Leads slipping through, automations
                                         misfiring, and a CRM that needs therapy? I bring structure, clarity, and just
                                         enough sarcasm to keep things fun and working.</p>
                                 </div>
 
                                 <!-- cards -->
-                                <div>
-                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-0 ">
+                                <div class="">
+                                    <div
+                                        class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-2 border-[#FAFAFA]/50 rounded-md overflow-hidden">
+
                                         <!-- card 1 -->
                                         <div
-                                            class="relative group w-full lg:w-11/12 bg-[rgba(7,11,29,0.01)] backdrop-blur-[8px] rounded-lg border-2 border-[#F57722] hover:border-[#0AC4FF] inset-shadow-[0px_0px_20px_#F57722] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:scale-105 transition-all duration-300 overflow-clip aspect-[3/2]">
-                                            <!-- svg 1 -->
+                                            class="relative group bg-linear-to-tl to-100% to-[#F57722]/10 from-10% from-[#F57722]/40 hover:bg-none transition-all backdrop-blur-xl">
+                                            <!-- bg hover -->
                                             <div
-                                                class="absolute flex justify-evenly items-center w-2/12 group-hover:w-full bg-[#F57722] rounded-r-sm group-hover:rounded-r-none group-hover:rounded-none p-3 mb-5 mt-7 group-hover:bg-[#0AC4FF] transition-all delay-150 duration-300 ease-out">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                                    class="size-1/12 svg-drop-shadow animate-spin opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                                    <path class="fill-[#fafafa] stroke-14 stroke-[#fafafa]"
-                                                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
-                                                </svg>
-                                                <h3
-                                                    class="text-4xl lg:text-5xl text-center group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-500">
-                                                    1</h3>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                                    class="size-1/12 svg-drop-shadow animate-spin opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                                    <path class="fill-[#fafafa] stroke-14 stroke-[#fafafa]"
-                                                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
-                                                </svg>
+                                                class="absolute inset-0 w-full h-full scale-0 group-hover:scale-100 -z-10 bg-[#0AC4FF] transition-all duration-300">
                                             </div>
+
+
                                             <!-- content -->
-                                            <div class="px-6 pb-7">
-                                                <h3
-                                                    class="text-2xl lg:text-3xl group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] uppercase ml-10 lg:ml-14 mt-7 mb-4 group-hover:mt-[37%] group-hover:ml-0 transition-all ease-linear duration-300">
-                                                    Practical. Not Preachy</h3>
-                                                <p
-                                                    class="text-base lg:text-lg group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
-                                                    No fluff, no 60-slide strategy decks. Just clean setups, fixed
-                                                    workflows, and a CRM that stops gaslighting your team.</p>
+
+                                            <div class="px-5 py-7 space-y-3">
+                                                <div
+                                                    class="text-[clamp(3rem,3vw,3.5rem)] text-center heading-font font-bold group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] group-hover:text-[#0A0F26] transition-all duration-300">
+                                                    <p>1</p>
+                                                </div>
+
+                                                <div
+                                                    class="group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] group-hover:text-[#0A0F26] space-y-5 transition-all duration-300 text-center">
+                                                    <h2
+                                                        class="text-[clamp(1.5rem,2vw,2rem)] leading-snug uppercase font-bold tracking-wider">
+                                                        Practical. Not Preachy</h2>
+                                                    <p class="text-[clamp(1rem,1.5vw,1.3rem)]">No fluff, no 60-slide
+                                                        strategy decks. Just clean setups, fixed
+                                                        workflows, and a CRM that stops gaslighting your team.</p>
+                                                </div>
                                             </div>
                                         </div>
+
                                         <!-- card 2 -->
                                         <div
-                                            class="relative group w-full lg:w-11/12 bg-[rgba(7,11,29,0.01)] backdrop-blur-[8px] rounded-lg border-2 border-[#F57722] hover:border-[#0AC4FF] inset-shadow-[0px_0px_20px_#F57722] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:scale-105 transition-all duration-300 overflow-clip aspect-[3/2]">
-                                            <!-- svg 1 -->
+                                            class="relative group bg-linear-to-t to-100% to-[#F57722]/10 from-10% from-[#F57722]/40 hover:bg-none transition-all backdrop-blur-xl border-[#fafafa]/50 border-y-2 md:border-l-2 md:border-y-0 lg:border-l-2 lg:border-r-2">
+                                            <!-- bg hover -->
                                             <div
-                                                class="absolute flex justify-evenly items-center w-2/12 group-hover:w-full bg-[#F57722] rounded-r-sm group-hover:rounded-r-none group-hover:rounded-none p-3 mb-5 mt-7 group-hover:bg-[#0AC4FF] transition-all delay-150 duration-300 ease-out">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                                    class="size-1/12 svg-drop-shadow animate-spin opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                                    <path class="fill-[#fafafa] stroke-14 stroke-[#fafafa]"
-                                                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
-                                                </svg>
-                                                <h3
-                                                    class="text-4xl lg:text-5xl text-center group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-500">
-                                                    2</h3>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                                    class="size-1/12 svg-drop-shadow animate-spin opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                                    <path class="fill-[#fafafa] stroke-14 stroke-[#fafafa]"
-                                                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
-                                                </svg>
+                                                class="absolute inset-0 w-full h-full scale-0 group-hover:scale-100 -z-10 bg-[#0AC4FF] transition-all duration-300">
                                             </div>
+
+
                                             <!-- content -->
-                                            <div class="px-6 pb-7">
-                                                <h3
-                                                    class="text-2xl lg:text-3xl group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] uppercase ml-10 lg:ml-14 mt-7 mb-4 group-hover:mt-[37%] group-hover:ml-0 transition-all ease-linear duration-300">
-                                                    Built for the Real World</h3>
-                                                <p
-                                                    class="text-base lg:text-lg group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
-                                                    I’ve seen the chaos: half-finished forms, mystery properties, and
-                                                    “quick fixes” that haunt dashboards. I work with what’s real — not
-                                                    ideal.</p>
+
+                                            <div class="px-5 py-7 space-y-3">
+                                                <div
+                                                    class="text-[clamp(3rem,3vw,3.5rem)] text-center heading-font font-bold group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] group-hover:text-[#0A0F26] transition-all duration-300">
+                                                    <p>2</p>
+                                                </div>
+
+                                                <div
+                                                    class="group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] group-hover:text-[#0A0F26] space-y-5 transition-all duration-300 text-center">
+                                                    <h2
+                                                        class="text-[clamp(1.5rem,2vw,2rem)] leading-snug uppercase font-bold tracking-wider">
+                                                        Built for the Real World</h2>
+                                                    <p class="text-[clamp(1rem,1.5vw,1.3rem)]">I’ve seen the chaos:
+                                                        half-finished forms, mystery properties, and “quick fixes” that
+                                                        haunt dashboards. I work with what’s real — not ideal.</p>
+                                                </div>
                                             </div>
                                         </div>
+
                                         <!-- card 3 -->
                                         <div
-                                            class="relative group w-full lg:w-11/12 bg-[rgba(7,11,29,0.01)] backdrop-blur-[8px] rounded-lg border-2 border-[#F57722] hover:border-[#0AC4FF] inset-shadow-[0px_0px_20px_#F57722] hover:inset-shadow-[0px_0px_20px_#0AC4FF] hover:scale-105 transition-all duration-300 overflow-clip aspect-[3/2]">
-                                            <!-- svg 1 -->
+                                            class="relative md:col-span-2 lg:col-span-1 group bg-linear-to-tr to-100% to-[#F57722]/10 from-10% from-[#F57722]/40 hover:bg-none border-[#fafafa]/50 md:border-t-2 lg:border-t-0 transition-all backdrop-blur-xl">
+                                            <!-- bg hover -->
                                             <div
-                                                class="absolute flex justify-evenly items-center w-2/12 group-hover:w-full bg-[#F57722] rounded-r-sm group-hover:rounded-r-none group-hover:rounded-none p-3 mb-5 mt-7 group-hover:bg-[#0AC4FF] transition-all delay-150 duration-300 ease-out">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                                    class="size-1/12 svg-drop-shadow animate-spin opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                                    <path class="fill-[#fafafa] stroke-14 stroke-[#fafafa]"
-                                                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
-                                                </svg>
-                                                <h3
-                                                    class="text-4xl lg:text-5xl text-center group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-500">
-                                                    3</h3>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                                                    class="size-1/12 svg-drop-shadow animate-spin opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                                    <path class="fill-[#fafafa] stroke-14 stroke-[#fafafa]"
-                                                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z" />
-                                                </svg>
+                                                class="absolute inset-0 w-full h-full scale-0 group-hover:scale-100 -z-10 bg-[#0AC4FF] transition-all duration-300">
                                             </div>
+
+
                                             <!-- content -->
-                                            <div class="px-6 pb-7">
-                                                <h3
-                                                    class="text-2xl lg:text-3xl group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] uppercase ml-10 lg:ml-14 mt-7 mb-4 group-hover:mt-[37%] group-hover:ml-0 transition-all ease-linear duration-300">
-                                                    HubSpot & Front-End</h3>
-                                                <p
-                                                    class="text-base lg:text-lg group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] transition-all duration-300">
-                                                    Yes, I know coding, but I won’t brag about it, but when HubSpot’s
-                                                    editor gives up, I
-                                                    don’t. Yes, I’ve fought inline styles. Yes, I won.</p>
+
+                                            <div class="px-5 py-7 space-y-3">
+                                                <div
+                                                    class="text-[clamp(3rem,3vw,3.5rem)] text-center heading-font font-bold group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] group-hover:text-[#0A0F26] transition-all duration-300">
+                                                    <p>3</p>
+                                                </div>
+
+                                                <div
+                                                    class="group-hover:text-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5] group-hover:text-[#0A0F26] space-y-5 transition-all duration-300 text-center">
+                                                    <h2
+                                                        class="text-[clamp(1.5rem,2vw,2rem)] leading-snug uppercase font-bold tracking-wider">
+                                                        HubSpot & Front-End</h2>
+                                                    <p class="text-[clamp(1rem,1.5vw,1.3rem)]">Yes, I know coding, but I
+                                                        won’t brag about it, but when HubSpot’s editor gives up, I
+                                                        don’t. Yes, I’ve fought inline styles. Yes, I won.</p>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
 
