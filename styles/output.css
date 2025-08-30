@@ -4648,6 +4648,12 @@
       border-color: var(--color-red-500);
     }
   }
+  .hover\:-translate-x-2 {
+    &:hover {
+      --tw-translate-x: calc(var(--spacing) * -2);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
   .hover\:-translate-y-1 {
     &:hover {
       --tw-translate-y: calc(var(--spacing) * -1);
@@ -5940,6 +5946,12 @@
       min-height: 31rem;
     }
   }
+  .xl\:-translate-y-0 {
+    @media (width >= 80rem) {
+      --tw-translate-y: calc(var(--spacing) * -0);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
   .xl\:grid-cols-4 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -5995,6 +6007,22 @@
     @media (width >= 80rem) {
       &:hover {
         --tw-translate-x: calc(var(--spacing) * -4);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .xl\:hover\:-translate-y-0 {
+    @media (width >= 80rem) {
+      &:hover {
+        --tw-translate-y: calc(var(--spacing) * -0);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .xl\:hover\:-translate-y-4 {
+    @media (width >= 80rem) {
+      &:hover {
+        --tw-translate-y: calc(var(--spacing) * -4);
         translate: var(--tw-translate-x) var(--tw-translate-y);
       }
     }
