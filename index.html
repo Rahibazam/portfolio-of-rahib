@@ -14,28 +14,39 @@
     <link rel="canonical" href="https://rahibazam.github.io/portfolio-of-rahib/index.html">
     <title>Portfolio of Rahib</title>
     <link rel="shortcut icon" href="icons/logo.webp" type="image/x-icon">
-    <!-- google fonts -->
+
+    <!-- Google Fonts (async with display=swap) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quantico:wght@400;700&family=Roboto:wght@300&display=swap"
-        rel="stylesheet">
-    <!-- tailwind cdn -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quantico:wght@400;700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quantico:wght@400;700&family=Roboto:wght@300&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+    <!-- Critical / above-the-fold CSS (inline or leave output.css if needed) -->
     <link rel="stylesheet" href="styles/output.css">
-    <!-- external css file -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/shared-style.css">
-    <link rel="stylesheet" href="styles/loader.css">
-    <!-- Start of HubSpot Embed Code -->
+    
+    <!-- Non-critical CSS async load -->
+    <link rel="stylesheet" href="styles/styles.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/shared-style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/loader.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/shared-style.css">
+        <link rel="stylesheet" href="styles/loader.css">
+    </noscript>
+
+    <!-- HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/50435581.js"></script>
-    <!-- End of HubSpot Embed Code -->
-    <!-- js -->
-    <script src="loader.js"></script>
+
+    <!-- JS -->
+    <script src="loader.js" defer></script>
     <script src="page-transition.js" defer></script>
     <script src="drawer.js" defer></script>
 </head>
+
 
 <body class="primary-font bg-[#070B1D]">
 
@@ -1110,7 +1121,7 @@
                                         class="group relative overflow-hidden rounded-md h-64 lg:h-96 shadow-[0px_2px_20px_#0AC4FF] transform transition-all duration-300 hover:shadow-[0px_2px_40px_#0AC4FF]">
                                         <!-- Background Image -->
                                         <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                            src="images/rinterio.webp" alt="Rinterio Interior Design">
+                                            src="images/rinterio.webp" alt="Rinterio Interior Design" loading="lazy">
 
                                         <!-- Gradient overlay -->
                                         <div
@@ -1179,7 +1190,7 @@
                                         class="group relative overflow-hidden rounded-md h-64 lg:h-96 shadow-[0px_2px_20px_#0AC4FF] transform transition-all duration-300 hover:shadow-[0px_2px_40px_#0AC4FF]">
                                         <!-- Background Image -->
                                         <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                                            src="images/extreme-surfing.webp" alt="Extreme Surfing">
+                                            src="images/extreme-surfing.webp" alt="Extreme Surfing" loading="lazy">
 
                                         <!-- Gradient overlay -->
                                         <div
@@ -1300,14 +1311,14 @@
                                     <div
                                         class="group btn w-[clamp(2.4rem,5vw,3rem)] h-[clamp(2.4rem,4vw,3rem)] p-0 bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] will-change-transform hover:scale-105 hover:-translate-y-1 active:translate-y-0.5 transition-all duration-300">
                                         <img class="w-8/12 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5]"
-                                            src="icons/linkedin.png" alt="linkedin profile">
+                                            src="icons/linkedin.png" alt="linkedin profile" loading="lazy">
                                     </div>
                                 </a>
                                 <a href="https://github.com/Rahibazam" target="_blank" rel="noopener noreferrer">
                                     <div
                                         class="group btn w-[clamp(2.4rem,5vw,3rem)] h-[clamp(2.4rem,4vw,3rem)] p-0 bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] will-change-transform hover:scale-105 hover:-translate-y-1 active:translate-y-0.5 transition-all duration-300">
                                         <img class="w-7/12 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5]"
-                                            src="icons/github.png" alt="github profile">
+                                            src="icons/github.png" alt="github profile" loading="lazy">
                                     </div>
                                 </a>
                                 <a href="https://www.facebook.com/rahib.ahmed.165/" target="_blank"
@@ -1315,7 +1326,7 @@
                                     <div
                                         class="group btn w-[clamp(2.4rem,5vw,3rem)] h-[clamp(2.4rem,4vw,3rem)] p-0 bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] will-change-transform hover:scale-105 hover:-translate-y-1 active:translate-y-0.5 transition-all duration-300">
                                         <img class="w-8/12 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5]"
-                                            src="icons/facebook.png" alt="facebook profile">
+                                            src="icons/facebook.png" alt="facebook profile" loading="lazy">
                                     </div>
                                 </a>
                                 <a href="https://www.instagram.com/rahib.1x1/" target="_blank"
@@ -1323,7 +1334,7 @@
                                     <div
                                         class="group btn w-[clamp(2.4rem,5vw,3rem)] h-[clamp(2.4rem,4vw,3rem)] p-0 bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] will-change-transform hover:scale-105 hover:-translate-y-1 active:translate-y-0.5 transition-all duration-300">
                                         <img class="w-7/12 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5]"
-                                            src="icons/instagram.png" alt="instagram profile">
+                                            src="icons/instagram.png" alt="instagram profile" loading="lazy">
                                     </div>
                                 </a>
                                 <a href="https://open.spotify.com/user/317hi3rvqhayq7j2dt2iwkuyua6u?si=b74add915b924b09"
@@ -1331,7 +1342,7 @@
                                     <div
                                         class="group btn w-[clamp(2.4rem,5vw,3rem)] h-[clamp(2.4rem,4vw,3rem)] p-0 bg-[#0AC4FF] border-none shadow-none hover:bg-[#422ad5] will-change-transform hover:scale-105 hover:-translate-y-1 active:translate-y-0.5 transition-all duration-300">
                                         <img class="w-7/12 group-hover:drop-shadow-[0_0_3px_#0ac6ff,0_0_7px_#0ac6ff,0_0_12px_#0ac6ff,0_0_17px_#412ad5]"
-                                            src="icons/spotify-about.webp" alt="spotify profile">
+                                            src="icons/spotify-about.webp" alt="spotify profile" loading="lazy">
                                     </div>
                                 </a>
                             </div>
@@ -1387,7 +1398,7 @@
                             <div
                                 class="absolute m-0 -z-10 will-change-transform opacity-5 group-hover/logo:opacity-10 inset-0 inset-y-[clamp(-6rem,10vw,-8rem)] sm:inset-y-[clamp(15rem,10vw,20rem)] lg:inset-y-[clamp(15rem,10vw,20rem)] inset-x-[clamp(40%,1vw,80%)] lg:inset-x-[clamp(70%,1vw,80%)] w-full max-w-[clamp(35rem,10vw,60rem)] transition-all duration-500">
                                 <img class="invert brightness-0 will-change-transform -rotate-25 group-hover/logo:-rotate-45 group-hover/logo:drop-shadow-[0_0_3px_#0AC4FF,0_0_7px_#0AC4FF,0_0_12px_#0AC4FF,0_0_17px_#412ad5] w-full transition-all duration-500"
-                                    src="icons/logo.webp" alt="">
+                                    src="icons/logo.webp" alt="website log" loading="lazy">
                             </div>
                         </div>
 
