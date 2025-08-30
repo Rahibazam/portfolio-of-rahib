@@ -3792,6 +3792,18 @@
   .text-\[clamp\(1\.25rem\,2\.5vw\,1\.5rem\)\] {
     font-size: clamp(1.25rem, 2.5vw, 1.5rem);
   }
+  .text-\[clamp\(1\.25rem\,4\.3vw\,1\.75rem\)\] {
+    font-size: clamp(1.25rem, 4.3vw, 1.75rem);
+  }
+  .text-\[clamp\(1\.25rem\,4vw\,1\.6rem\)\] {
+    font-size: clamp(1.25rem, 4vw, 1.6rem);
+  }
+  .text-\[clamp\(1\.25rem\,4vw\,1\.75rem\)\] {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+  }
+  .text-\[clamp\(1\.25rem\,4vw\,2rem\)\] {
+    font-size: clamp(1.25rem, 4vw, 2rem);
+  }
   .text-\[clamp\(1\.125rem\,1\,5vw\,1\.30rem\)\] {
     font-size: clamp(1.125rem, 1, 5vw, 1.30rem);
   }
@@ -3819,6 +3831,12 @@
   .text-\[clamp\(1rem\,1\.5vw\,1\.3rem\)\] {
     font-size: clamp(1rem, 1.5vw, 1.3rem);
   }
+  .text-\[clamp\(1rem\,1\.6vw\,1\.2rem\)\] {
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+  }
+  .text-\[clamp\(1rem\,1\.6vw\,1\.25rem\)\] {
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
+  }
   .text-\[clamp\(1rem\,1vw\,1\.2rem\)\] {
     font-size: clamp(1rem, 1vw, 1.2rem);
   }
@@ -3830,6 +3848,9 @@
   }
   .text-\[clamp\(1rem\,2vw\,1\.2rem\)\] {
     font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+  .text-\[clamp\(1rem\,2vw\,1\.25rem\)\] {
+    font-size: clamp(1rem, 2vw, 1.25rem);
   }
   .text-\[clamp\(1rem\,2vw\,1\.35rem\)\] {
     font-size: clamp(1rem, 2vw, 1.35rem);
