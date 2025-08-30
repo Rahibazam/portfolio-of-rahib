@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("my-drawer"),n=document.querySelectorAll(".drawer-side a[href]");console.log("Found drawer links:",n.length),n.forEach(n=>{n.addEventListener("click",function(){console.log("Drawer link clicked:",this.href),e.checked=!1})})});

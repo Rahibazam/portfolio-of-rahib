@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-of-rahib",
+  "version": "1.0.0",
+  "main": "animated-background.js",
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i app.css -o styles/output.css --minify",
+    "watch:css": "npx @tailwindcss/cli -i app.css -o styles/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "clean-css-cli": "^5.6.3",
+    "daisyui": "^5.0.54",
+    "html-minifier-terser": "^7.2.0",
+    "tailwindcss": "^4.1.12",
+    "terser": "^5.43.1"
+  },
+  "description": ""
+}
