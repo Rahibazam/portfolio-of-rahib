@@ -14,50 +14,53 @@
     <link rel="canonical" href="https://rahibazam.github.io/portfolio-of-rahib/about-me.html">
     <title>About Rahib</title>
     <link rel="shortcut icon" href="icons/logo.webp" type="image/x-icon">
-    <!-- Preconnect (keep these) -->
+
+    <!-- Preconnect Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Preload the exact fonts for your button (ADD THESE) -->
-    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/quantico/v17/rax5HiSdp9cPL3KIF7xsNjxQhmLZ.woff2"
-        type="font/woff2" crossorigin>
-    <link rel="preload" as="font"
-        href="https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2" type="font/woff2"
-        crossorigin>
+    <!-- Preload important fonts -->
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/quantico/v17/rax5HiSdp9cPL3KIF7xsNjxQhmLZ.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="https://fonts.gstatic.com/s/orbitron/v31/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2" type="font/woff2" crossorigin>
 
-    <!-- Your existing Google Fonts CSS link (KEEP THIS) -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quantico:wght@400;700&display=swap"
-        rel="stylesheet">
-    <!-- tailwind cdn -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <!-- Google Fonts CSS (async) -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quantico:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Critical CSS -->
     <link rel="stylesheet" href="styles/output.css">
-    <!-- Add this inline CSS for immediate font fallback -->
+
+    <!-- Inline font fallback -->
     <style>
         .primary-font {
             font-family: 'Quantico', Arial, sans-serif;
             font-display: swap;
         }
     </style>
-    <!-- external css file -->
-    <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript>
-        <link rel="stylesheet" href="styles/styles.css">
-    </noscript>
+
+    <!-- Non-critical CSS (async load) -->
+    <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/styles.css"></noscript>
+
     <link rel="preload" href="styles/shared-style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="styles/shared-style.css">
-    </noscript>
-    <link rel="stylesheet" href="styles/loader.css">
-    <!-- Start of HubSpot Embed Code -->
+    <noscript><link rel="stylesheet" href="styles/shared-style.css"></noscript>
+
+    <link rel="stylesheet" href="styles/loader.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="styles/loader.css"></noscript>
+
+    <!-- HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/50435581.js"></script>
-    <!-- End of HubSpot Embed Code -->
-    <!-- js -->
-    <script src="loader.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JS -->
+    <script src="loader.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
     <script src="page-transition.js" defer></script>
     <script src="drawer.js" defer></script>
     <script src="playlist.js" defer></script>
 </head>
+
 
 
 <body class="primary-font">
