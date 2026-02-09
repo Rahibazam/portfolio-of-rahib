@@ -51,7 +51,6 @@
     --radius-3xl: 1.5rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
-    --animate-spin: spin 1s linear infinite;
     --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --animate-bounce: bounce 1s infinite;
@@ -3084,9 +3083,6 @@
   .border-\[\#BABABA\]\/15 {
     border-color: color-mix(in oklab, #BABABA 15%, transparent);
   }
-  .border-\[\#BABABA\]\/20 {
-    border-color: color-mix(in oklab, #BABABA 20%, transparent);
-  }
   .border-\[\#F57722\] {
     border-color: #F57722;
   }
@@ -3798,29 +3794,8 @@
   .text-\[clamp\(1\.25rem\,4\.3vw\,1\.75rem\)\] {
     font-size: clamp(1.25rem, 4.3vw, 1.75rem);
   }
-  .text-\[clamp\(1\.25rem\,4vw\,1\.6rem\)\] {
-    font-size: clamp(1.25rem, 4vw, 1.6rem);
-  }
-  .text-\[clamp\(1\.25rem\,4vw\,1\.75rem\)\] {
-    font-size: clamp(1.25rem, 4vw, 1.75rem);
-  }
-  .text-\[clamp\(1\.25rem\,4vw\,2rem\)\] {
-    font-size: clamp(1.25rem, 4vw, 2rem);
-  }
-  .text-\[clamp\(1\.125rem\,1\,5vw\,1\.30rem\)\] {
-    font-size: clamp(1.125rem, 1, 5vw, 1.30rem);
-  }
   .text-\[clamp\(1\.125rem\,1\.2vw\,1\.7rem\)\] {
     font-size: clamp(1.125rem, 1.2vw, 1.7rem);
-  }
-  .text-\[clamp\(1\.125rem\,4vw\,1\.30rem\)\] {
-    font-size: clamp(1.125rem, 4vw, 1.30rem);
-  }
-  .text-\[clamp\(1\.125rem\,5vw\,1\.30rem\)\] {
-    font-size: clamp(1.125rem, 5vw, 1.30rem);
-  }
-  .text-\[clamp\(1\.125rem\,6vw\,1\.30rem\)\] {
-    font-size: clamp(1.125rem, 6vw, 1.30rem);
   }
   .text-\[clamp\(1\.875rem\,5vw\,3rem\)\] {
     font-size: clamp(1.875rem, 5vw, 3rem);
@@ -3837,9 +3812,6 @@
   .text-\[clamp\(1rem\,1\.6vw\,1\.2rem\)\] {
     font-size: clamp(1rem, 1.6vw, 1.2rem);
   }
-  .text-\[clamp\(1rem\,1\.6vw\,1\.25rem\)\] {
-    font-size: clamp(1rem, 1.6vw, 1.25rem);
-  }
   .text-\[clamp\(1rem\,1vw\,1\.2rem\)\] {
     font-size: clamp(1rem, 1vw, 1.2rem);
   }
@@ -3848,12 +3820,6 @@
   }
   .text-\[clamp\(1rem\,2vw\,1\.1rem\)\] {
     font-size: clamp(1rem, 2vw, 1.1rem);
-  }
-  .text-\[clamp\(1rem\,2vw\,1\.2rem\)\] {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-  }
-  .text-\[clamp\(1rem\,2vw\,1\.25rem\)\] {
-    font-size: clamp(1rem, 2vw, 1.25rem);
   }
   .text-\[clamp\(1rem\,2vw\,1\.35rem\)\] {
     font-size: clamp(1rem, 2vw, 1.35rem);
@@ -3929,10 +3895,6 @@
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
   }
-  .font-medium {
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
-  }
   .font-normal {
     --tw-font-weight: var(--font-weight-normal);
     font-weight: var(--font-weight-normal);
@@ -3960,9 +3922,6 @@
   }
   .text-\[\#FAFAFA\] {
     color: #FAFAFA;
-  }
-  .text-\[\#FAFAFA\]\/90 {
-    color: color-mix(in oklab, #FAFAFA 90%, transparent);
   }
   .text-\[\#fafafa\] {
     color: #fafafa;
@@ -4660,12 +4619,6 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
-  .hover\:-translate-y-2 {
-    &:hover {
-      --tw-translate-y: calc(var(--spacing) * -2);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
   .hover\:-translate-y-3 {
     &:hover {
       --tw-translate-y: calc(var(--spacing) * -3);
@@ -5281,18 +5234,6 @@
       text-align: end;
     }
   }
-  .md\:text-5xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
-  }
-  .md\:text-xl {
-    @media (width >= 48rem) {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-  }
   .md\:text-\[clamp\(2rem\,1\.3vw\,3rem\)\] {
     @media (width >= 48rem) {
       font-size: clamp(2rem, 1.3vw, 3rem);
@@ -5583,11 +5524,6 @@
       width: calc(var(--spacing) * 2);
     }
   }
-  .lg\:w-3\/5 {
-    @media (width >= 64rem) {
-      width: calc(3/5 * 100%);
-    }
-  }
   .lg\:w-8\/12 {
     @media (width >= 64rem) {
       width: calc(8/12 * 100%);
@@ -5631,11 +5567,6 @@
   .lg\:grid-cols-4 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-  .lg\:grid-cols-5 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-6 {
@@ -5946,12 +5877,6 @@
       min-height: 31rem;
     }
   }
-  .xl\:-translate-y-0 {
-    @media (width >= 80rem) {
-      --tw-translate-y: calc(var(--spacing) * -0);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
-  }
   .xl\:grid-cols-4 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -6001,30 +5926,6 @@
     @media (width >= 80rem) {
       --tw-tracking: var(--tracking-widest);
       letter-spacing: var(--tracking-widest);
-    }
-  }
-  .xl\:hover\:-translate-x-4 {
-    @media (width >= 80rem) {
-      &:hover {
-        --tw-translate-x: calc(var(--spacing) * -4);
-        translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
-    }
-  }
-  .xl\:hover\:-translate-y-0 {
-    @media (width >= 80rem) {
-      &:hover {
-        --tw-translate-y: calc(var(--spacing) * -0);
-        translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
-    }
-  }
-  .xl\:hover\:-translate-y-4 {
-    @media (width >= 80rem) {
-      &:hover {
-        --tw-translate-y: calc(var(--spacing) * -4);
-        translate: var(--tw-translate-x) var(--tw-translate-y);
-      }
     }
   }
   .\32 xl\:h-\[26rem\] {
@@ -6578,11 +6479,6 @@
   syntax: "<percentage>";
   inherits: false;
   initial-value: 100%;
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
 }
 @keyframes ping {
   75%, 100% {
